@@ -1,0 +1,2747 @@
+[
+  {
+    "id": "16",
+    "nameEN": "Hammer Hill Road Swimming Pool",
+    "nameTC": "斧山道游泳池",
+    "addr": "30 Lung Cheung Road, Wong Tai Sin, Kowloon",
+    "addrTC": "九龍黃大仙龍翔道30號",
+    "phone": "2350 6173, 2350 6062",
+    "email": "hhrsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=16",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=16",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "Closed on every Monday from 10:00am to 5:00pm for weekly cleansing operation. (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Tuesday of the same week)\nAnnual maintenance:\nOutdoor pools: From 1 November to 15 April of the following year\nIndoor pools: From 16 April to 15 June",
+    "indoorWindows": [
+      {
+        "label": "室內泳池（訓練池及嬉水池1）",
+        "tc": "5月11日至6月30日",
+        "en": "From 11 May to 30 June",
+        "start": "11 May 2027",
+        "end": "30 Jun 2027",
+        "reopen": "1 Jul 2027",
+        "iso": "2027-05-11"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 10 May 2027, 1 Jul – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "*^Training pool (Length 25m x Width 11m, Depth: 1m-1.4m)",
+      "^Leisure pool 1 ( Irregular shape, Depth: 0.4m)",
+      "Family changing room",
+      "Outdoor facilities",
+      "Toddlers' pool ( Irregular shape, Depth: 0.3m)",
+      "Leisure pool 2 ( Irregular shape, Depth: 0.6m)",
+      "Leisure pool 3 ( Irregular shape, Depth: 0.4m)",
+      "Participatory fountain",
+      "Barrier free facilities : Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Training pool), Shower room(s), Toilet(s) (including accessible toilet) and 1 Designated disable parking space (including assessable parking space), Tactile guide path,Visual fire alarm system and Braille directory map/floor plan"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 訓練池 ( 長 25米 x 闊 11米，水深： 1米 -1.4米 )",
+      "^ 嬉水池 1 ( 不規則形狀，水深： 0.4米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "戲水池 ( 不規則形狀，水深： 0.3米 )",
+      "嬉水池 2 ( 不規則形狀，水深： 0.6米 )",
+      "嬉水池 3 ( 不規則形狀，水深： 0.4米 )",
+      "韻律噴泉"
+    ],
+    "hours": "April to October:\nFirst session: 6:30am to 12:00nn\nSecond session: 1:00pm to 5:00pm\nThird session: 6:00pm to 10:00pm\nNovember to March (Indoor pools only)\nFirst session: 6:30am to 12:00nn\nSecond session: 1:00pm to 5:00pm\nThird session: 6:00pm to 9:00pm",
+    "hoursTC": "4月至10月:\n第一節: 上午6時30分至中午12時\n第二節: 下午1時至5時\n第三節: 晚上6時至10時\n11月至3月(只開放室內游泳池):\n第一節: 上午6時30分至中午12時\n第二節: 下午1時至5時\n第三節: 晚上6時至9時",
+    "maintEN": "Outdoor pools : From 1 November to 15 April of the following year\n Indoor pools : From 11 May to 30 June",
+    "maintTC": "戶外泳池 ：11月1日至翌年4月15日 \n室內泳池 ： 5月11日至6月30日",
+    "revision": "2026年11月6日",
+    "search": "hammer hill road swimming pool 斧山道游泳池 30 lung cheung road, wong tai sin, kowloon 九龍黃大仙龍翔道30號"
+  },
+  {
+    "id": "14",
+    "nameEN": "Kowloon Tsai Swimming Pool",
+    "nameTC": "九龍仔游泳池",
+    "addr": "13 Inverness Road, Kowloon City, Kowloon",
+    "addrTC": "九龍城延文禮士道13號",
+    "phone": "2336 5817, 2336 5790",
+    "email": "kcsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=14",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=14",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "",
+    "indoorWindows": [
+      {
+        "label": "室內主池（由2027年開始）",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor Facilities",
+      "^*Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "Spectator stand (1200 seats), Electronic Scoreboard, Family Changing Rooms",
+      "Outdoor facilities",
+      "Training Pool (Length 25m x Width 25m, Depth: 0.9-1.2m)",
+      "Leisure pool (Irregular shape, Depth: 0.4m)",
+      "Barrier free facilities",
+      "Barrier free access(es) facilitating entrance to the pool deck area, Mobile Pool Lift (Indoor Main Pool), Accessible/Family Changing Rooms and Toilets, Accessible Lift, Visual Fire Alarm System, Tactile Guide Path, Braille and Tactile Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "^*主池 (長50米 x 闊25米，水深：1.4米-1.9米)",
+      "觀眾看台(1200個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "訓練池(長25米 x 闊25米，水深：0.9米-1.2米)",
+      "嬉水池 (不規則形狀，水深：0.4米)"
+    ],
+    "hours": "April to October : 06:30 am – 12:00 nn; 1:00 pm – 5:00 pm; 6:00 pm – 10:00 pm\nNovember : 06:30 am – 12:00 nn\nRemark : Closed on every Monday from 10:00 am to 5:00 pm for weekly cleansing operation.",
+    "hoursTC": "四月至十月 ：上午6時30分至12時；下午1時至5時；晚上6時至10時\n十一月 ： 上午6時30分至12時\n備註 : 逢星期一上午10時至下午5時關閉進行清洗",
+    "maintEN": "Indoor Main Pool: \nFrom 16 April to 5 June (Starting from 2027)\nOutdoor Pools : \nFrom 1 November to 15 April of the following year",
+    "maintTC": "室內主池﹕ 4月16日至6月5日 (由2027年開始)\n戶外泳池﹕ 11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "kowloon tsai swimming pool 九龍仔游泳池 13 inverness road, kowloon city, kowloon 九龍城延文禮士道13號"
+  },
+  {
+    "id": "41",
+    "nameEN": "Ping Shan Tin Shui Wai Swimming Pool",
+    "nameTC": "屏山天水圍游泳池",
+    "addr": "1 Tsui Sing Road, Tin Shui Wai, Yuen Long",
+    "addrTC": "元朗天水圍聚星路1號",
+    "phone": "2856 2244, 2856 1739",
+    "email": "pstswsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=41",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=41",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "Every Monday from 10 am to 6 pm for weekly cleansing operation.",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "^Indoor Training pool (Length 25m x Width 25m, Depth: 1.2m)",
+      "Family Changing Room , Babycare Room",
+      "Barrier Free Facilities: Pool lift (Training Pool), Accessible Toilet & Changing Room, Tactile Guide Path, Visual Fire Alarm System, Braille Directory Map/Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "^室內訓練池 ( 長 25 米 x 闊 25 米，水深： 1.2 米 )",
+      "家庭更衣室 、育嬰間"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to September: 6:30 am to 10 pm (Session Breaks: 12 nn - 1 pm & 6 pm to 7 pm); November to March: 6:30 am to 9:30 pm (Session Breaks: 12 nn - 1 pm & 6 pm to 7 pm) ; September to October: Temporary Closure for Annual Maintenance",
+    "hoursTC": "4月 至 9月: 上午6時30分至晚上10時 (暫停開放時間：中午12時至下午1時及下午6時至7時); 11月 至 3月: 上午6時30分至晚上9時30分 (暫停開放時間:中午12時至下午1時及晚上6時至7時); 9月- 10月: 每年維修工程暫停開放",
+    "maintEN": "From 11 September to 31 October",
+    "maintTC": "9月11日至10月31日",
+    "revision": "2026年11月6日",
+    "search": "ping shan tin shui wai swimming pool 屏山天水圍游泳池 1 tsui sing road, tin shui wai, yuen long 元朗天水圍聚星路1號"
+  },
+  {
+    "id": "25",
+    "nameEN": "Shing Mun Valley Swimming Pool",
+    "nameTC": "城門谷游泳池",
+    "addr": "21 Shing Mun Road, Tsuen Wan",
+    "addrTC": "荃灣城門道21號",
+    "phone": "2416 0522, 2414 8985",
+    "email": "smvsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=25",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=25",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "Closed on every Monday from 10:00 am to 7:00pm for weekly cleansing operation.",
+    "indoorWindows": [
+      {
+        "label": "室內主池",
+        "tc": "5月1日至6月30日",
+        "en": "From 1 May to 30 June",
+        "start": "1 May 2027",
+        "end": "30 Jun 2027",
+        "reopen": "1 Jul 2027",
+        "iso": "2027-05-01"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外訓練池、習泳池及嬉水池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 30 Apr 2027, 1 Jul – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "@^Main pool (Length 23.5m x Width 25m, Depth: 1.2m)",
+      "@^Main pool (Length 25m x Width 25m, Depth: 2m)",
+      "Spectator stand (1000 seats), Electronic scoreboard, Family changing room",
+      "Outdoor facilities",
+      "Training pool (Length 25m x Width 7.8m, Depth: 0.9m-1.2m)",
+      "Teaching pool (Length 20m x Width 13.5m, Depth: 0.7m-0.95m)",
+      "Leisure pool 1 ( Irregular shape, Depth: 0.1m-0.5m)",
+      "Leisure pool 2 ( Irregular shape, Depth: 0.6m-1.2m)",
+      "Leisure pool 3 ( Irregular shape, Depth: 1.2m)",
+      "Barrier free facilities : Accessible toilet, Tactile guide path, Braille and tactile floor plan, Assistive listening system, Visual fire alarm system"
+    ],
+    "indoorFacilitiesTC": [
+      "@^ 主池 ( 長 23.5米 x 闊 25 米，水深： 1.2米 )",
+      "@^ 主池 ( 長 25米 x 闊 25 米，水深： 2米 )",
+      "觀眾看台 (1000 個座位 ) 、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "訓練池 ( 長 25米 x 闊 7.8米，水深： 0.9米 -1.2米 )",
+      "習泳池 ( 長 20米 x 闊 13.5米，水深： 0.7米 -0.95米 )",
+      "嬉水池 1 ( 不規則形狀，水深： 0.1米 -0.5米 )",
+      "嬉水池 2 ( 不規則形狀，水深：0.6 米-1.2 米)",
+      "嬉水池 3 ( 不規則形狀，水深：1.2 米 )"
+    ],
+    "hours": "Summer (April - October) : 6:30am to 12nn, 1:00pm-6:30pm, 7:30pm-10pm\nWinter (November - March) : 6:30am to 12nn,1:00pm-6:00pm,7:00pm-9:30pm",
+    "hoursTC": "夏季 (四月至十月) :上午6時30分至中午12時正,下午1時正至下午6時30分,下午7時30分至晚上10時正\n冬季(十一月至三月) : 上午6時30分至中午12時正,下午1時正至下午6時正,下午7時正至晚上9時30分",
+    "maintEN": "Outdoor training pool, teaching pool, leisure pools : From 1 November to 15 April of the following year Indoor main pool : From 1 May to 30 June",
+    "maintTC": "戶外訓練池、習泳池、嬉水池 : 11月1日至翌年4月15日 室內主池 : 5月1日至6月30日",
+    "revision": "2026年11月6日",
+    "search": "shing mun valley swimming pool 城門谷游泳池 21 shing mun road, tsuen wan 荃灣城門道21號"
+  },
+  {
+    "id": "37",
+    "nameEN": "Tai Kok Tsui Swimming Pool",
+    "nameTC": "大角咀游泳池",
+    "addr": "4/F,Tai Kok Tsui Municipal Services Building, 63 Fuk Tsun Street, Tai Kok Tsui, Kowloon",
+    "addrTC": "九龍大角咀福全街63號大角咀市政大廈四樓",
+    "phone": "2393 1237",
+    "email": "",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=37",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=37",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "逢星期一上午十時至下午六時為每週大洗日，如遇上星期一為公眾假期，大洗日將順延至星期三進行",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "*^Training pool (Length 25m x Width 14m, Depth: 1.2m-1.5m)",
+      "^Leisure pool ( Irregular shape, Depth: 0.4m)",
+      "Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Accessible lifting platform (Training pool), Accessible Toilet and shower compartments, Accessible Lift (with Assistive Listening System), Tactile Guide Path & Braille Directory Map/Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 訓練池 ( 長 25米 x 闊 14米，水深： 1.2米 -1.5米 )",
+      "^ 嬉水池 ( 不規則形狀，水深： 0.4米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "6:30am to 12nn; 1 to 5pm; 6 to 10pm",
+    "hoursTC": "上午6時30分至中午12時; 下午1時至5時; 下午6時至晚上10時",
+    "maintEN": "From 11 September to 31 October",
+    "maintTC": "9月11日至10月31日",
+    "revision": "2026年11月6日",
+    "search": "tai kok tsui swimming pool 大角咀游泳池 4/f,tai kok tsui municipal services building, 63 fuk tsun street, tai kok tsui, kowloon 九龍大角咀福全街63號大角咀市政大廈四樓"
+  },
+  {
+    "id": "31",
+    "nameEN": "Tai Po Swimming Pool",
+    "nameTC": "大埔游泳池",
+    "addr": "11 Ting Tai Road",
+    "addrTC": "大埔汀太路11號",
+    "phone": "2661 2244, 2665 5058",
+    "email": "tpdo@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=31",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=31",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "Every Monday (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Wednesday of the same week)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 25m, Depth: 1.4m-1.93m)",
+      "Teaching pool 1 (Length 20m x Width 12m, Depth: 0.7m-0.95m)",
+      "Teaching pool 2 (Length 20m x Width 12m, Depth: 0.85m-1.1m)",
+      "Diving pool (Length 12m x Width 11m, Depth: 4.5m)",
+      "Children's pool ( Irregular shape, Depth: 0.15m-0.3m)",
+      "Leisure pool 1 ( Irregular shape, Depth: 0 m-1.35m)",
+      "Leisure pool 2 ( Irregular shape, Depth: 1m)",
+      "Spectator stand (800 seats), Electronic scoreboard, Family changing room",
+      "Barrier Free Facilities: Barrier Free Entrance, Accessible Toilet, Accessible Services Counter, Tactile Guide Path, Visual Fire Alarm System, Braille Directory Map/Floor Plan."
+    ],
+    "indoorFacilitiesTC": [
+      "主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.93 米 )",
+      "習泳池 1 ( 長 20米 x 闊 12米，水深： 0.7米 -0.95米 )",
+      "習泳池 2 ( 長 20米 x 闊 12米，水深： 0.85米 -1.1米 )",
+      "跳水池 ( 長 12米 x 闊 11米，水深： 4.5米 )",
+      "兒童池 ( 不規則形狀，水深： 0.15 米 -0.3 米 )",
+      "嬉水池 1 ( 不規則形狀，水深： 0米 -1.35米 )",
+      "嬉水池 2 ( 不規則形狀，水深： 1米 )",
+      "觀眾看台(800個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Apr - Oct): 6:30 a.m. -10:00 p.m.(Session breaks: 12 nn - 1 pm & 6:30 pm - 7:30 pm)",
+    "hoursTC": "每年4月1日至10月31日: 上午6時30分至晚上10時(暫停開放時間: 中午12時至下午1時及下午6時30分至下午7時30分",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "tai po swimming pool 大埔游泳池 11 ting tai road 大埔汀太路11號"
+  },
+  {
+    "id": "35",
+    "nameEN": "Tseung Kwan O Swimming Pool",
+    "nameTC": "將軍澳游泳池",
+    "addr": "9 Wan Lung Road, Tseung Kwan O, NT",
+    "addrTC": "將軍澳運隆路9號",
+    "phone": "2706 7646, 2706 6767",
+    "email": "tkosp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=35",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=35",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "Closed on every Monday from 10:00am to 6:00pm(Nov. to March) 10:00am to 6:30pm (April to Oct.) for weekly cleansing operation. (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Tuesday of the same week)\nAnnual maintenance:\n All pools except Main pool : From 1 November to 15 April of the following year\n Main pool : From 16 April to 5 June",
+    "indoorWindows": [
+      {
+        "label": "訓練池、習泳池、跳水池、戲水池及嬉水池",
+        "tc": "11月1日至翌年4月15日",
+        "en": "From 1 November to 15 April of the following year",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027",
+        "iso": "2026-11-01"
+      },
+      {
+        "label": "主池",
+        "tc": "5月4日至6月23日",
+        "en": "From 4 May to 23 June",
+        "start": "4 May 2027",
+        "end": "23 Jun 2027",
+        "reopen": "24 Jun 2027",
+        "iso": "2027-05-04"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "16 Apr – 3 May 2027, 24 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "*^Main pool (Length 50m x Width 25m, Depth: 2m-2.2m)",
+      "*Training pool (Length 25m x Width 12m, Depth: 0.9m-1.2m)",
+      "Teaching pool 1 (Length 20m x Width 12m, Depth: 0.85m-1.1m)",
+      "Teaching pool 2 (Length 20m x Width 12m, Depth: 0.85m-1.1m)",
+      "Diving pool (Length 12m x Width 11m, Depth: 4.4m-4.5m)",
+      "Toddlers' pool (Irregular shape, Depth: 0.1m-0.3m)",
+      "Leisure pool 1 (Irregular shape, Depth: 0 m-0.95m)",
+      "Leisure pool 2 (water slides) (Irregular shape, Depth: 0.9m-1.1m)",
+      "Sun bathing area",
+      "Spectator stand (1136 seats), Electronic scoreboard, Family changing room, Babycare roomBarrier Free Facilities: Accessible toilets and shower compartments, accessible lifting platform (main pool and training pool), ramp(s)(teaching pool(s)), tactile guide path, visual fire alarm system, Braille and tactile floor plan, accessible car parking space (1 designated car parking space)"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 主池 ( 長 50 米 x 闊 25 米，水深： 2 米 -2.2 米 )",
+      "* 訓練池 ( 長 25 米 x 闊 12 米，水深： 0.9 米 -1.2 米 )",
+      "習泳池 1 ( 長 20 米 x 闊 12 米，水深： 0.85 米 -1.1 米 )",
+      "習泳池 2 ( 長 20 米 x 闊 12 米，水深： 0.85 米 -1.1 米 )",
+      "跳水池 ( 長 12 米 x 闊 11 米，水深： 4.4 米 -4.5 米 )",
+      "戲水池 ( 不規則形狀，水深： 0.1 米 -0.3 米 )",
+      "嬉水池 1 ( 不規則形狀，水深： 0 米 -0.95 米 )",
+      "嬉水池 2 (滑水梯) ( 不規則形狀，水深： 0.9 米 -1.1 米 )",
+      "日光浴場",
+      "觀眾看台(1136個座位)、電子計分板、家庭更衣室、育嬰室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Nov - Mar) 6:30 a.m.- 9:30 p.m. (only main pool opened for use)(Session breaks: 12 nn - 1 pm & 6 pm - 7 pm)\n(Apr - Oct) 6:30 a.m. - 10:00 p.m.(Session breaks: 12 nn - 1 pm & 6:30 pm - 7:30",
+    "hoursTC": "(十一月至三月) 上午6時30分至 晚上9時30分 (只開放主池)(暫停開放時間: 中午12時至下午1時及下午6時至下午7時)\n(四月至十月) 上午6時30分至晚上10時(暫停開放時間: 中午12時至下午1時及下午6時30分至下午7時30分)",
+    "maintEN": "Main Pool : From 4 May to 23 June Training pool, Teaching pools, Diving pool, Toddlers' pool, Leisure pools : From 1 November to 15 April of the following year",
+    "maintTC": "主池： 5月4日至6月23日 訓練池、習泳池、跳水池、戲水池、嬉水池： 11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "tseung kwan o swimming pool 將軍澳游泳池 9 wan lung road, tseung kwan o, nt 將軍澳運隆路9號"
+  },
+  {
+    "id": "5",
+    "nameEN": "Victoria Park Swimming Pool",
+    "nameTC": "維多利亞公園游泳池",
+    "addr": "1 Hing Fat Street, Causeway Bay, Hong Kong",
+    "addrTC": "香港銅鑼灣興發街一號",
+    "phone": "2570 8347",
+    "email": "vpsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=5",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=5",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Monday",
+    "dayTC": "星期一",
+    "dayIdx": 0,
+    "closedToday": false,
+    "restDay": "Every Monday\n(If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled to Friday of the same week)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施（冬季時間表列明 13.2.2027 – 14.4.2027）",
+        "tc": "2月20日至4月21日",
+        "en": "From 20 February to 21 April",
+        "start": "20 Feb 2027",
+        "end": "21 Apr 2027",
+        "reopen": "22 Apr 2027",
+        "iso": "2027-02-20"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 19 Feb 2027, 22 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "^*Main pool (Length 50m x Width 25m, Depth: 1.2m-2m)",
+      "^*Multi-purpose pool (Length 33m x Width 25m, Depth: 1.2m)",
+      "Spectator stand (2,500 seats), Electronic scoreboard, Family changing room, Babycare room",
+      "Barrier free Facilities: Barrier Free access(es) facilitating entrance to the pool deck area, Mobile Pool lift (Main pool and Multi-purpose pool), Shower room(s), Toilet(s) (including accessible toilet), Accessible Lift (With Assistive Listening System), Tactile Guide Path, Visual Fire Alarm System, Braille Directory Map / Floor Plan",
+      "Public Coaching Area: Main Pool"
+    ],
+    "indoorFacilitiesTC": [
+      "^*主池 ( 長 50 米 x 闊 25 米，水深：1.2米 -2 米 )",
+      "^*多用途池 ( 長 33 米 x 闊 25 米，水深：1.2米 )",
+      "觀眾看台(2,500個座位)、電子計分板、家庭更衣室、育嬰室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "6:30am to 12 nn ; 1pm to 5pm ; 6pm to 10pm",
+    "hoursTC": "上午6時30分至中午12時 ; 下午1時至5時 ; 下午6時至晚上10時",
+    "maintEN": "From 20 February to 21 April",
+    "maintTC": "2月20日至4月21日",
+    "revision": "2026年11月6日",
+    "search": "victoria park swimming pool 維多利亞公園游泳池 1 hing fat street, causeway bay, hong kong 香港銅鑼灣興發街一號"
+  },
+  {
+    "id": "7",
+    "nameEN": "Chai Wan Swimming Pool",
+    "nameTC": "柴灣游泳池",
+    "addr": "345 San Ha Street, Chai Wan, Hong Kong",
+    "addrTC": "香港柴灣新廈街345號",
+    "phone": "2558 3538",
+    "email": "cwsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=7",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=7",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Every Tuesday (10am to 5pm) (If the weekly cleansing falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled to Thursday of the same week)",
+    "indoorWindows": [
+      {
+        "label": "全泳館",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 21m, Depth: 1.4m-1.9m)",
+      "Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.4m)",
+      "Training pool (Length 25m x Width 11m, Depth: 0.9m-1.2m)",
+      "*Teaching pool 1 (Length 21m x Width 12m, Depth: 0.83m-1.05m)",
+      "Teaching pool 2 (Length 21m x Width 12m, Depth: 0.68m-0.9m)",
+      "Diving pool (Length 11m x Width 11.75m, Depth: 4.4m-4.6m)",
+      "Leisure pool 1 (Irregular shape, Depth: 0.39m-0.5m)",
+      "Leisure pool 2 (Irregular shape, Depth: 0.39m-0.45m)",
+      "Leisure pool 3 (Irregular shape)",
+      "Spectator stand (800 seats), Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Accessible lifting platform (Teaching pool), Accessible toilets and shower compartments, Tactile guide path, Visual fire alarm system, Braille floor map"
+    ],
+    "indoorFacilitiesTC": [
+      "主池 (長50米 x 闊21米，水深：1.4米-1.9米)",
+      "副池 (長50米 x 闊21米，水深：1.1米-1.4米)",
+      "訓練池 (長25米 x 闊11米，水深：0.9米-1.2米)",
+      "*習泳池 1 (長21米 x 闊12米，水深：0.83米-1.05米)",
+      "習泳池 2 (長21米 x 闊12米，水深：0.68米-0.9米)",
+      "跳水池 (長11米 x 闊11.75米，水深：4.4米-4.6米)",
+      "嬉水池 1 (不規則形狀，水深：0.39米-0.5米)",
+      "嬉水池 2 (不規則形狀，水深：0.39米-0.45米)",
+      "嬉水池 3 (不規則形狀)",
+      "觀眾看台(800個座位)、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "6:30am to 10:00pm (April - October) (Session breaks: 12 nn - 1 pm & 5 pm - 6 pm) Closed (November - March)",
+    "hoursTC": "上午6時30分至晚上10時(四月至十月)(暫停開放時間: 中午12時至下午1時及下午5時至下午6時)關閉(十一月至三月)",
+    "maintEN": "Whole pool complex: From 1 November to 31 March of the following year",
+    "maintTC": "全泳館：11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "chai wan swimming pool 柴灣游泳池 345 san ha street, chai wan, hong kong 香港柴灣新廈街345號"
+  },
+  {
+    "id": "29",
+    "nameEN": "Fanling Swimming Pool",
+    "nameTC": "粉嶺游泳池",
+    "addr": "73 San Wan Road, Fanling",
+    "addrTC": "新界粉嶺新運路73號",
+    "phone": "2675 6951",
+    "email": "flsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=29",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=29",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "(Apr. - Oct.) 10:00am to 6:30pm (Every Tuesday)(Nov - Mar.)10:00am to 6:00pm (Every Tuesday)Closed for weekly Cleansing operation.",
+    "indoorWindows": [
+      {
+        "label": "副池、訓練池及戲水池",
+        "tc": "11月1日至翌年4月15日",
+        "en": "From 1 November to 15 April of the following year",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027",
+        "iso": "2026-11-01"
+      },
+      {
+        "label": "主池",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "*^Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "*Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.4m)",
+      "Training pool (Length 25m x Width 11m, Depth: 0.9m-1.2m)",
+      "Toddlers' pool ( Irregular shape, Depth: 0.24m-0.42m)",
+      "Spectator stand (850 seats), Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Main Pool and Secondary Pool), Shower room(s), Accessible toilets, Tactile Guide Path, Visual Fire Alarm System, Braille Directory Map/Floor Plan and 1 Accessible Parking Space"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.9米 )",
+      "* 副池 ( 長 50 米 x 闊 21米，水深： 1.1米 -1.4米 )",
+      "訓練池 ( 長 25米 x 闊 11米，水深： 0.9米 -1.2米 )",
+      "戲水池 ( 不規則形狀，水深： 0.24米 -0.42米 )",
+      "觀眾看台(850個座位)、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Apr - Oct)6:30am to 12:00nn; 1:00pm to 6:30pm; 7:30 to 10:00pm(Nov - Mar)6:30am to 12:00nn; 1:00pm to 6:00pm; 7:00pm to 9:30pm",
+    "hoursTC": "(4 - 10月): 上午6時30分至中午12時; 下午1時至下午6時30分; 晚上7時30分至晚上10時(11 - 3 月): 上午6時30分至中午12時; 下午1時至下午6時; 晚上7時至晚上9時30分",
+    "maintEN": "Main pool : \n From 16 April to 14 November 2014--> Main pool:\n From 16 April to 5 June \nSecondary pool, Training pool, Toddlers' pool : \n From 1 November to 15 April of the following year",
+    "maintTC": "主池 ：2014年4月16日至11月14日--> 主池： 4月16日至6月5日\n 副池、訓練池、戲水池 ：11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "fanling swimming pool 粉嶺游泳池 73 san wan road, fanling 新界粉嶺新運路73號"
+  },
+  {
+    "id": "17",
+    "nameEN": "Jordan Valley Swimming Pool",
+    "nameTC": "佐敦谷游泳池",
+    "addr": "6 Choi Ha Road, Ngau Tau Kok, Kowloon",
+    "addrTC": "九龍牛頭角彩霞道6號",
+    "phone": "2305 5919, 2305 5920",
+    "email": "jvsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=17",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=17",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Closed on every Tuesday from 10 am to 6 pm for weekly cleansing operation.\n(If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Thursday of the same week)\nAnnual maintenance : From 1 Nov to 31 Mar of the following year",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "*Training pool (Length 25m x Width 11m, Depth: 1m-1.4m) (Irregular shape, Depth: 0.8)",
+      "Leisure pool 1 ( Irregular shape, Depth: 0.6m)",
+      "Leisure pool 2&3 ( Irregular shape, Depth: 0.2m-0.6m)",
+      "Leisure pool 4 ( Irregular shape, Depth: 0.2m-0.3m)",
+      "Family changing room",
+      "Barrier free facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Training pool), Shower room(s), Accessible toilet, Tactile guide path, Visual fire alarm system, Braille directory map/floor plan and 1 Designated disable parking space (including assessable parking space)"
+    ],
+    "indoorFacilitiesTC": [
+      "* 訓練池 ( 長 25 x 闊 11米，水深： 1米 -1.4米 ) (不規則形狀，水深：0.8米)",
+      "嬉水池 1 ( 不規則形狀，水深： 0.6米 )",
+      "嬉水池 2&3 ( 不規則形狀，水深： 0.2米 -0.6米 )",
+      "嬉水池 4 ( 不規則形狀，水深： 0.2米 -0.3米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to October : 6:30am to 10pm \n(Session breaks:12 nn-1 pm & 6 pm-7 pm) Apr - Oct First session: 6:30am to 12:00 nn Second session: 1:00 pm to 6:00 pm Third session: 7:00 pm to 10:00 pm (Session breaks: 12:00 nn - 1:00 pm & 6:00 - 7:00 pm) Remark: Closed on every Tuesday from 10 am to 6 pm for weekly cleansing operation. Annual maintenance : From 1 Nov to 31 Mar of the following year",
+    "hoursTC": "4月至10月\n第一節: 上午6時30分至中午12時\n第二節: 下午1時至6時\n第三節: 晚上7時至10時\n(暫停開放時段：中午12時至下午1時及下午6時至7時)\n備註: 逢星期二上午10時至下午6時關閉進行清洗。\n周年維修 : 11月1日至翌年3月31日",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "jordan valley swimming pool 佐敦谷游泳池 6 choi ha road, ngau tau kok, kowloon 九龍牛頭角彩霞道6號"
+  },
+  {
+    "id": "11",
+    "nameEN": "Kowloon Park Swimming Pool",
+    "nameTC": "九龍公園游泳池",
+    "addr": "22 Austin Road, Tsim Sha Tsui, Kowloon, Hong Kong",
+    "addrTC": "九龍尖沙咀柯士甸道22號",
+    "phone": "2724 3577",
+    "email": "kpsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=11",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=11",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "",
+    "indoorWindows": [
+      {
+        "label": "室內泳池",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "^Main pool (Length 50m x Width 25m, Depth: 1.2m-2.5m)",
+      "^Indoor L1 Training pool (Length 25m x Width 10m, Depth: 1.2m)",
+      "*^Indoor L2 Training pool (Length 25m x Width 12.5m, Depth: 1.2m)",
+      "^Diving pool (Length 21m x Width 15m, Depth: 5m)",
+      "Spectator stand (1689 seats), Electronic scoreboard, Family changing room, Babycare room",
+      "Outdoor facilities",
+      "Toddlers' pool (Irregular shape, Depth: 0.6m)",
+      "Leisure pool No.1 (Irregular shape, Depth: 0m-1.4m)",
+      "Leisure pool No.2 (Irregular shape, Depth: 0m-1.5m)",
+      "Leisure pool No.3 (Irregular shape, Depth: 0m-1.1m)",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Indoor L2 Training pool), Accessible Toilet, Accessible Lifting Platform (with Assistive Listening System), Tactile Guide Path, Braille Directory Map/Floor Plan and Assessable Car Parking Space (2 Designated Car Parking Spaces)"
+    ],
+    "indoorFacilitiesTC": [
+      "^ 主池 ( 長 50 米 x 闊 25 米，水深： 1.2 米 -2.5 米 )",
+      "^ 室內第一層訓練池 ( 長 25 米 x 闊 10 米，水深： 1.2 米 )",
+      "*^ 室內第二層訓練池 ( 長 25 米 x 闊 12.5 米，水深： 1.2 米 )",
+      "^ 跳水池 ( 長 21 米 x 闊 15 米，水深： 5 米 )",
+      "觀眾看台 (1689 個座位 ) 、電子計分板、家庭更衣室、育嬰室"
+    ],
+    "outdoorFacilities": [
+      "戲水池 ( 不規則形狀，水深： 0.6 米 )",
+      "嬉水池一號 ( 不規則形狀，水深： 0 米 -1.4 米 )",
+      "嬉水池二號 ( 不規則形狀，水深： 0 米 -1.5 米 )",
+      "嬉水池三號 ( 不規則形狀，水深： 0 米 -1.1 米 )"
+    ],
+    "hours": "6:30am to 12nn; 1 to 5pm; 6 to 10pm",
+    "hoursTC": "上午6時30分至中午12時; 下午1時至5時; 下午6時至晚上10時",
+    "maintEN": "Indoor Pools : \nFrom 16 April to 5 June \n Outdoor Pools : \nFrom 1 November to 15 April of the following year",
+    "maintTC": "室內 泳池 ﹕ 4月16日至6月5日\n 戶外泳池 ﹕ 11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "kowloon park swimming pool 九龍公園游泳池 22 austin road, tsim sha tsui, kowloon, hong kong 九龍尖沙咀柯士甸道22號"
+  },
+  {
+    "id": "34",
+    "nameEN": "Ma On Shan Swimming Pool",
+    "nameTC": "馬鞍山游泳池",
+    "addr": "33 On Chun Street, Ma On Shan, Sha Tin.",
+    "addrTC": "沙田馬鞍山鞍駿街33號",
+    "phone": "2641 0776",
+    "email": "mossp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=34",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=34",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "(Apr - Oct)Scheduled cleansing day on every Tuesday from 10:00am to 7:30pm (except Public Holidays)(Nov - Mar) Closed for overhaul",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "*Main pool (Length 50m x Width 25m, Depth: 2m)",
+      "Training pool (Length 25m x Width 11m, Depth: 0.9m-1.2m)",
+      "Teaching pool 1 (Length 20m x Width 12m, Depth: 0.9m-1.1m)",
+      "Teaching pool 2 (Length 20m x Width 12m, Depth: 0.9m-1.1m)",
+      "Toddlers’ pool (Irregular shape, Depth: 0.3m)",
+      "Giant water slides (Irregular shape, Depth: 1.1m)",
+      "Round stepping pool (Irregular shape, Depth: 1.1m)",
+      "Spectator stand (1200 seats), Electronic scoreboard, Family changing room",
+      "Barrier Free Facilities: Barrier Free Entrance, Accessible Toilet, Accessible Services Counter, Tactile Guide Path, Visual Fire Alarm System, Braille Directory Map/Floor Plan, Slipway (Teaching Pool), Accessible Parking Space (1 Designated Disable Parking Space), Pool Lift, Shower Room"
+    ],
+    "indoorFacilitiesTC": [
+      "* 主池 ( 長 50 米 x 闊 25 米，水深： 2米 )",
+      "訓練池 ( 長 25米 x 闊 11米，水深： 0.9米 -1.2米 )",
+      "習泳池 1( 長 20 米 x 闊 12米，水深： 0.9米 -1.1米 )",
+      "習泳池 2( 長 20 米 x 闊 12 米，水深︰ 0.9 米 -1.1 米 )",
+      "幼童池 ( 不規則形狀，水深︰ 0.3 米 )",
+      "大型滑水梯 ( 不規則形狀，水深︰ 1.1 米 )",
+      "圓形梯級池 ( 不規則形狀，水深︰ 1.1 米 )",
+      "觀眾看台(1200個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Apr - Oct)1st session : 6:30am to 12:00pm;2nd session : 1:00pm to 6:30pm;3rd session : 7:30pm to 10:00pm (except scheduled cleansing day on every Tuesday)",
+    "hoursTC": "(4 - 10月)第一節 : 上午6時30分至中午12時;第二節 : 下午1時至下午6時30分;第三節 : 晚上7時30分至晚上10時(逢星期二大清潔日例外)",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "ma on shan swimming pool 馬鞍山游泳池 33 on chun street, ma on shan, sha tin. 沙田馬鞍山鞍駿街33號"
+  },
+  {
+    "id": "1",
+    "nameEN": "Pao Yue Kong Swimming Pool",
+    "nameTC": "包玉剛游泳池",
+    "addr": "2 Shum Wan Road, Wong Chuk Hang, Hong Kong",
+    "addrTC": "香港黃竹坑深灣道２號",
+    "phone": "2553 3617",
+    "email": "pyksp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=1",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=1",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "November to March of next year",
+    "indoorWindows": [
+      {
+        "label": "全泳館（整個泳池設施）",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 21m, Depth: 1.4m-1.9 m )",
+      "Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.4m)",
+      "*Training pool (Length 25m x 9m, Depth: 0.9m - 1.2m)",
+      "Teaching pool1 (Length 18m x Width 12m, Depth: 0.6m-0.9m)",
+      "Teaching pool2 (Length18m x Width 12m, Depth: 0.8m-1.0m)",
+      "Diving pool (Length 11.7m x Width 11m, Depth: 4.5m)",
+      "Children's pool (Irregular shape, Depth: 0.3m)",
+      "Toddlers' pool (Irregular shape, Depth: 0.3m)",
+      "Spectator stand (600 seats), Electronic scoreboard, Family changing room",
+      "Barrier Free Facilities: A Barrier free access (es) facilitating entrance to the pool deck area, Accessible lifting platform (Training pool), Accessible toilets and shower compartments, Tactile guide path, Visual fire alarm system"
+    ],
+    "indoorFacilitiesTC": [
+      "主池 ( 長 50 米 x 闊 21 米，水深 :1.4 米 -1.9 米 )",
+      "副池 ( 長 50 米 x 闊 21 米，水深 :1.1 米 -1.4 米 )",
+      "* 訓練池 ( 長 25 米 x 闊 9 米，水深 :0.9 米 -1.2 米 )",
+      "習泳池 1 ( 長 18 米 x 闊 12 米，水深 :0.6 米 -0.9 米 )",
+      "習泳池 2 ( 長 18 米 x 闊 12 米，水深 :0.8 米 -1.0 米 )",
+      "跳水池 ( 長 11.7 米 x 闊 11 米，水深 :4.5 米 )",
+      "兒童池 ( 不規則形狀，水深 :0.3 米 )",
+      "戲水 池 ( 不規則形狀，水深 0.3 米 )",
+      "觀眾看台 (600 個座位 ) 、 電子計分板 、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(April to October) 6:30 a.m. to 10:00 p.m.(Session breaks: 12 nn - 1 pm & 6 pm - 7 pm)",
+    "hoursTC": "(4 - 10月) 上午6時30分 - 晚上10時(暫停開放時間: 中午12時至下午1時及下午6時至下午7時)",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "pao yue kong swimming pool 包玉剛游泳池 2 shum wan road, wong chuk hang, hong kong 香港黃竹坑深灣道２號"
+  },
+  {
+    "id": "40",
+    "nameEN": "Sun Yat Sen Memorial Park Swimming Pool",
+    "nameTC": "中山紀念公園游泳池",
+    "addr": "16 Eastern Street North, Sai Ying Pun, Hong Kong",
+    "addrTC": "香港西營盤東邊街北16號",
+    "phone": "2540 6708, 2547 3982",
+    "email": "sysmpsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=40",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=40",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Close on every Tuesday from 10:00am to 6:00pm for weekly cleansing operation",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor Facilities",
+      "*^Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "*^Training pool (Length 25m x Width 12.5m, Depth: 0.9m-1.2m)",
+      "Spectator stand (1000 seats), Electronic scoreboard, Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, accessible lifting platform (Main pool and Training pool), accessible toilet(s) and changing room(s), accessible car parking space (1 designated car parking space), accessible lift (with assistive listening system), tactile guide path, visual fire alarm system, braille and tactile floor plan, assistive listening system."
+    ],
+    "indoorFacilitiesTC": [
+      "*^主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.9 米 )",
+      "*^訓練池 ( 長25米 x 闊1 2.5 米，水深：0.9米 -1.2 米 )",
+      "觀眾看台(1000個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "6:30am to 12:00nn; 1:00pm to 5:00pm; 6:00pm to 10:00pm",
+    "hoursTC": "上午6時30分至中午12時; 下午1時至下午5時; 下午6時至下午10時",
+    "maintEN": "From 16 April to 5 June",
+    "maintTC": "4月16日至6月5日",
+    "revision": "2026年11月6日",
+    "search": "sun yat sen memorial park swimming pool 中山紀念公園游泳池 16 eastern street north, sai ying pun, hong kong 香港西營盤東邊街北16號"
+  },
+  {
+    "id": "21",
+    "nameEN": "The Jockey Club Yan Oi Tong Swimming Pool",
+    "nameTC": "賽馬會仁愛堂游泳池",
+    "addr": "Tsing Chung Koon Road, Tuen Mun",
+    "addrTC": "新界屯門青松觀路",
+    "phone": "2464 7149, 2464 6561",
+    "email": "yotsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=21",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=21",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Nov - Mar: Venue closed for annual maintenance Closed on every Tuesday from 10:00 am to 6:00 pm for weekly cleansing operation. (Except Public Holiday)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施（十一月至三月暫停開放）",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Leisure pool 1 ( Irregular shape, Depth: 0.8m)",
+      "Leisure pool 2 ( Irregular shape, Depth: 0m-1.3m)",
+      "Barrier Free Facilities: Accessible Toilet, Tactile Guide Path, Visual Fire Alarm System and Braille Directory Map / Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "嬉水池 1 ( 不規則形狀，水深： 0.8 米 )",
+      "嬉水池 2 ( 不規則形狀，水深： 0米-1.3 米 )"
+    ],
+    "outdoorFacilities": [],
+    "hours": "Apr - Oct: 6:30 am- 12:00 nn., 1:00 pm- 6:00 pm & 7:00 pm - 10:00 pm (except weekly cleansing day from 10:00 am -6:00 pm on every Tuesday)",
+    "hoursTC": "四月至十月：上午6時30分至中午12時, 下午1時至6時及晚上7時至10時 (逢星期二上午10時至下午6時除外)",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "the jockey club yan oi tong swimming pool 賽馬會仁愛堂游泳池 tsing chung koon road, tuen mun 新界屯門青松觀路"
+  },
+  {
+    "id": "261",
+    "nameEN": "Tin Sau Road Swimming Pool",
+    "nameTC": "天秀路游泳池",
+    "addr": "20 Tin Sau Road, Tin Shui Wai",
+    "addrTC": "天水圍天秀路20號",
+    "phone": "2381 1433",
+    "email": "tsrsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=261",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=261",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Every Tuesday from 10 am to 6 pm for weekly cleansing operation.",
+    "indoorWindows": [
+      {
+        "label": "室內訓練池及室內按摩池",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外主池及戶外訓練池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor Facilities",
+      "^*Training Pool (Length 25m x Width 25m, Depth: 1.2m-1.4m)",
+      "^Jacuzzi (Irregular shape, Depth: 0.45m-0.85m)",
+      "Babycare Room",
+      "Outdoor Facilities",
+      "*Main Pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "*Training Pool (Length 25m x Width 15m, Depth: 0.9m-1.2m)",
+      "Spectator Stand (700 seats), Universal Toilets",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area,",
+      "Mobile Pool Lift (Outdoor Main Pool, Outdoor Training Pool, Indoor Training Pool), Ramp ( Outdoor Training Pool) , Accessible/Family Changing Rooms and Toilets, Accessible Lift (with assistive listening system), Visual Fire Alarm System, Tactile Guide Path, Braille and Tactile Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "^* 訓練池 ( 長 25 米 x 闊 25 米，水深： 1.2 米 -1.4 米 )",
+      "^ 按摩池 ( 不規則形狀，水深： 0.45 米 -0.85 米 )",
+      "育嬰間"
+    ],
+    "outdoorFacilities": [
+      "* 主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.9 米 )",
+      "* 訓練池 ( 長 25 米 x 闊 15 米，水深： 0.9 米 -1.2 米 )",
+      "觀眾看台 (700 個座位 ) 、通用洗手間"
+    ],
+    "hours": "April to October: 6:30 am to 10 pm (Session breaks: 12 nn - 1 pm & 6 pm to 7 pm); November to March: 6:30 am to 9:30 pm (Session breaks: 12 nn – 1 pm & 6 pm to 7 pm)",
+    "hoursTC": "4月至10月: 上午6時30分至晚上10時 (暫停開放時間: 中午12時至下午1時及晚上6時至7時); 11月至3月: 上午6時30分至晚上9時30分 (暫停開放時間: 中午12時至下午1時及晚上6時至7時)",
+    "maintEN": "Outdoor Main Pool and Outdoor Training Pool : \n From 1 November to 15 April of the following year \n Indoor Training Pool and Indoor Jacuzzi : \n From 16 April to 5 June",
+    "maintTC": "室外主池及室外訓練池﹕ 11 月 1 日至翌年 4 月 15 日 \n室內訓練池及室內按摩池： 4 月 16 日至 6 月 5 日",
+    "revision": "2026年11月6日",
+    "search": "tin sau road swimming pool 天秀路游泳池 20 tin sau road, tin shui wai 天水圍天秀路20號"
+  },
+  {
+    "id": "44",
+    "nameEN": "Tsing Yi Southwest Swimming Pool",
+    "nameTC": "青衣西南游泳池",
+    "addr": "70 Chung Mei Road, Tsing Yi",
+    "addrTC": "新界青衣涌美路70號",
+    "phone": "2715 4202",
+    "email": "tyswsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=44",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=44",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Closed on Tuesdays from 10:00am to 6:00pm for weekly cleansing operation",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "*^Indoor training pool (Length 25m x Width 15m, Depth: 0.9m-1.2m)",
+      "Men's and ladies' changing rooms and toilets, Family changing rooms",
+      "Barrier Free Facilities: Accessible toilet, Tactile guide path, Braille and tactile floor plan, Visual fire alarm system"
+    ],
+    "indoorFacilitiesTC": [
+      "*^室內訓練池 ( 長 25 米 x 闊15 米，水深：0.9米 -1.2 米 )",
+      "男、女更衣室及洗手間、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to mid September: 6:30am to 12:00noon; 1:00pm to 6:00pm; 7:00pm to 10:00pm \n November to March: 6:30am to 12:00noon; 1:00pm to 6:00pm; 7:00pm to 9:30pm \n Temporary closure for annual maintenance : 11 September – 31 October",
+    "hoursTC": "四月至九月中 上午6時30分至中午12時; 下午1時至6時;下午7時至晚上10時 \n 十一月至三月 上午6時30分至中午12時; 下午1時至6時;下午7時至晚上9時30分 \n 每年維修工程的暫停開放時間: 9月11日至10月31日",
+    "maintEN": "From 11 September to 31 October",
+    "maintTC": "9月11日至10月31日",
+    "revision": "2026年11月6日",
+    "search": "tsing yi southwest swimming pool 青衣西南游泳池 70 chung mei road, tsing yi 新界青衣涌美路70號"
+  },
+  {
+    "id": "24",
+    "nameEN": "Tsuen King Circuit Wu Chung Swimming Pool",
+    "nameTC": "荃景圍胡忠游泳池",
+    "addr": "178 Tsuen King Circuit, Tsuen Wan",
+    "addrTC": "荃灣荃景圍安逸街",
+    "phone": "2413 5523",
+    "email": "tkcwcsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=24",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=24",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Closed on every Tuesday from 10:00 am to 7:30 pm for weekly cleansing operation.",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Training pool (Length 25m x Width 11.6m, Depth: 0.95m-1.25m)",
+      "Children's pool (Irregular shape, Depth: 0.47m )",
+      "Leisure pool (Irregular shape, Depth: 1m-1.2m )",
+      "Family changing room",
+      "Barrier Free Facilities: Accessible toilet, Tactile guide path, Braille and tactile floor plan , Assistive listening system, Visual fire alarm system."
+    ],
+    "indoorFacilitiesTC": [
+      "訓練池 ( 長 25米 x 闊 11.6米，水深： 0.95米 -1.25米 )",
+      "兒童池 ( 不規則形狀，水深： 0.47米 )",
+      "嬉水池 ( 不規則形狀，水深： 1米 -1.2米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "Summer (April - October) : 6:30am to 12nn, 1:00pm-6:30pm, 7:30pm-10pm\nWinter (November - March) : Closed",
+    "hoursTC": "夏季 (四月至十月) :上午6時30分至中午12時正,下午1時正至下午6時30分,下午7時30分至晚上10時正\n冬季(十一月至三月) : 關閉",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "tsuen king circuit wu chung swimming pool 荃景圍胡忠游泳池 178 tsuen king circuit, tsuen wan 荃灣荃景圍安逸街"
+  },
+  {
+    "id": "38",
+    "nameEN": "Tung Chung Swimming Pool",
+    "nameTC": "東涌游泳池",
+    "addr": "5 Tat Tung Road, Tung Chung, N.T.",
+    "addrTC": "東涌達東路5號",
+    "phone": "2109 9107, 2109 0147",
+    "email": "tcspis@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=38",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=38",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Tuesday",
+    "dayTC": "星期二",
+    "dayIdx": 1,
+    "closedToday": false,
+    "restDay": "Closed on every Tuesday 10:00 am to 6:00 pm for weekly cleansing operation (Except Public Holiday)",
+    "indoorWindows": [
+      {
+        "label": "主池",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "訓練池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "* ^Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "Spectator stand (1,000 seats), Electronic scoreboard, Family changing room",
+      "Outdoor facilities",
+      "* Training pool (Length 25m x Width 25m, Depth: 0.9m-1.2m)",
+      "Barrier Free Facilities: Pool lift (main pool and training pool), Slipway (training pool), Shower room(s), Accessible toilet, Accessible lift (with assistive listening system), Tactile guide path, Braille and tactile floor plan, Visual fire alarm system"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.9米 )",
+      "觀眾看台 (1,000 個座位 ) 、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "* 訓練池 ( 長 25米 x 闊 25 米，水深： 0.9米 -1.2米 )"
+    ],
+    "hours": "Apr. to Oct.: 6:30am - 10:00pm\n(session breaks: 12nn - 1pm & 6:00pm - 7:00pm)\nNov. to Mar.: 6:30am - 9:30pm\n(session breaks: 12nn - 1pm & 6:00pm - 7:00pm)",
+    "hoursTC": "四月至十月：上午6時30分至晚上10時\n(暫停開放時間：中午12時至1時及晚上6時至7時)\n十一月至三月：上午6時30分至晚上9時30分\n(暫停開放時間：中午12時至1時及晚上6時至7時)",
+    "maintEN": "Main pool: From 11 September to 31 October\n Training pool: From 1 November to 15 April of the following year",
+    "maintTC": "主池： 9月11日至10月31日\n 訓練池： 11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "tung chung swimming pool 東涌游泳池 5 tat tung road, tung chung, n.t. 東涌達東路5號"
+  },
+  {
+    "id": "13",
+    "nameEN": "Ho Man Tin Swimming Pool",
+    "nameTC": "何文田游泳池",
+    "addr": "1 Chung Yee Street, Ho Man Tin, Kowloon",
+    "addrTC": "九龍何文田忠義街1號",
+    "phone": "2715 0139",
+    "email": "hmtsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=13",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=13",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "",
+    "indoorWindows": [
+      {
+        "label": "室內泳池",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池（冬季開放時間表）",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027"
+      },
+      {
+        "label": "戶外泳池（冬季開放時間表）",
+        "start": "1 Apr 2027",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "^Leisure pool 1 ( Irregular shape, Depth: 0.9m-1.2m)",
+      "^Leisure pool 2 ( Irregular shape, Depth: 0.38m)",
+      "Family changing room",
+      "Outdoor facilities",
+      "Leisure pool 3 ( Irregular shape, Depth: 0.9m-1.2m)",
+      "Leisure pool 4 ( Irregular shape, Depth: 0.38m)",
+      "Barrier free facilities: Barrier free access(es) facilitating entrance to the pool deck area, Tactile guide path and Braille directory map/floor plan for major facilities of the building, Visual fire alarm system, Shower room(s), Toilet(s) (including accessible toilet) and 1 Designated disable parking space (including assessable parking space)"
+    ],
+    "indoorFacilitiesTC": [
+      "^ 嬉水池 1 ( 不規則形狀，水深： 0.9米 -1.2米 )",
+      "^ 嬉水池 2 ( 不規則形狀，水深： 0.38米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "嬉水池 3 ( 不規則形狀，水深： 0.9米 -1.2米 )",
+      "嬉水池 4 ( 不規則形狀，水深： 0.38米 )"
+    ],
+    "hours": "April – 10th September : 06:30 am – 12:00 nn; 1:00 pm – 5:00 pm; 6:00 pm – 10:00 pm\nNovember – March : 06:30 am – 12:00 nn; 1:00 pm – 5:00 pm; 6:00 pm – 9:00 pm\nRemark : Closed on every Wednesday from 10:00 am to 5:00 pm for weekly cleansing operation.",
+    "hoursTC": "四月至九月十日 : 上午6時30分至12時；下午1時至5時；晚上6時至10時\n十一月至三月 : 上午6時30分至12時；下午1時至5時；晚上6時至9時\n備註 : 逢星期三上午10時至下午5時關閉進行清洗",
+    "maintEN": "Indoor Pools : From 11 September to 31 October Outdoor Pools : From 11 September to 15 April of the following year",
+    "maintTC": "室內泳池 ：9月11日至10月31日 戶外泳池 ：9月11日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "ho man tin swimming pool 何文田游泳池 1 chung yee street, ho man tin, kowloon 九龍何文田忠義街1號"
+  },
+  {
+    "id": "6",
+    "nameEN": "Island East Swimming Pool",
+    "nameTC": "港島東游泳池",
+    "addr": "52, Lei King Road, Sai Wan Ho, Hong Kong",
+    "addrTC": "香港西灣河鯉景道52號港島東體育館一樓",
+    "phone": "2151 4082",
+    "email": "iesp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=6",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=6",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Every Wednesday (10am to 5pm) (If the weekly cleansing falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled to Friday of the same week)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "^*Training pool (Length 25m x Width 10m, Depth: 0.9m-1.2m)",
+      "^Toddlers' pool (Circular, Depth: 0m-0.15m)",
+      "^Leisure pool (Irregular shape, Depth: 0.3m-0.45m)",
+      "Family changing room",
+      "Barrier Free Facilities : Barrier free access(es) facilitating entrance to the pool deck area, Accessible lifting platform (Training pool), Accessible toilets and shower compartments, Assessible parking spaces (2 designated car parking spaces), Accessible lift (with assistive listening system), Tactile guide path, Visual fire alarm system, Braille floor map",
+      "Public Coaching Area: Training pool (Saturday, Sunday and Public Holiday Only)"
+    ],
+    "indoorFacilitiesTC": [
+      "^* 訓練池 ( 長25米 x 闊10米，水深：0.9米 -1.2 米 )",
+      "^戲水池 (圓形 ，水深：0米 -0.15 米 )",
+      "^嬉水池 ( 不規則形狀，水深： 0.3米-0.45 米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "6.30am to 10pm (April - October) 6.30am to 9pm (November - March)(Session breaks: 12 nn - 1 pm & 5 pm - 6 pm) \nClosed (11 September – 31 October)",
+    "hoursTC": "上午6時30分至晚上10時(四月至十月) 上午6時30分至晚上9時(十一月至三月)(暫停開放時間: 中午12時至下午1時及下午5時至下午6時)\n關閉(九月十一日至十月三十一日)",
+    "maintEN": "From 11 September to 31 October",
+    "maintTC": "9月11日至10月31日",
+    "revision": "2026年11月6日",
+    "search": "island east swimming pool 港島東游泳池 52, lei king road, sai wan ho, hong kong 香港西灣河鯉景道52號港島東體育館一樓"
+  },
+  {
+    "id": "2",
+    "nameEN": "Kennedy Town Swimming Pool",
+    "nameTC": "堅尼地城游泳池",
+    "addr": "2 Sai Cheung Street North, Kennedy Town",
+    "addrTC": "香港堅尼地城西祥街北2號",
+    "phone": "2817 7973, 2817 4504",
+    "email": "kentsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=2",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=2",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Close on every Wednesday from 10:00am to 6:00pm for weekly cleansing operation",
+    "indoorWindows": [
+      {
+        "label": "室內泳池",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "Indoor Facilities",
+      "*^Secondary pool (Length 50m x Width 15m, Depth: 1.2m-1.4m)",
+      "*^Training pool (Length 25m x Width 12.5m, Depth: 0.9m-1.2m)",
+      "*^Jacuzzi ( Depth: 0.85m )",
+      "Family changing room",
+      "Outdoor Facilities",
+      "*Secondary pool (Length 50m x Width 25m, Depth: 1.1m-1.4m)",
+      "Leisure pool ( Irregular shape, Depth: 0m-0.85m )",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Accessible lifting platform(s) (Secondary pool, Training pool and Jacuzzi), Accessible Toilet(s) & Changing Room(s), Accessible Lift (with Assistive Listening System), Tactile Guide Path, Visual Fire Alarm System, Braille and tactile floor plan, Assistive Listening System.",
+      "Public Coaching Area: Training pool (Available from 16/4-10/9 when indoor and outdoor pools are opened only)"
+    ],
+    "indoorFacilitiesTC": [
+      "*^副池 (長50米 x 闊15米，水深：1.2米-1.4米)",
+      "*^訓練池 (長25米 x 闊12.5米，水深：0.9米-1.2米)",
+      "*^按摩池 (水深：0.85米)",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "*副池 ( 長 50 米 x 闊2 5 米，水深： 1.1 米 -1.4 米)",
+      "嬉水池 ( 不規則形狀，水深：0米- 0.85 米 )"
+    ],
+    "hours": "6:30am to 12:00nn; 1:00pm to 5:00pm; 6:00pm to 10:00pm",
+    "hoursTC": "上午6時30分至中午12時; 下午1時至下午5時; 下午6時至下午10時",
+    "maintEN": "Indoor pools : \nFrom 11 September to 31 October\n Outdoor pools : \nFrom 1 November to 15 April of the following year",
+    "maintTC": "室內泳池 : 9月11日至10月31日\n戶外泳池 : 11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "kennedy town swimming pool 堅尼地城游泳池 2 sai cheung street north, kennedy town 香港堅尼地城西祥街北2號"
+  },
+  {
+    "id": "18",
+    "nameEN": "Kwun Tong Swimming Pool",
+    "nameTC": "觀塘游泳池",
+    "addr": "2 Tsui Ping Road, Kwun Tong, Kowloon",
+    "addrTC": "九龍觀塘翠屏道2號",
+    "phone": "2717 9022，2347 8140",
+    "email": "ktsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=18",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=18",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Closed on every Wednesday from 10 am to 6 pm for weekly cleansing operation. \n(If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Friday of the same week)\nAnnual maintenance : \nJan to Feb (Whole pool complex)\n1 Nov to 15 April of the following year (Outdoor pools)",
+    "indoorWindows": [
+      {
+        "label": "室內泳池（主池及訓練池）",
+        "tc": "1月2日至2月21日",
+        "en": "From 2 January to 21 February",
+        "start": "2 Jan 2027",
+        "end": "21 Feb 2027",
+        "reopen": "22 Feb 2027",
+        "iso": "2027-01-02"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "室外泳池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 1 Jan 2027, 22 Feb – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "*^Main pool (Length 50.03m x Width 25m, Depth: 1.4m-1.9m)",
+      "^Training pool (Length 25m x Width 30m, Depth: 1.2m)",
+      "Spectator stand (1492 seats), Electronic scoreboard, Family changing room",
+      "Outdoor facilities",
+      "Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.4m)",
+      "Teaching pool 1&2 (Length 25m x Width 12.5m, Depth: 0.7m-0.9m)",
+      "Sun bathing area",
+      "Barrier free facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Main pool), Ramp to pool water with handrail(s) (Training pool, Secondary pool and Teaching pools), Shower room(s), Accessible toilet, Accessible lift (with Assistive listening system), Tactile guide path, Visual fire alarm system, Braille directory map/floor plan, Assistive listening system",
+      "Public Coaching Area: Training pool"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 主池 ( 長 50.03米 x 闊 25 米，水深： 1.4 米 -1.9米 )",
+      "^ 訓練池 ( 長 25米 x 闊 30米，水深： 1.2米 )",
+      "觀眾看台 (1492 個座位 ) 、",
+      "電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "副池 ( 長 50 米 x 闊 21米，水深： 1.1米 -1.4米 )",
+      "習泳池 1&2 ( 長 25米 x 闊 12.5米，水深： 0.7米 -0.9米 )",
+      "日光浴場"
+    ],
+    "hours": "Apr to Oct: \nFirst session: 6:30am to 12:00 nn\nSecond session: 1:00 pm to 6:00 pm\nThird session: 7:00 pm to 10:00 pm. \nNov to Mar (Indoor pools only)\nFirst session: 6:30am to 12:00 nn\nSecond session: 1:00 pm to 6:00 pm\nThird session: 7:00 pm to 9:00 pm \n(Session breaks: 12:00 nn - 1:00 pm & 6:00 - 7:00 pm)\nRemark: Closed on every Wednesday from 10 am to 6 pm for weekly cleansing operation. \nAnnual maintenance : \nJan to Feb (Whole pool complex)\nFrom 1 Nov to 15 April of the following year (Outdoor pools)",
+    "hoursTC": "4月至10月\n第一節: 上午6時30分至中午12時\n第二節: 下午1時至6時\n第三節: 晚上7時至10時\n11月至3月(只開放室內游泳池)：\n第一節: 上午6時30分至中午12時\n第二節: 下午1時至6時\n第三節: 晚上7時至9時 \n(暫停開放時段：中午12時至下午1時及下午6時至7時)\n備註 : 逢星期三上午10時至下午6時關閉進行清洗。\n周年維修 : \n1月至2月(全泳館)\n11月1日至翌年4月15日(室外泳池)",
+    "maintEN": "Outdoor pools : From 1 November to 15 April of the following year\n Indoor pools : From 2 January to 21 February",
+    "maintTC": "戶外泳池 ： 11 月 1 日至翌年 4 月 15 日\n 室內泳池 ： 1月2日至2月21日",
+    "revision": "2026年11月6日",
+    "search": "kwun tong swimming pool 觀塘游泳池 2 tsui ping road, kwun tong, kowloon 九龍觀塘翠屏道2號"
+  },
+  {
+    "id": "8",
+    "nameEN": "Lai Chi Kok Park Swimming Pool",
+    "nameTC": "荔枝角公園游泳池",
+    "addr": "No.1 Lai Wan Road, Lai Chi Kok, Kowloon",
+    "addrTC": "九龍深水埗荔灣道1號",
+    "phone": "2745 5234，2742 8387",
+    "email": "lckpsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=8",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=8",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Closed on every Wednesday from 10 am to 6 pm for weekly cleansing operation. (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Tuesday of the same week.)",
+    "indoorWindows": [
+      {
+        "label": "室內副池",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "跳水池、訓練池、習泳池及戲水池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      },
+      {
+        "label": "戶外主池（連同副池及跳水池）",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Outdoor facilities",
+      "^Main pool (Length 50m x Width 25m, Depth: 1.4m-1.93m)",
+      "Training pool (Length 25m x Width 11m, Depth: 0.91m-1.22m)",
+      "*Teaching pool 1 (Length 20m x Width 12m, Depth: 0.83m-0.89m)",
+      "Teaching pool 2 (Length 20m x Width 12m, Depth: 0.68m-0.73m)",
+      "Diving pool (Length 11.75m x Width 11m, Depth: 4.4m-4.6m)",
+      "Toddlers' pool ( Irregular shape, Depth: 0.1m-0.37m )",
+      "Indoor facilities",
+      "^Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.4m)",
+      "Spectator stand (800 seats), Electronic Scoreboard, Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Teaching pool), Shower room(s), Accessible toilet(s) and shower compartments, Braille and tactile floor Plan, Tactile guide path, Visual fire alarm system",
+      "Public Coaching Area: Secondary pool and Teaching pool 2"
+    ],
+    "indoorFacilitiesTC": [
+      "^副池 ( 長 50 米 x 闊21米，水深： 1.1 米 -1.4 米 )",
+      "觀眾看台(800個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "Apr to Oct: First session: 6:30am to 12:00 noon Second session: 1:00 pm to 6:00 pm Third session: 7:00 pm to 10:00 pm. Nov to Mar (Outdoor main pool and indoor secondary pool only) ) First session: 6:30am to 12:00 noonSecond session: 1:00 pm to 6:00 pmThird session: 7:00 pm to 9:00 pm.",
+    "hoursTC": "4月至10月：第一節: 上午6時30分至中午12時第二節: 下午1時至6時第三節: 晚上7時至10時。 11月至3月(只開放戶外主池及室內副池)：第一節: 上午6時30分至中午12時第二節: 下午1時至6時第三節: 晚上7時至9時。",
+    "maintEN": "Diving pool, Training pool, Teaching pools and Toddlers' pool: \nFrom 1 November to 15 April of the following year\n Main pool, Secondary pool, Diving pool: \nFrom 16 April to 5 June",
+    "maintTC": "跳水池 、 訓練池、習泳池、戲水池： \n11月1日至翌年4月15日\n 主池、副池、跳水池 : \n4月16日至6月5日",
+    "revision": "2026年11月6日",
+    "search": "lai chi kok park swimming pool 荔枝角公園游泳池 no.1 lai wan road, lai chi kok, kowloon 九龍深水埗荔灣道1號"
+  },
+  {
+    "id": "4",
+    "nameEN": "Morrison Hill Swimming Pool",
+    "nameTC": "摩理臣山游泳池",
+    "addr": "7 Oi Kwan Road, Wan Chai, Hong Kong",
+    "addrTC": "香港灣仔愛群道7號",
+    "phone": "2575 3028 / 2891 7335",
+    "email": "mhsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=4",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=4",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Wednesday (10 am - 5 pm)",
+    "indoorWindows": [
+      {
+        "label": "室內主池及訓練池",
+        "tc": "5月11日至6月30日",
+        "en": "From 11 May to 30 June",
+        "start": "11 May 2027",
+        "end": "30 Jun 2027",
+        "reopen": "1 Jul 2027",
+        "iso": "2027-05-11"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外習泳池及幼童池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 10 May 2027, 1 Jul – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "^*Main pool (Length 50m x Width 21m, Depth: 1.4m-1.9m)",
+      "^Training pool (Length 25m x Width 12m, Depth: 0.84m-1.07m)",
+      "Spectator stand (204 seats), Electronic scoreboard, Family changing room",
+      "Outdoor facilities",
+      "Teaching pool (Length 18m x Width 12m, Depth: 0.8m-1.4m)",
+      "Toddlers' pool (Length 18m x Width 6m, Depth: 0.46m)",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Accessible lifting platform(Main pool), Accessible toilet, Accessible toilet and changing room, Accessible lift, Tactile guide path, Visual fire alarm system, Braille directory map/floor plan",
+      "Public Coaching Area: Main Pool"
+    ],
+    "indoorFacilitiesTC": [
+      "^*主池 (長 50 米 x 闊 21 米，水深： 1.4 米 -1.9 米 )",
+      "^訓練池 (長25米 x 闊12米，水深：0.8 4 米 -1.07 米)",
+      "觀眾看台(204個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "習泳池 (長18米 x 闊12米，水深：0 .8 米 -1.4 米 )",
+      "幼童池 (長18米 x 闊6米，水深：0 .46 米 )"
+    ],
+    "hours": "6:30am to 10pm\n(Session breaks: 12 nn-1 pm & 6 pm-7 pm)",
+    "hoursTC": "上午6時30分至晚上10時\n(暫停開放時間:中午12時至下午1時及下午6時至下午7時)",
+    "maintEN": "Indoor main pool and training pool: From 11 May to 30 June \n Outdoor teaching pool and toddler's pool: From 1 November to 15 April of the following year",
+    "maintTC": "室內主池、訓練池: 5月11日至6月30日\n戶外習泳池、幼童池：11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "morrison hill swimming pool 摩理臣山游泳池 7 oi kwan road, wan chai, hong kong 香港灣仔愛群道7號"
+  },
+  {
+    "id": "27",
+    "nameEN": "North Kwai Chung Jockey Club Swimming Pool",
+    "nameTC": "北葵涌賽馬會游泳池",
+    "addr": "290 Wo Yi Hop Road, Kwai Chung",
+    "addrTC": "新界葵涌和宜合道290號",
+    "phone": "2422 1779",
+    "email": "nkwcsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=27",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=27",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Closed on Wednesdays from 10:00am to 6:00pm for weekly cleansing operation.",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "Teaching pool 1 (Length 25m x Width 11m, Depth: 0.9m-1.2m)",
+      "Teaching pool 2 (Length 12m x Width 9m, Depth: 0.9m-1.2m)",
+      "Diving pool (Length 11.75m x Width 11.3m, Depth: 4.4m-4.6m)",
+      "Toddlers' pool ( Irregular shape, Depth: 0.32m) is open from June to August free of charge",
+      "Men's and ladies' changing rooms and toilets, Family changing room",
+      "Barrier Free Facilities: Accessible toilet, Tactile guide path, Braille and tactile floor plan"
+    ],
+    "indoorFacilitiesTC": [
+      "主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.9米 )",
+      "習泳池 1 ( 長 25米 x 闊 11米，水深： 0.9米 -1.2米 )",
+      "習泳池 2 ( 長 12米 x 闊 9米，水深： 0.9米 -1.2米 )",
+      "跳水池 ( 長 11.75米 x 闊 11.3米，水深： 4.4米 -4.6米 )",
+      "幼童池 ( 不規則形狀，水深： 0.32米 ) 於六月至八月免費開放",
+      "男、女更衣室及洗手間、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to October6:30am to 12:00noon1:00pm to 6pm7pm to 10:00pm",
+    "hoursTC": "四月至十月上午6時30分至中午12時下午1時至6時下午7時至晚上10時",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "north kwai chung jockey club swimming pool 北葵涌賽馬會游泳池 290 wo yi hop road, kwai chung 新界葵涌和宜合道290號"
+  },
+  {
+    "id": "36",
+    "nameEN": "Sai Kung Swimming Pool",
+    "nameTC": "西貢游泳池",
+    "addr": "Wai Man Road, Sai Kung, NT",
+    "addrTC": "西貢惠民路12號",
+    "phone": "2792 7285",
+    "email": "sksp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=36",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=36",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 15m, Depth: 1.4m-1.93m)",
+      "Teaching pool (Length 20m x Width 13.5m, Depth: 0.85m-1.1m)",
+      "Leisure pool ( Irregular shape, Depth: 0.1m-1.1m)",
+      "Spectator stand (380 seats), Family changing room, Babycare room",
+      "Barrier Free Facilities: Accessible toilets and shower compartments, accessible lifting platform, ramp(s)(teaching pool and leisure pool), tactile guide path, visual fire alarm system, Braille and tactile floor plan"
+    ],
+    "indoorFacilitiesTC": [
+      "主池 ( 長 50 米 x 闊 15 米，水深： 1.4 米 -1.93 米 )",
+      "習泳池 ( 長 20 米 x 闊 13.5 米，水深： 0.85米 -1.1米 )",
+      "嬉水池 ( 不規則形狀，水深： 0.1米 -1.1米 )",
+      "觀眾看台(380個座位)、家庭更衣室、育嬰室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Apr - Oct) 6:30 a.m. - 10:00 p.m.(Session breaks: 12 nn - 1 pm & 6:30 pm - 7:30 pm)\n(Nov - March) Maintenance",
+    "hoursTC": "(四月至十月) 上午6時30分至晚上10時(暫停開放時間: 中午12時至下午1時及下午6時30分至下午7時30分)\n(十一月至三月) 維修",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "sai kung swimming pool 西貢游泳池 wai man road, sai kung, nt 西貢惠民路12號"
+  },
+  {
+    "id": "43",
+    "nameEN": "Tuen Mun North West Swimming Pool",
+    "nameTC": "屯門西北游泳池",
+    "addr": "95 Ming Kum Road, Tuen Mun, N.T.",
+    "addrTC": "屯門鳴琴路95號",
+    "phone": "2164 8355, 2164 8349",
+    "email": "tmnwsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=43",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=43",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Closed on every Wednesday (Apr to Oct) from 10:00 am to 6:00 pm and (Nov to Mar) 10:00 am to 6:00 pm for weekly cleansing operation (Except Public Holiday)",
+    "indoorWindows": [
+      {
+        "label": "室內訓練池、嬉水池及按摩池",
+        "tc": "9月1日至10月21日",
+        "en": "1 September to 21 October",
+        "start": "1 Sep 2027",
+        "end": "21 Oct 2027",
+        "reopen": "22 Oct 2027",
+        "iso": "2026-09-01"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "室外泳池（主池、訓練池及習泳池）",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 31 Aug 2027, 22 Oct – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor Facilities",
+      "^ Training pool 1 (Length 25m x Width 25m, Depth: 1.1m-1.4m)",
+      "^ Leisure pool ( Irregular shape, Depth: 0 m-0.5m)",
+      "^ Jacuzzi ( Irregular shape, Depth: 0.85m)",
+      "Family changing room(s)",
+      "Outdoor Facilities",
+      "Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "Training pool 2 (Length 25m x Width 15m, Depth: 1.2m-1.4m)",
+      "Teaching pool (Length 25m x Width 12m, Depth: 0.7m-0.9m)",
+      "Spectator stand (800 seats), Electronic scoreboard",
+      "Barrier Free Facilities: Accessible Toilet, Accessible Lift, Tactile Guide Path, Visual Fire Alarm System, Braille Directory Map / Floor Plan and Accessible Car Parking Space (including assessable parking space)"
+    ],
+    "indoorFacilitiesTC": [
+      "^ 訓練池 1 ( 長 25米 x 闊 25米，水深： 1.1米 -1.4米 )",
+      "^ 嬉水池 ( 不規則形狀，水深： 0米 -0.5 米 )",
+      "^ 按摩池 ( 不規則形狀，水深： 0.85 米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "主池 ( 長 50米 x 闊 25米，水深： 1.4米 -1.9米 )",
+      "訓練池 2 ( 長 25米 x 闊 15米，水深： 1.2米 -1.4米 )",
+      "習泳池 ( 長 25米 x 闊 12米，水深： 0.7米 -0.9米 )",
+      "觀眾看台 (800 個座位 ) 、電子計分板"
+    ],
+    "hours": "Nov to Mar (Indoor Pool only): 6:30 am- 12:00 nn., 1:00 pm- 6:00 pm & 7:00 pm - 9:30 pm (except weekly cleansing day from 10:00 am -6:00 pm on every Wednesday) Apr - Oct: 6:30 am- 12:00 nn., 1:00 pm- 6:00 pm & 7:00 pm - 10:00 pm (except weekly cleansing day from 10:00 am -6:00 pm on every Wednesday) (Indoor pool closed for maintenance from 11 Sept to 31 Oct)",
+    "hoursTC": "十一月至三月(只開放室內池)：上午6時30分至中午12時, 下午1時至6時及晚上7時至9時30分(逢星期三上午10時至下午6時除外) 四月至十月：上午6時30分至中午12時, 下午1時至6時及晚上7時至10時 (逢星期三上午10時至下午6時除外) (室內池於九月十一日至十月三十一日暫停開放，以便進行年度維修)",
+    "maintEN": "Outdoor pools (Main pool, Training pool, Teaching pool) : \nFrom 1 November to 15 April of the following year\n Maintenance of indoor training pool, leisure pool and jacuzzi: \n 1 September to 21 October",
+    "maintTC": "室外泳池(主池、訓練池及 習泳池) ： 11月1日至翌年4月15日\n 室內訓練池、嬉水池及按摩池維修： 9月1日至10月21日",
+    "revision": "2026年11月6日",
+    "search": "tuen mun north west swimming pool 屯門西北游泳池 95 ming kum road, tuen mun, n.t. 屯門鳴琴路95號"
+  },
+  {
+    "id": "22",
+    "nameEN": "Yuen Long Swimming Pool",
+    "nameTC": "元朗游泳池",
+    "addr": "10 Tai Yuk Road, Yuen Long",
+    "addrTC": "元朗體育路10號",
+    "phone": "2475 0184, 2449 3506",
+    "email": "ylsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=22",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=22",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Wednesday",
+    "dayTC": "星期三",
+    "dayIdx": 2,
+    "closedToday": false,
+    "restDay": "Every Wednesday from 10 am to 6 pm for weekly cleansing operation",
+    "indoorWindows": [
+      {
+        "label": "副池、訓練池、跳水池及幼童池",
+        "tc": "11月1日至翌年4月15日",
+        "en": "From 1 November to 15 April of the following year",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027",
+        "iso": "2026-11-01"
+      },
+      {
+        "label": "主池",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "^Main Pool (Length 50m x Width 21m, Depth: 1.4m-1.9m)",
+      "Secondary Pool (Length 50m x Width 21m, Depth: 1.1m-1.4m)",
+      "Training Pool (Length 25m x Width 11m, Depth: 0.9m-1.2m)",
+      "Diving Pool (Length 11.75m x Width 11m, Depth: 4.5m-4.6m)",
+      "Toddlers' Pool (Irregular shape, Depth: 0.18m-0.3m) is open from June to August free of charge",
+      "Spectator Stand (700 seats), Family Changing Room",
+      "Barrier Free Facilities: Accessible Toilet, Tactile Guide Path, 1 Fee-charging Car Park (including 1 Accessible Parking Space), Visual Fire Alarm System, Braille Directory Map/Floor Plan",
+      "Public Coaching Area: Secondary pool"
+    ],
+    "indoorFacilitiesTC": [
+      "^ 主池 ( 長 50 米 x 闊 21米，水深： 1.4 米 -1.9米 )",
+      "副池 ( 長 50 米 x 闊 21米，水深： 1.1米 -1.4米 )",
+      "訓練池 ( 長 25米 x 闊 11米，水深： 0.9米 -1.2米 )",
+      "跳水池 ( 長 11.75米 x 闊 11米，水深： 4.5米 -4.6米 )",
+      "幼童池 ( 不規則形狀，水深： 0.18米 -0.3米 ) 於六月至八月免費開放",
+      "觀眾看台 (700 個座位 ) 、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to October: 6:30 am to 10 pm (Session Breaks: 12 nn - 1 pm & 6 pm to 7 pm) November to March: 6:30 am to 9:30 pm (Session Breaks: 12 nn - 1 pm & 6 pm to 7 pm)",
+    "hoursTC": "4月 至 10月: 上午6時30分至晚上10時 (暫停開放時間：中午12時至下午1時及下午6時至7時); 11月 至 3月: 上午6時30分至晚上9時30分 (暫停開放時間:中午12時至下午1時及晚上6時至7時)",
+    "maintEN": "Secondary pool, Training pool, Diving pool, Toddlers' Pool : From 1 November to 15 April of the following year Main pool : From 16 April to 5 June",
+    "maintTC": "副池、訓練池、跳水池、幼童池﹕ 11月1日至翌年4月15日\n主池：4月16日至6月5日",
+    "revision": "2026年11月6日",
+    "search": "yuen long swimming pool 元朗游泳池 10 tai yuk road, yuen long 元朗體育路10號"
+  },
+  {
+    "id": "33",
+    "nameEN": "Hin Tin Swimming Pool",
+    "nameTC": "顯田游泳池",
+    "addr": "68 Che Kung Miu Road, Tai Wai, Sha Tin.",
+    "addrTC": "沙田大圍車公廟路68號",
+    "phone": "2607 3423",
+    "email": "htsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=33",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=33",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "(Apr - Oct)Scheduled cleansing day on every Thursday from 10:00am to 7:30pm (except Public Holidays):(11th Sep - 31st Oct) indoor main pool and indoor Jacuzzi closed for overhaul except outdoor leisure pool scheduled cleansing day on Thursday from 10:00am to 7:30pm : (Nov - Mar) outdoor leisure pool closed for overhaul except indoor main pool and indoor Jacuzzi scheduled cleansing day on Thursday from 10:00am to 7:00pm",
+    "indoorWindows": [
+      {
+        "label": "室內泳池（主池、按摩池）",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池（訓練池、嬉水池）",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "*^Main pool (Length 50m x Width 25m, Depth: 1.4m-2m)",
+      "^Jacuzzi pool (Circular, Depth: 0.85m)",
+      "Family changing room",
+      "Outdoor facilities",
+      "Training pool (Length 25m x Width 11m, Depth: 0.8m-1.2m)",
+      "Leisure Pool (Shallow Water Zone) (Irregular shape, Depth: 0.3m-0.86m)",
+      "Leisure Pool (Deep Water Zone) (Irregular shape, Depth: 0.83m-1.5m)",
+      "Small Water Slides (Irregular shape, Depth: 0.83m-0.9m)",
+      "Giant Water Slides (Irregular shape, Depth: 0.85m-0.9m)",
+      "Toddlers' Zone (Irregular shape, Depth: 0.35m-0.5m)",
+      "Barrier free facilities: Barrier free entrance, Accessible toilets and shower compartments, Accessible services counter, Tactile guide path, Visual fire alarm system, Braille directory map/floor plan, Pool lift"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -2米 )",
+      "^ 按摩池 ( 圓形 ，水深： 0.85米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "訓練池 ( 長 25米 x 闊 11米，水深： 0.8米 -1.2米 )",
+      "嬉水池 ( 淺水區 ) ( 不規則形狀，水深： 0.3 米 -0.86 米 )",
+      "嬉水池 ( 深水區 ) ( 不規則形狀，水深： 0.83 米 -1.5 米 )",
+      "兒童滑水梯 ( 不規則形狀，水深： 0.83 米 -0.9 米 )",
+      "大型滑水梯 ( 不規則形狀，水深： 0.85 米 -0.9 米 )",
+      "幼童區 ( 不規則形狀，水深： 0.35 米 -0.5 米 )"
+    ],
+    "hours": "(Apr - Oct) 1st session : 6:30am to 12:00pm; 2nd session : 1:00pm to 6:30pm; 3rd session : 7:30pm to 10:00pm(except scheduled cleansing day on every Thursday) (Nov - Mar) indoor main pool and indoor Jacuzzi only 1st session : 6:30am to 12:00pm; 2nd session : 1:00pm to 6:00pm; 3rd session : 7:00pm to 9:30pm (except scheduled cleansing day on every Thursday)",
+    "hoursTC": "(4 - 10月)第一節 : 上午6時30分至中午12時;第二節 : 下午1時至下午6時30分;第三節 : 晚上7時30分至晚上10時(逢星期四大清潔日例外)(11月 - 3月)只開放室內主池及室內按摩池 第一節 : 上午6時30分至中午12時;第二節 : 下午1時至下午6時;第三節 : 晚上7時至晚上9時30分(逢星期四大清潔日例外)",
+    "maintEN": "Indoor pools (Main pool ,Jacuzzi pool ): From 11 September to 31 October Outdoor pools (Training pool, Leisure pool ): From 1 November to 15 April of the following year",
+    "maintTC": "室內泳池 ( 主池 、 按摩池)： 9月11日至10月31日 戶外泳池( 訓練池、嬉水池)： 11月1日至翌年4月15日",
+    "revision": "2026年11月6日",
+    "search": "hin tin swimming pool 顯田游泳池 68 che kung miu road, tai wai, sha tin. 沙田大圍車公廟路68號"
+  },
+  {
+    "id": "42",
+    "nameEN": "Lam Tin Swimming Pool",
+    "nameTC": "藍田游泳池",
+    "addr": "1/F Lam Tin Complex, 1 Hing Tin Street, Lam Tin, Kowloon",
+    "addrTC": "九龍藍田慶田街1號藍田綜合大樓1樓",
+    "phone": "2205 6535, 2205 6711",
+    "email": "ltsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=42",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=42",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "Closed on every Thursday from 10 am to 6 pm for weekly cleansing operation.\n(If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Monday of the same week)\nAnnual maintenance : From 15 April to 5 June",
+    "indoorWindows": [
+      {
+        "label": "室內訓練池及習泳池",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "日光浴場（隨泳池維修）",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "*^Training pool (Length 25m x Width 25m, Depth: 1.2m-1.4m)",
+      "*^Teaching pool (Length 25m x Width 10m, Depth: 0.7m-0.9m)",
+      "Family changing room",
+      "Outdoor facilities",
+      "Sun bathing area",
+      "Barrier free facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Training pool and Teaching pool), Shower room(s), Accessible toilet, Accessible lift (with Assistive listening system), Tactile guide path, Visual fire alarm system, Braille directory map/floor plan, Assistive listening system"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 訓練池 ( 長 25米 x 闊 25米，水深： 1.2米 -1.4米 )",
+      "*^ 習泳池 ( 長 25米 x 闊 10米，水深： 0.7米 -0.9米 )",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "日光浴場"
+    ],
+    "hours": "First session: 6:30am to 12:00 nn\nSecond session: 1:00 pm to 6:00 pm\nThird session: 7:00 pm to 10:00 pm\n(Session breaks: 12:00 nn - 1:00 pm & 6:00 - 7:00 pm)\nRemark: Closed on every Thursday from 10 am to 6 pm for weekly cleansing operation.\nAnnual maintenance : From 15 April to 5 June",
+    "hoursTC": "第一節: 上午6時30分至中午12時\n第二節: 下午1時至6時\n第三節: 晚上7時至10時\n(暫停開放時段：中午12時至下午1時及下午6時至7時)\n備註: 逢星期四上午10時至下午6時關閉進行清洗。\n周年維修 : 4月16至6月5日",
+    "maintEN": "From 16 April to 5 June",
+    "maintTC": "4月16日至6月5日",
+    "revision": "2026年11月6日",
+    "search": "lam tin swimming pool 藍田游泳池 1/f lam tin complex, 1 hing tin street, lam tin, kowloon 九龍藍田慶田街1號藍田綜合大樓1樓"
+  },
+  {
+    "id": "10",
+    "nameEN": "Lei Cheng Uk Swimming Pool",
+    "nameTC": "李鄭屋游泳池",
+    "addr": "25 Kwong Lee Road, Kowloon, Hong Kong",
+    "addrTC": "深水埗廣利道25號",
+    "phone": "2387 4224，2708 1204",
+    "email": "lcusp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=10",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=10",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "Closed on every Thursday from 10 am to 6 pm for weekly cleansing operation.\n (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Tuesday of the same week.) Nov to Mar: Maintenance",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 21m, Depth: 1.37m-1.93m)",
+      "Secondary pool (Length 50m x Width 20m, Depth: 1.07m-1.37m)",
+      "*Teaching pool 1 (Length 18.2m x Width 12.1m, Depth: 0.84m-1.07m)",
+      "Teaching pool 2 (Length 18.2m x Width 12.1m, Depth: 0.69m-0.91m)",
+      "Teaching pool 3 (Length 18.2m x Width 12.1m, Depth: 0.69m-0.91m)",
+      "Diving pool (Length 10.6m x Width 10.6m, Depth: 3.5m-3.61m)",
+      "Children's pool (Irregular shape, Depth: 0.28m-0.33m)",
+      "Spectator stand (700 seats), Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Accessible toilets and shower compartments, Accessible lifting platform (Teaching pool), Braille and tactile floor plan, Tactile Guide Path, Visual Fire Alarm System",
+      "1 The Diving Pool is closed for public use due to the urgent repair of the springboard.-->"
+    ],
+    "indoorFacilitiesTC": [
+      "主池 ( 長 50 米 x 闊 21 米，水深： 1.37 米 -1.93 米 )",
+      "副池 ( 長 50 米 x 闊 20 米，水深： 1.07 米 -1.37 米 )",
+      "*習泳池 1 ( 長 18.2 米 x 闊12.1米，水深：0.84米 -1.07 米 )",
+      "習泳池 2 ( 長 18.2 米 x 闊12.1米，水深：0.69米 -0.91 米 )",
+      "習泳池 3 ( 長 18.2 米 x 闊12.1米，水深：0.69米 -0.91 米 )",
+      "跳水池 ( 長 10.6 米 x 闊10.6米，水深：3.5米 -3.61 米 )",
+      "兒童池 ( 不規則形狀，水深： 0.28米-0.33 米)",
+      "觀眾看台(700個座位)、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "Apr - Oct \n First session: 6:30am to 12:00 noon Second session: 1:00 pm to 6:00 pm Third session: 7:00 pm to 10:00 pm\n (Session breaks: 12:00 nn - 1:00 pm & 6:00 - 7:00 pm) \n Remark: Closed on every Thursday from 10 am to 6 pm for weekly cleansing operation.",
+    "hoursTC": "4月至10月\n 第一節: 上午6時30分至中午12時 第二節: 下午1時至6時00分 第三節: 晚上7時00分至10時 \n (暫停開放時段：中午12時至下午1時及下午6時至7時)",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "lei cheng uk swimming pool 李鄭屋游泳池 25 kwong lee road, kowloon, hong kong 深水埗廣利道25號"
+  },
+  {
+    "id": "30",
+    "nameEN": "Sheung Shui Swimming Pool",
+    "nameTC": "上水游泳池",
+    "addr": "38 Tin Ping Road, Sheung Shui",
+    "addrTC": "新界上水天平路38號",
+    "phone": "2679 4844",
+    "email": "sssp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=30",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=30",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "(Apr. - Oct.) 10:00am to 6:30pm (Every Thursday)Closed for weekly Cleansing operation.",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Leisure pool ( Irregular shape, Depth: 0.1m-1.6m)",
+      "Jacuzzi (Circular, Depth: 0.4m-0.45m)",
+      "Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Leisure pool), Shower room(s), Accessible toilets, Tactile guide path, Visual fire alarm system, Braille directory map/floor plan and 1 Accessible parking space"
+    ],
+    "indoorFacilitiesTC": [
+      "嬉水池 ( 不規則形狀，水深：0.1米 -1.6 米 )",
+      "按摩池 (圓形，水深：0.4米-0.45米)",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Apr - Oct)6:30am to 12:00nn; 1:00pm to 6:30pm; 7:30 to 10:00pm(Nov - Mar)Closed",
+    "hoursTC": "(4 - 10月): 上午6時30分至中午12時; 下午1時至下午6時30分; 晚上7時30分至晚上10時(11 - 3 月): 關閉",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "sheung shui swimming pool 上水游泳池 38 tin ping road, sheung shui 新界上水天平路38號"
+  },
+  {
+    "id": "39",
+    "nameEN": "Siu Sai Wan Swimming Pool",
+    "nameTC": "小西灣游泳池",
+    "addr": "1/F., Siu Sai Wan Complex, 15 Siu Sai Wan Road, HK",
+    "addrTC": "香港小西灣道15號小西灣綜合大樓一樓",
+    "phone": "3427 3341",
+    "email": "edo@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=39",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=39",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "Every Thursday (10am to 5pm) (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled to Monday of the same week)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "5月2日至7月26日",
+        "en": "From 2 May to 26 July",
+        "start": "2 May 2027",
+        "end": "26 Jul 2027",
+        "reopen": "27 Jul 2027",
+        "iso": "2027-05-02"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 1 May 2027, 27 Jul – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "*^Training Pool 1 (Length 25m x Width 25m, Depth: 1.4m)",
+      "*^Training Pool 2 (Length 25m x Width 10m, Depth: 0.9m-1.2m)",
+      "Family changing room (2)",
+      "Barrier Free Facilities : Barrier free access(es) facilitating entrance to the pool deck area, Accessible lifting platform (Training pool), Ramp(Training pool), Accessible toilets and shower compartments, Accessible lift (with assistive listening system), Tactile guide path, Visual fire alarm system, Braille floor map",
+      "Public Coaching Area: Training pool"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 訓練池 1 ( 長25米 x 闊 25 米，水深： 1.4 米)",
+      "*^ 訓練池 2 ( 長25米 x 闊10米，水深：0.9米-1.2米)",
+      "家庭更衣室 (2)"
+    ],
+    "outdoorFacilities": [],
+    "hours": "6:30am to 10:00pm (April - October) 6:30am to 9:00pm (November - March)(Session breaks: 12 nn - 1 pm & 5 pm - 6 pm)",
+    "hoursTC": "上午6時30分至晚上10時(四月至十月) 上午6時30分至晚上9時(十一月至三月)(暫停開放時間: 中午12時至下午1時及下午5時至下午6時)",
+    "maintEN": "From 2 May to 26 July",
+    "maintTC": "5月2日至7月26日",
+    "revision": "2026年11月6日",
+    "search": "siu sai wan swimming pool 小西灣游泳池 1/f., siu sai wan complex, 15 siu sai wan road, hk 香港小西灣道15號小西灣綜合大樓一樓"
+  },
+  {
+    "id": "12",
+    "nameEN": "Tai Wan Shan Swimming Pool",
+    "nameTC": "大環山游泳池",
+    "addr": "No.7 Wan Hoi Street, Hung Hom, Kowloon",
+    "addrTC": "九龍紅磡環海街7號",
+    "phone": "2333 1335, 2334 1570",
+    "email": "twssp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=12",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=12",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "1.11.2026 - 31.3.2027",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 21m, Depth: 1.4m-1.93m)",
+      "*Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.43m)",
+      "Teaching pool 1 (Length 18.3m x Width 12.2m, Depth: 0.84m-1.06m)",
+      "Teaching pool 2 (Length 18.3m x Width 12.2m, Depth: 0.84m-1.06m)",
+      "Teaching pool 3 (Length 18.3m x Width 12.2m, Depth: 0.68m-0.91m)",
+      "Diving pool (Length 11.75m x Width 11.75m, Depth: 4.38m-4.5m)",
+      "Leisure pool 1 (Irregular shape, Depth: 0.13m-0.29m)",
+      "Leisure pool 2&3 (Irregular shape, Depth: 0.14m-0.45m)",
+      "Spectator stand (800 seats), Electronic Scoreboard, Family changing room",
+      "Barrier free facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift , Tactile guide path , Visual fire alarm system, Shower room(s), Toilet(s) (including accessible toilet), Braille directory map/floor plan"
+    ],
+    "indoorFacilitiesTC": [
+      "主池 (長50米 x 闊21米，水深：1.4米-1.93米)",
+      "*副池 (長50米 x 闊21米，水深：1.1米-1.43米)",
+      "習泳池 1 (長18.3米 x 闊12.2米，水深：0.84米-1.06米)",
+      "習泳池 2 (長18.3米 x 闊12.2米，水深：0.84米-1.06米)",
+      "習泳池 3 (長18.3米 x 闊12.2米，水深：0.68米-0.91米)",
+      "跳水池 (長11.75米 x 闊11.75米，水深：4.38米-4.5米)",
+      "嬉水池 1 (不規則形狀，水深：0.13米-0.29米)",
+      "嬉水池 2&3 (不規則形狀，水深：0.14米-0.45米)",
+      "觀眾看台(800個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to October : 06:30 am – 12:00 nn; 1:00 pm – 5:00 pm; 6:00 pm – 10:00 pm\nRemark : Closed on every Thursday from 10:00 am to 5:00 pm for weekly cleansing operation.",
+    "hoursTC": "四月至十月 ：上午6時30分至12時；下午1時至5時；晚上6時至10時\n備註 : 逢星期四上午10時至下午5時關閉進行清洗",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "tai wan shan swimming pool 大環山游泳池 no.7 wan hoi street, hung hom, kowloon 九龍紅磡環海街7號"
+  },
+  {
+    "id": "23",
+    "nameEN": "Tin Shui Wai Swimming Pool",
+    "nameTC": "天水圍游泳池",
+    "addr": "No. 1 Tin Pak Road, Tin Shui Wai",
+    "addrTC": "天水圍天柏路一號",
+    "phone": "2446 9057, 2446 1103",
+    "email": "tswsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=23",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=23",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "Every Thursday from 10 am to 6 pm for weekly cleansing operation",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Training Pool (Length 25m x Width 22m, Depth: 0.93m-1.22m)",
+      "Teaching Pool (Length 20m x Width 12m, Depth: 0.7m-0.93m)",
+      "Leisure Pool ( Irregular shape, Depth: 0.43m-1.1m)",
+      "Giant Water Slides, Family Changing Room",
+      "Barrier Free Facilities : Slipway (Teaching Pool), Accessible Toilet & Changing Room, Tactile Guide Path, 1 Fee-charging Car Park (including 1 Accessible Parking Space) , Visual Fire Alarm System, Braille Directory Map/Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "訓練池 ( 長 25米 x 闊 22米，水深： 0.93米 -1.22米 )",
+      "習泳池 ( 長 20米 x 闊 12米，水深： 0.7米 -0.93米 )",
+      "嬉水池 ( 不規則形狀，水深： 0.43米 -1.1米 )",
+      "大型滑水梯、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to October: 6:30 am to 10 pm (Session Breaks: 12 nn - 1 pm & 6 pm to 7 pm) November to March: Temporary Closure for Annual Maintenance",
+    "hoursTC": "4月至10月: 上午6時30分至晚上10時 (暫停開放時間:中午12時至下午1時及晚上6時至7時) 11月至3月: 每年維修工程暫停開放",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "tin shui wai swimming pool 天水圍游泳池 no. 1 tin pak road, tin shui wai 天水圍天柏路一號"
+  },
+  {
+    "id": "28",
+    "nameEN": "Tsing Yi Swimming Pool",
+    "nameTC": "青衣游泳池",
+    "addr": "51 Tsing King Road, Tsing Yi",
+    "addrTC": "新界青衣青敬路 51號",
+    "phone": "2435 6407",
+    "email": "tysp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=28",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=28",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "Closed on Thursdays from 10:00am to 6:00pm for weekly cleansing operation",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 25m, Depth: 1.4m-1.93m)",
+      "Teaching pool (Length 20m x Width 12m, Depth: 0.9m-1.1m)",
+      "Leisure pool 1 (Irregular shape, Depth: 0.3m)",
+      "Leisure pool 2 (Irregular shape, Depth: 0.9m)",
+      "Giant water slides (Irregular shape, Depth: 1.1m)",
+      "Toddlers' pool (Round shape, Depth: 0.1m-0.3m)",
+      "Spectator stand (974 seats), Electronic scoreboard, Men's and ladies' changing rooms and toilets, Family changing room",
+      "Barrier Free Facilities: Accessible toilet, Tactile guide path, Braille and tactile floor plan"
+    ],
+    "indoorFacilitiesTC": [
+      "主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.93 米 ）",
+      "習泳池 ( 長 20 米 x 闊 12米，水深： 0.9米 -1.1米 ）",
+      "嬉水池1（不規則形狀，水深：0.3米）",
+      "嬉水池2（不規則形狀，水深：0.9米）",
+      "大型滑水梯（不規則形狀，水深：1.1米）",
+      "戲水池（圓型，水深：0.1米-0.3米）",
+      "觀眾看台(974個座位)、電子計分板、男、女更衣室及洗手間、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to October 6:30am to 12:00 noon 1:00pm to 6:00pm 7:00pm to 10:00pm",
+    "hoursTC": "四月至十月 上午6時30分至中午12時 下午1時至6時 下午7時至晚上10時",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "tsing yi swimming pool 青衣游泳池 51 tsing king road, tsing yi 新界青衣青敬路 51號"
+  },
+  {
+    "id": "20",
+    "nameEN": "Tuen Mun Swimming Pool",
+    "nameTC": "屯門游泳池",
+    "addr": "50 Lung Mun Road, Tuen Mun, N.T.",
+    "addrTC": "新界屯門龍門路50號",
+    "phone": "2404 1918, 2458 8022",
+    "email": "tmsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=20",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=20",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "Every Thursday from 10:00 am to 6:00 pm for weekly cleansing operation. (Except Public Holiday)",
+    "indoorWindows": [
+      {
+        "label": "室內泳池（主池、訓練池）",
+        "tc": "2027年4月16日至2027年6月5日",
+        "en": "From 16 April 2027 to 5 Jun 2027",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池（訓練池、習泳池、嬉水池及跳水池）",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor Facilities",
+      "^Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "^Training pool Length 25m x Width 15m, Depth: 1.2m-1.4m)",
+      "Spectator stand (1200 seats), Electronic Scoreboard, Family changing rooms, Babycare room",
+      "Outdoor Facilities",
+      "Training pool 2(Length 25m x Width 30m, Depth: 1.1m-1.4m)",
+      "Teaching pool (Length 25m x Width 12.5m, Depth: 0.7m-0.9m)",
+      "Leisure pool (Irregular shape, Depth: 0.1 m-0.5m)",
+      "Diving pool (Length 11.75m x Width 11m, Depth: 4.4m-4.6m)",
+      "Barrier Free Facilities: Pool Lift (Indoor Main Pool, Indoor Training Pool), Ramp (Outdoor Training Pool), Accessible/Universal Changing Rooms and Toilets, Accessible Lift, Tactile Guide Path, Visual Fire Alarm System, Braille and tactile Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "^主池 (長50米 x 闊25米，水深：1.4米-1.9米)",
+      "^訓練池1 (長25米 x 闊15米，水深：1.2米-1.4米)",
+      "觀眾看台(1200個座位)、電子計分板、家庭更衣室、育嬰室"
+    ],
+    "outdoorFacilities": [
+      "訓練池2 (長25米 x 闊30米，水深：1.1米-1.4米)",
+      "習泳池 (長25米 x 闊12.5米，水深：0.7米-0.9米)",
+      "嬉水池 (不規則形狀，水深：0.1米-0.5米)",
+      "跳水池 (長11.75米 x 闊11米，水深：4.4米-4.6米)"
+    ],
+    "hours": "Nov - Mar (Indoor Main Pool and Training pool only): 6:30 am- 12:00 nn., 1:00 pm- 6:00 pm & 7:00 pm - 9:30 pm (except weekly cleansing day from 10:00 am -6:00 pm on every Thursday) Apr - Oct: 6:30 am- 12:00 nn., 1:00 pm- 6:00 pm & 7:00 pm - 10:00 pm (except weekly cleansing day from 10:00 am -6:00 pm on every Thursday) (Indoor pool closed for maintenance from 16 Apr to 5 Jun，Outdoor pool closed for maintenance from 1 Nov to 15 Apr)",
+    "hoursTC": "十一月至三月(只開放室內主池及訓練池)：上午6時30分至中午12時, 下午1時至6時及晚上7時至9時30分(逢星期四上午10時至下午6時除外) 四月至十月：上午6時30分至中午12時, 下午1時至6及晚上7時至10時 (逢星期四上午10時至下午6時除外) (室內池於四月十六日至六月五日暫停開放，戶外池於十一月一日至四月十五日暫停開放，以便進行年度維修)",
+    "maintEN": "Outdoor pools (Training pool, Teaching pool, Leisure pool and Diving pool):\nFrom 1 November 2026 to 15 April of the following year\nIndoor pools (Main pool and Training pool):\nFrom 16 April 2027 to 5 Jun 2027",
+    "maintTC": "戶外泳池(訓練池、習泳池、嬉水池及跳水池 )：2026年11月1日至翌年4月15日\n室內泳池(主池、訓練池)：2027年4月16日至2027年6月5日",
+    "revision": "2026年11月6日",
+    "search": "tuen mun swimming pool 屯門游泳池 50 lung mun road, tuen mun, n.t. 新界屯門龍門路50號"
+  },
+  {
+    "id": "250",
+    "nameEN": "Tung Cheong Street Swimming Pool",
+    "nameTC": "東昌街游泳池",
+    "addr": "1/F, Tai Po Tung Cheong Street Leisure Building",
+    "addrTC": "大埔東昌街康體大樓1樓",
+    "phone": "2691 2428, 2691 2433",
+    "email": "tpdo@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=250",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=250",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Thursday",
+    "dayTC": "星期四",
+    "dayIdx": 3,
+    "closedToday": false,
+    "restDay": "Every Thursday (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Friday of the same week.)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "9月11日至10月31日",
+        "en": "From 11 September to 31 October",
+        "start": "11 Sep 2027",
+        "end": "31 Oct 2027",
+        "reopen": "1 Nov 2027",
+        "iso": "2026-09-11"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov 2026 – 10 Sep 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "^Training pool (Length 25m x Width 25m, Depth: 1.2m-1.4m)",
+      "^Teaching pool (Length 25m x Width 10m, Depth: 0.7m-0.9m)",
+      "^Jacuzzi (Depth: 0.85m)",
+      "Family changing room",
+      "Barrier Free Facilities: Barrier Free Access, Accessible Lifting Platform, Ramp (Teaching Pool), Accessible Toilet, Accessible Services Counter, Visual Fire Alarm System, Tactile Guide Path, Braille Directory Map and Floor Plan"
+    ],
+    "indoorFacilitiesTC": [
+      "^訓練池 (長25米 x 闊25米，水深：1.2米-1.4米)",
+      "^習泳池 (長25米 x 闊10米，水深：0.7米-0.9米)",
+      "^按摩池 (水深：0.85米)",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Apr - Oct): 6:30 a.m. - 10:00 p.m. (Session breaks: 12:00 nn - 1:00 p.m. & 6:00 p.m. - 7:00 p.m.) (Nov - Mar of the following year): 6:30 a.m. - 9:30 p.m. (Session breaks: 12:00 nn - 1:00 p.m. & 6:00 p.m. - 7:00 p.m.)",
+    "hoursTC": "每年4月1日至10月31日: 上午6時30分至晚上10時 (暫停開放時間: 中午12時至下午1時及下午6時至下午7時) 每年11月1日至翌年3月31日: 上午6時30分至晚上9時30分 (暫停開放時間: 中午12時至下午1時及下午6時至下午7時)",
+    "maintEN": "From 11 September to 31 October",
+    "maintTC": "9月11日至10月31日",
+    "revision": "2026年11月6日",
+    "search": "tung cheong street swimming pool 東昌街游泳池 1/f, tai po tung cheong street leisure building 大埔東昌街康體大樓1樓"
+  },
+  {
+    "id": "26",
+    "nameEN": "Kwai Shing Swimming Pool",
+    "nameTC": "葵盛游泳池",
+    "addr": "306 Kwai Shing Circuit, Kwai Chung",
+    "addrTC": "新界葵涌葵盛圍306號",
+    "phone": "2426 2081",
+    "email": "kssp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=26",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=26",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Friday",
+    "dayTC": "星期五",
+    "dayIdx": 4,
+    "closedToday": true,
+    "restDay": "Closed on Fridays 10am to 6:00 pm for weeking cleansing operation",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Main pool (Length 50m x Width 21m, Depth: 1.37m-1.93m)",
+      "Secondary pool (Length 50m x Width 21m, Depth: 1.07m-1.37m)",
+      "Teaching pool(1) (Length 18m x Width 12m, Depth: 0.84m-1.07m)",
+      "Teaching pool(2) (Length18m x Width 12m, Depth: 0.84m-1.07m)",
+      "Teaching pool(3) (Length 18m x Width 12m, Depth: 0.69m-0.91m)",
+      "Diving pool (Length 10.7m x Width 10.7m, Depth: 3.5m)",
+      "Children's pool (Irregular shape, Depth: 0.15m-0.47m)",
+      "Toddlers' pool(1) (Irregular shape, Depth: 0.43m-0.5m) is open from June to August free of charge.",
+      "Toddlers' pool(2) (Irregular shape, Depth: 0.46m-0.5m) is open from June to August free of charge.",
+      "Spectator stand (700 seats), Men's and ladies' changing rooms and toilets, Family changing room Barrier Free Facilities: Accessible toilet, Tactile guide path, Braille and tactile floor plan"
+    ],
+    "indoorFacilitiesTC": [
+      "主池(長50米x闊21米，水深:1.37米 -1.93米)",
+      "副池(長50米x闊21米，水深:1.07米 -1.37米)",
+      "習泳池1(長18米x闊12米，水深:0.84米 -1.07米)",
+      "習泳池2(長18米x闊12米，水深:0.84米 -1.07米)",
+      "習泳池3(長18米x闊12米，水深:0.69米-0.91米)",
+      "跳水池(長10.7米x闊10.7米，水深:3.5米)",
+      "兒童池(不規則形狀，水深:0.15米-0.47米)",
+      "幼童池1(不規則形狀，水深0.43- 0.5米)於六月至八月免費開放",
+      "幼童池2(不規則形狀，水深0.46- 0.5米)於六月至八月免費開放",
+      "觀眾看台(700個座位)、男、女更衣室及洗手間、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "April to October 6:30am to 12nn 1:00pm to 6:00 pm 7:00pm to 10:00 pm",
+    "hoursTC": "四月至十月 上午6時30分至中午12時 下午1時至6時 下午7時至晚上10時",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "kwai shing swimming pool 葵盛游泳池 306 kwai shing circuit, kwai chung 新界葵涌葵盛圍306號"
+  },
+  {
+    "id": "15",
+    "nameEN": "Morse Park Swimming Pool",
+    "nameTC": "摩士公園游泳池",
+    "addr": "80 Fung Mo Street, Wong Tai Sin, Kowloon",
+    "addrTC": "九龍黃大仙鳳舞街80號",
+    "phone": "2320 2023, 2324 1795",
+    "email": "mpsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=15",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=15",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Friday",
+    "dayTC": "星期五",
+    "dayIdx": 4,
+    "closedToday": true,
+    "restDay": "Closed on every Friday from 10:00am to 5:00pm for weekly cleansing operation. (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Wednesday of the same week)\nAnnual maintenance:\n Whole pool complex: From 1 November to 31 March of the following year",
+    "indoorWindows": [
+      {
+        "label": "室內副池",
+        "tc": "4月16日至6月5日",
+        "en": "From 16 April to 5 June",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027",
+        "iso": "2027-04-16"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "戶外泳池",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027"
+      }
+    ],
+    "openPeriod": "1 Nov 2026 – 15 Apr 2027, 6 Jun – 31 Oct 2027",
+    "indoorFacilities": [
+      "Indoor facilities",
+      "*^ Secondary Pool (Length 50m X Width 21m, Depth:1.1m-1.4m)",
+      "Family changing room",
+      "Outdoor facilities",
+      "Main pool (Length 50m x Width 21m, Depth: 1.37m-1.9m)",
+      "Teaching pool 1 (Length 18m x Width 12m, Depth: 0.84m-1.07m)",
+      "Teaching pool 2 (Length 18m x Width 12m, Depth: 0.69m-0.9m)",
+      "Teaching pool 3 (Length 18m x Width 12m, Depth: 0.69m-0.9m)",
+      "Children’s Pool with play equipment (Irregular shape, Depth: 0.1m-0.4m)",
+      "Diving pool (Only for group training purpose) (Length 12m x Width 11.25m, Depth: 3.5m-3.61m)",
+      "Spectator stand (800 seats), Electronic scoreboard, Babycare room",
+      "Barrier free facilities: Barrier free access(es) facilitating entrance to the pool deck area, Pool lift (Secondary pool, Teaching pool 3), Shower room(s), Toilet(s) (including accessible toilet), Accessible lift, 1 Designated disable parking space (including assessable parking space), Tactile guide path, Visual fire alarm system and Braille directory map/floor plan"
+    ],
+    "indoorFacilitiesTC": [
+      "*^副池(長50米x 闊21米，水深：1.1米-1.4米)",
+      "家庭更衣室"
+    ],
+    "outdoorFacilities": [
+      "主池 ( 長 50 米 x 闊 21 米，水深： 1.37 米 -1.9 米 )",
+      "習泳池 1 ( 長 18米 x 闊 12米，水深： 0.84米 -1.07米 )",
+      "習泳池 2 ( 長 18米 x 闊 12米，水深： 0.69米 -0.9米 )",
+      "習泳池 3 ( 長 18米 x 闊 12米，水深： 0.69米 -0.9米 )",
+      "兒童池(不規則形狀，水深：0.1米-0.4米)",
+      "跳水池 ( 只供團體租用 ) ( 長 12米 x 闊 11.25米，水深： 3.5米 -3.61米 )",
+      "觀眾看台 (800 個座位 ) 、電子計分板、育嬰室"
+    ],
+    "hours": "April to October:\n First session: 6:30am to 12:00nn\n Second session: 1:00pm to 5:00pm\n Third session: 6:00pm to 10:00pm",
+    "hoursTC": "4月至10月:\n 第一節: 上午6時30分至中午12時\n 第二節: 下午1時至5時\n 第三節: 晚上6時至10時",
+    "maintEN": "Outdoor Pools: From 1 November to 15 April of the following year \n Indoor Secondary Pool: From 16 April to 5 June",
+    "maintTC": "戶外泳池 : 11 月1日至翌年4月15日 \n 室內副池: 4月16日至 6月5日",
+    "revision": "2026年11月6日",
+    "search": "morse park swimming pool 摩士公園游泳池 80 fung mo street, wong tai sin, kowloon 九龍黃大仙鳳舞街80號"
+  },
+  {
+    "id": "19",
+    "nameEN": "Mui Wo Swimming Pool",
+    "nameTC": "梅窩游泳池",
+    "addr": "5 Ngan Shek Street, Mui Wo, Lantau",
+    "addrTC": "大嶼山梅窩銀石街5號",
+    "phone": "2984 2496, 2984 2573",
+    "email": "mwsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=19",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=19",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Friday",
+    "dayTC": "星期五",
+    "dayIdx": 4,
+    "closedToday": true,
+    "restDay": "Closed on every Friday 8:30 am to 6:00 pm for weekly cleansing operation (Except Public Holiday)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "11月1日至翌年3月31日",
+        "en": "From 1 November to 31 March of the following year",
+        "start": "1 Nov 2026",
+        "end": "31 Mar 2027",
+        "reopen": "1 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "Training pool (Length 25m x 11m, Depth: 0.93m-1.25m)",
+      "Spectator stand (120 seats), Family changing room, Changing room s and toilet s",
+      "Barrier Free Facilities: Accessible toilet, Tactile guide path, Braille and tactile floor plan, Visual fire alarm system."
+    ],
+    "indoorFacilitiesTC": [
+      "訓練池 (長25米 x 闊11米，水深: 0.93米-1.25米)",
+      "觀眾看台 (120 個座位 ) 、家庭更衣室、更衣室及洗手間"
+    ],
+    "outdoorFacilities": [],
+    "hours": "Apr. to Oct.: Mondays to Thursdays and Saturdays, Sundays and public holidays: 8:30 am - 6:00 pm (Session breaks: 12:00 nn - 1:00 pm ); Fridays: from 7:00 pm to 10:00 pm; Nov. to Mar.: maintenance",
+    "hoursTC": "四月至十月：星期一至四，以及星期六、日和公眾假期：上午8時30分至下午6時（暫停開放時間：中午12時至下午1時）；星期五：晚上7時至10時；十一月至三月：維修",
+    "maintEN": "From 1 November to 31 March of the following year",
+    "maintTC": "11月1日至翌年3月31日",
+    "revision": "2026年11月6日",
+    "search": "mui wo swimming pool 梅窩游泳池 5 ngan shek street, mui wo, lantau 大嶼山梅窩銀石街5號"
+  },
+  {
+    "id": "32",
+    "nameEN": "Sha Tin Jockey Club Swimming Pool",
+    "nameTC": "沙田賽馬會游泳池",
+    "addr": "10 Yuen Wo Road, Sha Tin, N.T.",
+    "addrTC": "沙田源禾路10號",
+    "phone": "2693 6613",
+    "email": "stsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=32",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=32",
+    "type": "mixed",
+    "typeLabel": "Indoor + outdoor",
+    "day": "Friday",
+    "dayTC": "星期五",
+    "dayIdx": 4,
+    "closedToday": true,
+    "restDay": "(Apr - Oct)Scheduled cleansing day on Friday from 10:00am to 7:30pm (except Public Holidays)(Nov - Mar) Closed for overhaul except main pool Scheduled cleansing day on Friday from 10:00am to 7:00pm (except Public Holidays)",
+    "indoorWindows": [
+      {
+        "label": "副池、兒童池、幼童池、訓練池及習泳池",
+        "tc": "11月1日至翌年4月15日",
+        "en": "From 1 November to 15 April of the following year",
+        "start": "1 Nov 2026",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027",
+        "iso": "2026-11-01"
+      }
+    ],
+    "outdoorWindows": [
+      {
+        "label": "主池",
+        "start": "16 Apr 2027",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027"
+      },
+      {
+        "label": "跳水池",
+        "start": "1 Nov 2026",
+        "end": "5 Jun 2027",
+        "reopen": "6 Jun 2027"
+      }
+    ],
+    "openPeriod": "16 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "*^Main pool (Length 50m x Width 25m, Depth: 1.4m-1.9m)",
+      "Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.3m)",
+      "Training pool (Length 25m x Width 11m, Depth: 0.92m-1.25m)",
+      "Teaching pool 1 (Length 20m x Width 12m, Depth: 0.85m-1.1m)",
+      "Teaching pool 2 (Length 20m x Width 12m, Depth: 0.7m-0.9m)",
+      "Diving pool (Length 11m x Width 11m, Depth: 4.4m)",
+      "Children pool ( Irregular shape, Depth: 0.5m)",
+      "Toddlers' pool ( Irregular shape, Depth: 0.3m-0.4m) is open from June to August free of charge",
+      "Spectator stand (700 seats), Electronic scoreboard, Family changing room",
+      "Barrier Free Facilities: Barrier Free Entrance, Accessible Toilet, Accessible Services Counter, Tactile Guide Path, Visual Fire Alarm System, Braille Directory Map/Floor Plan, Accessible Parking Space (1 Designated Disable Parking Space), Pool Lift (Main Pool), Shower Room",
+      "Public Coaching Area: Secondary pool and Teaching pool 2"
+    ],
+    "indoorFacilitiesTC": [
+      "*^ 主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.9米 )",
+      "副池 ( 長 50 米 x 闊 21米，水深： 1.1米 -1.3 米 )",
+      "訓練池 ( 長 25米 x 闊 11米，水深： 0.92米 -1.25米 )",
+      "習泳池 1 ( 長 20 米 x 闊 12米，水深： 0.85米 -1.1米 )",
+      "習泳池 2 ( 長 20 米 x 闊 12米，水深： 0.7米-0.9 米 )",
+      "跳水池 ( 長 11米 x 闊 11米，水深： 4.4米 )",
+      "兒童池 ( 不規則形狀，水深： 0.5米 )",
+      "幼童池 ( 不規則形狀，水深： 0.3米 -0.4米 ) 於六月至八月免費開放",
+      "觀眾看台(700個座位)、電子計分板、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "(Apr - Oct)1st session : 6:30am to 12:00pm;2nd session : 1:00pm to 6:30pm;3rd session : 7:30pm to 10:00pm(Nov - Mar) Main Pool Only1st session : 6:30am to 12:00pm;2nd session : 1:00pm to 6:00pm;3rd session : 7:00pm to 9:30pm (except scheduled cleansing day on every Friday)",
+    "hoursTC": "(4 - 10月)第一節 : 上午6時30分至中午12時;第二節 : 下午1時至下午6時30分;第三節 : 晚上7時30分至晚上10時(11月 - 3月)只開放主池第一節 : 上午6時30分至中午12時;第二節 : 下午1時至下午6時;第三節 : 晚上7時至晚上9時30分(逢星期五大清潔日例外)",
+    "maintEN": "Main pool : From 16 April to 5 June Secondary pool, Children's pool , Toddlers' Pool, Training pool, Teaching pools : From 1 November to 15 April of the following year \n Diving pool : From 1 November to 5 June of the following year",
+    "maintTC": "主池： 4月16日至6月5日 副池、兒童池 、幼童池、 訓練池、習泳池 ：11月1日至翌年4月15日 跳水池 : 11月1日至翌年6月5日",
+    "revision": "2026年11月6日",
+    "search": "sha tin jockey club swimming pool 沙田賽馬會游泳池 10 yuen wo road, sha tin, n.t. 沙田源禾路10號"
+  },
+  {
+    "id": "9",
+    "nameEN": "Sham Shui Po Park Swimming Pool",
+    "nameTC": "深水埗公園游泳池",
+    "addr": "733 Lai Chi Kok Road, Sham Shui Po, Kowloon.",
+    "addrTC": "九龍深水埗荔枝角道733號",
+    "phone": "2360 2329，2708 7514",
+    "email": "ssppsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=9",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=9",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Friday",
+    "dayTC": "星期五",
+    "dayIdx": 4,
+    "closedToday": true,
+    "restDay": "Closed on every Friday from 10 am to 6 pm for weekly cleansing operation. (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Tuesday of the same week). Late Feb to mid-Apr: Maintenance",
+    "indoorWindows": [
+      {
+        "label": "除主池外，其他泳池",
+        "tc": "11月1日至翌年2月23日",
+        "en": "From 1 November to 23 February of the following year",
+        "start": "1 Nov 2026",
+        "end": "23 Feb 2027",
+        "reopen": "24 Feb 2027",
+        "iso": "2026-11-01"
+      },
+      {
+        "label": "全池",
+        "tc": "2月24日至4月15日",
+        "en": "From 24 February to 15 April",
+        "start": "24 Feb 2027",
+        "end": "15 Apr 2027",
+        "reopen": "16 Apr 2027",
+        "iso": "2027-02-24"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "16 Apr – 31 Oct 2027",
+    "indoorFacilities": [
+      "^Main pool (Length 50m x Width 25m, Depth: 1.4m-1.93m)",
+      "Secondary pool (Length 50m x Width 21m, Depth: 1.1m-1.4m)",
+      "Training pool (Length 25m x Width 11m, Depth: 0.9m-1.2m)",
+      "Teaching pool 1(Length 20m x Width 12m, Depth: 0.8m-1m)",
+      "Teaching pool 2 (Length 20m x Width 12m, Depth: 0.8m-1m)",
+      "Diving pool (Length 11.75m x Width 11m, Depth: 4.4m-4.6m)",
+      "Children's pool (Circular, Depth: 0.3m)",
+      "Toddlers' pool (Irregular shape, Depth: 0.1m-0.37m)",
+      "Spectator stand (750 seats), Family changing room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Accessible toilets and shower compartments, Braille and tactile floor plan, Tactile Guide Path, Visual Fire Alarm System"
+    ],
+    "indoorFacilitiesTC": [
+      "^主池 ( 長 50 米 x 闊 25 米，水深： 1.4 米 -1.93 米 )",
+      "副池 ( 長 50 米 x 闊 21 米，水深： 1.1 米 -1.4 米 )",
+      "訓練池 ( 長 25 米 x 闊1 1 米，水深：0.9米 -1.2 米 )",
+      "習泳池 1 ( 長 20 米 x 闊12米，水深：0.8米 -1 米 )",
+      "習泳池 2 ( 長 20 米 x 闊12米，水深：0.8米 -1 米 )",
+      "跳水池 ( 長11.75米 x 闊1 1 米，水深：4.4米-4.6米 )",
+      "兒童池 (圓形，水深： 0.3 米)",
+      "戲水池 ( 不規則形狀，水深： 0.1米-0.37 米 )",
+      "觀眾看台(750個座位)、家庭更衣室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "Apr - Oct First session: 6:30am to 12:00 noon Second session: 1:00 pm to 6:00 pm Third session: 7:00 pm to 10:00 pm Nov - Feb (Main pool only) First session: 6:30am to 12:00 noon Second session: 1:00 pm to 6:00 pm Third session: 7:00 pm to 9:00 pm",
+    "hoursTC": "4月至10月 第一節: 上午6時30分至中午12時 第二節: 下午1時至6時 第三節: 晚上7時至10時 11月至2月(只開放主池) 第一節: 上午6時30分至中午12時 第二節: 下午1時至6時 第三節: 晚上7時至9時",
+    "maintEN": "Whole complex: From 24 February to 15 April \n Other pools except main pool: From 1 November to 23 February of the following year",
+    "maintTC": "全池 : 2月24日至 4月15日 \n除主池外，其他泳池: 11 月1日至翌年2月23日",
+    "revision": "2026年11月6日",
+    "search": "sham shui po park swimming pool 深水埗公園游泳池 733 lai chi kok road, sham shui po, kowloon. 九龍深水埗荔枝角道733號"
+  },
+  {
+    "id": "3",
+    "nameEN": "Wan Chai Swimming Pool",
+    "nameTC": "灣仔游泳池",
+    "addr": "27 Harbour Road, Wan Chai, Hong Kong",
+    "addrTC": "香港灣仔港灣道27號",
+    "phone": "2827 5240",
+    "email": "wsp@lcsd.gov.hk",
+    "url": "https://www.lcsd.gov.hk/clpss/en/webApp/Swimming.do?swpId=3",
+    "urlTC": "https://www.lcsd.gov.hk/clpss/tc/webApp/Swimming.do?swpId=3",
+    "type": "indoor_only",
+    "typeLabel": "Indoor only",
+    "day": "Friday",
+    "dayTC": "星期五",
+    "dayIdx": 4,
+    "closedToday": true,
+    "restDay": "Friday (10 am - 4 pm)",
+    "indoorWindows": [
+      {
+        "label": "全泳池設施",
+        "tc": "1.12.2026 - 20.1.2027",
+        "en": "From 1 December to 20 January of the following year",
+        "start": "1 Dec 2026",
+        "end": "20 Jan 2027",
+        "reopen": "21 Jan 2027",
+        "iso": "2026-12-01"
+      }
+    ],
+    "outdoorWindows": [],
+    "openPeriod": "1 Nov – 30 Nov 2026, 21 Jan – 31 Oct 2027",
+    "indoorFacilities": [
+      "^Main pool (Length 50m x Width 25m, Depth: 2m)",
+      "Spectator stand (105 seats), Babycare room",
+      "Barrier Free Facilities: Barrier free access(es) facilitating entrance to the pool deck area, Accessible lifting platform (Main pool), Accessible toilets, Accessible toilet and shower compartment, Accessible lift (with assistive listening system), Tactile guide path, Visual fire alarm system, Braille directory map/floor Plan, Assistive listening system"
+    ],
+    "indoorFacilitiesTC": [
+      "^ 主池 ( 長 50 米 x 闊 25 米，水深：2米 )",
+      "觀眾看台 (105 個座位 )、育嬰室"
+    ],
+    "outdoorFacilities": [],
+    "hours": "7am to 10pm",
+    "hoursTC": "上午7時至晚上10時",
+    "maintEN": "From 1 December to 20 January of the following year",
+    "maintTC": "12月1日至翌年1月20日",
+    "revision": "2026年11月6日",
+    "search": "wan chai swimming pool 灣仔游泳池 27 harbour road, wan chai, hong kong 香港灣仔港灣道27號"
+  }
+]

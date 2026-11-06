@@ -1,0 +1,40 @@
+"""Export the indoor-pool dataset as CSV (for spreadsheet use)."""
+
+import csv
+import json
+from pathlib import Path
+
+BASE = Path(r"C:\Users\wingl\Documents\Minimax\lcsd-swimming-pool")
+DATA = BASE / "data"
+records = json.loads((DATA / "page_data.json").read_text(encoding="utf-8"))
+
+rows = []
+for r in records:
+    indoor = "; ".join(
+        f"{w['label']}: closes {w['start']}, reopens {w['reopen']}" for w in r["indoorWindows"])
+    outdoor = "; ".join(
+        f"{w['label']}: closes {w['start']}, reopens {w['reopen']}" for w in r["outdoorWindows"])
+    rows.append({
+        "Pool (EN)": r["nameEN"],
+        "Pool (TC)": r["nameTC"],
+        "Address": r["addr"],
+        "Complex": r["typeLabel"],
+        "Routine day off": r["day"],
+        "Routine day off (TC)": r["dayTC"],
+        "Closure time / note": " ".join((r["restDay"] or "").split()),
+        "Indoor closure (annual maintenance)": indoor,
+        "Indoor open period": r["openPeriod"],
+        "Outdoor closure": outdoor,
+        "Indoor facilities": " | ".join(r["indoorFacilities"][:6]),
+        "Phone": r["phone"],
+        "Email": r["email"],
+        "LCSD page (EN)": r["url"],
+        "LCSD page (TC)": r["urlTC"],
+    })
+
+out = DATA / "lcsd-indoor-pools.csv"
+with out.open("w", encoding="utf-8-sig", newline="") as f:
+    w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+    w.writeheader()
+    w.writerows(rows)
+print(f"wrote {out} ({len(rows)} rows)")

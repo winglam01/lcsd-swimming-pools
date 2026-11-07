@@ -2,6 +2,7 @@
 
 import csv
 import json
+from datetime import date
 from pathlib import Path
 
 BASE = Path(r"C:\Users\wingl\Documents\Minimax\lcsd-swimming-pool")
@@ -13,6 +14,10 @@ STATUS_LABEL = {
     "evening": "Open evenings only today (daytime cleansing closure)",
     "closed": "Closed today (annual maintenance)",
 }
+
+# The status columns are a snapshot of the build date. The web page recomputes
+# them live from the visitor's clock, so it never goes stale.
+STATUS_AS_OF = date.today().isoformat()
 
 rows = []
 for r in records:
@@ -26,6 +31,7 @@ for r in records:
         "Address": r["addr"],
         "Complex": r["typeLabel"],
         "Status today": STATUS_LABEL.get(r.get("status", ""), ""),
+        "Status as of": STATUS_AS_OF,
         "Routine day off": r["day"],
         "Routine day off (TC)": r["dayTC"],
         "Closure time / note": " ".join((r["restDay"] or "").split()),

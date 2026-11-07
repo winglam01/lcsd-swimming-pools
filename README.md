@@ -24,7 +24,12 @@ The page answers *can I swim today?* directly:
 
 Pools inside their annual maintenance window are excluded from both. Each card carries a
 badge saying which case applies: *Open today*, *Open evenings only today*, or
-*Closed today · annual maintenance*. The same split is in the CSV's `Status today` column.
+*Closed today · annual maintenance*. The same split is in the CSV's `Status today` column,
+with a `Status as of` date alongside it.
+
+The status is computed **live in the browser from the visitor's own clock**, so the page
+stays correct as the days pass — it is not frozen at build time. The CSV is a snapshot and
+carries the date it was taken.
 
 ---
 

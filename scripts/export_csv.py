@@ -8,6 +8,12 @@ BASE = Path(r"C:\Users\wingl\Documents\Minimax\lcsd-swimming-pool")
 DATA = BASE / "data"
 records = json.loads((DATA / "page_data.json").read_text(encoding="utf-8"))
 
+STATUS_LABEL = {
+    "open": "Open today (all sessions)",
+    "evening": "Open evenings only today (daytime cleansing closure)",
+    "closed": "Closed today (annual maintenance)",
+}
+
 rows = []
 for r in records:
     indoor = "; ".join(
@@ -19,6 +25,7 @@ for r in records:
         "Pool (TC)": r["nameTC"],
         "Address": r["addr"],
         "Complex": r["typeLabel"],
+        "Status today": STATUS_LABEL.get(r.get("status", ""), ""),
         "Routine day off": r["day"],
         "Routine day off (TC)": r["dayTC"],
         "Closure time / note": " ".join((r["restDay"] or "").split()),

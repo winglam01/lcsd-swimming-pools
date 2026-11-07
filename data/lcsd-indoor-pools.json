@@ -64,7 +64,22 @@
     "maintEN": "Outdoor pools : From 1 November to 15 April of the following year\n Indoor pools : From 11 May to 30 June",
     "maintTC": "戶外泳池 ：11月1日至翌年4月15日 \n室內泳池 ： 5月11日至6月30日",
     "revision": "2026年11月6日",
-    "search": "hammer hill road swimming pool 斧山道游泳池 30 lung cheung road, wong tai sin, kowloon 九龍黃大仙龍翔道30號"
+    "search": "hammer hill road swimming pool 斧山道游泳池 30 lung cheung road, wong tai sin, kowloon 九龍黃大仙龍翔道30號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          30
+        ]
+      ]
+    ]
   },
   {
     "id": "14",
@@ -126,7 +141,22 @@
     "maintEN": "Indoor Main Pool: \nFrom 16 April to 5 June (Starting from 2027)\nOutdoor Pools : \nFrom 1 November to 15 April of the following year",
     "maintTC": "室內主池﹕ 4月16日至6月5日 (由2027年開始)\n戶外泳池﹕ 11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "kowloon tsai swimming pool 九龍仔游泳池 13 inverness road, kowloon city, kowloon 九龍城延文禮士道13號"
+    "search": "kowloon tsai swimming pool 九龍仔游泳池 13 inverness road, kowloon city, kowloon 九龍城延文禮士道13號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "41",
@@ -173,7 +203,22 @@
     "maintEN": "From 11 September to 31 October",
     "maintTC": "9月11日至10月31日",
     "revision": "2026年11月6日",
-    "search": "ping shan tin shui wai swimming pool 屏山天水圍游泳池 1 tsui sing road, tin shui wai, yuen long 元朗天水圍聚星路1號"
+    "search": "ping shan tin shui wai swimming pool 屏山天水圍游泳池 1 tsui sing road, tin shui wai, yuen long 元朗天水圍聚星路1號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "25",
@@ -242,7 +287,22 @@
     "maintEN": "Outdoor training pool, teaching pool, leisure pools : From 1 November to 15 April of the following year Indoor main pool : From 1 May to 30 June",
     "maintTC": "戶外訓練池、習泳池、嬉水池 : 11月1日至翌年4月15日 室內主池 : 5月1日至6月30日",
     "revision": "2026年11月6日",
-    "search": "shing mun valley swimming pool 城門谷游泳池 21 shing mun road, tsuen wan 荃灣城門道21號"
+    "search": "shing mun valley swimming pool 城門谷游泳池 21 shing mun road, tsuen wan 荃灣城門道21號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          30
+        ]
+      ]
+    ]
   },
   {
     "id": "37",
@@ -292,7 +352,22 @@
     "maintEN": "From 11 September to 31 October",
     "maintTC": "9月11日至10月31日",
     "revision": "2026年11月6日",
-    "search": "tai kok tsui swimming pool 大角咀游泳池 4/f,tai kok tsui municipal services building, 63 fuk tsun street, tai kok tsui, kowloon 九龍大角咀福全街63號大角咀市政大廈四樓"
+    "search": "tai kok tsui swimming pool 大角咀游泳池 4/f,tai kok tsui municipal services building, 63 fuk tsun street, tai kok tsui, kowloon 九龍大角咀福全街63號大角咀市政大廈四樓",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "31",
@@ -351,7 +426,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "tai po swimming pool 大埔游泳池 11 ting tai road 大埔汀太路11號"
+    "search": "tai po swimming pool 大埔游泳池 11 ting tai road 大埔汀太路11號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "35",
@@ -422,7 +512,32 @@
     "maintEN": "Main Pool : From 4 May to 23 June Training pool, Teaching pools, Diving pool, Toddlers' pool, Leisure pools : From 1 November to 15 April of the following year",
     "maintTC": "主池： 5月4日至6月23日 訓練池、習泳池、跳水池、戲水池、嬉水池： 11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "tseung kwan o swimming pool 將軍澳游泳池 9 wan lung road, tseung kwan o, nt 將軍澳運隆路9號"
+    "search": "tseung kwan o swimming pool 將軍澳游泳池 9 wan lung road, tseung kwan o, nt 將軍澳運隆路9號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          4,
+          15
+        ]
+      ],
+      [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          23
+        ]
+      ]
+    ]
   },
   {
     "id": "5",
@@ -473,7 +588,22 @@
     "maintEN": "From 20 February to 21 April",
     "maintTC": "2月20日至4月21日",
     "revision": "2026年11月6日",
-    "search": "victoria park swimming pool 維多利亞公園游泳池 1 hing fat street, causeway bay, hong kong 香港銅鑼灣興發街一號"
+    "search": "victoria park swimming pool 維多利亞公園游泳池 1 hing fat street, causeway bay, hong kong 香港銅鑼灣興發街一號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          2,
+          20
+        ],
+        [
+          4,
+          21
+        ]
+      ]
+    ]
   },
   {
     "id": "7",
@@ -536,7 +666,22 @@
     "maintEN": "Whole pool complex: From 1 November to 31 March of the following year",
     "maintTC": "全泳館：11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "chai wan swimming pool 柴灣游泳池 345 san ha street, chai wan, hong kong 香港柴灣新廈街345號"
+    "search": "chai wan swimming pool 柴灣游泳池 345 san ha street, chai wan, hong kong 香港柴灣新廈街345號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "29",
@@ -598,7 +743,32 @@
     "maintEN": "Main pool : \n From 16 April to 14 November 2014--> Main pool:\n From 16 April to 5 June \nSecondary pool, Training pool, Toddlers' pool : \n From 1 November to 15 April of the following year",
     "maintTC": "主池 ：2014年4月16日至11月14日--> 主池： 4月16日至6月5日\n 副池、訓練池、戲水池 ：11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "fanling swimming pool 粉嶺游泳池 73 san wan road, fanling 新界粉嶺新運路73號"
+    "search": "fanling swimming pool 粉嶺游泳池 73 san wan road, fanling 新界粉嶺新運路73號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          4,
+          15
+        ]
+      ],
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "17",
@@ -651,7 +821,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "jordan valley swimming pool 佐敦谷游泳池 6 choi ha road, ngau tau kok, kowloon 九龍牛頭角彩霞道6號"
+    "search": "jordan valley swimming pool 佐敦谷游泳池 6 choi ha road, ngau tau kok, kowloon 九龍牛頭角彩霞道6號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "11",
@@ -722,7 +907,22 @@
     "maintEN": "Indoor Pools : \nFrom 16 April to 5 June \n Outdoor Pools : \nFrom 1 November to 15 April of the following year",
     "maintTC": "室內 泳池 ﹕ 4月16日至6月5日\n 戶外泳池 ﹕ 11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "kowloon park swimming pool 九龍公園游泳池 22 austin road, tsim sha tsui, kowloon, hong kong 九龍尖沙咀柯士甸道22號"
+    "search": "kowloon park swimming pool 九龍公園游泳池 22 austin road, tsim sha tsui, kowloon, hong kong 九龍尖沙咀柯士甸道22號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "34",
@@ -781,7 +981,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "ma on shan swimming pool 馬鞍山游泳池 33 on chun street, ma on shan, sha tin. 沙田馬鞍山鞍駿街33號"
+    "search": "ma on shan swimming pool 馬鞍山游泳池 33 on chun street, ma on shan, sha tin. 沙田馬鞍山鞍駿街33號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "1",
@@ -842,7 +1057,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "pao yue kong swimming pool 包玉剛游泳池 2 shum wan road, wong chuk hang, hong kong 香港黃竹坑深灣道２號"
+    "search": "pao yue kong swimming pool 包玉剛游泳池 2 shum wan road, wong chuk hang, hong kong 香港黃竹坑深灣道２號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "40",
@@ -892,7 +1122,22 @@
     "maintEN": "From 16 April to 5 June",
     "maintTC": "4月16日至6月5日",
     "revision": "2026年11月6日",
-    "search": "sun yat sen memorial park swimming pool 中山紀念公園游泳池 16 eastern street north, sai ying pun, hong kong 香港西營盤東邊街北16號"
+    "search": "sun yat sen memorial park swimming pool 中山紀念公園游泳池 16 eastern street north, sai ying pun, hong kong 香港西營盤東邊街北16號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "21",
@@ -939,7 +1184,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "the jockey club yan oi tong swimming pool 賽馬會仁愛堂游泳池 tsing chung koon road, tuen mun 新界屯門青松觀路"
+    "search": "the jockey club yan oi tong swimming pool 賽馬會仁愛堂游泳池 tsing chung koon road, tuen mun 新界屯門青松觀路",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "261",
@@ -1005,7 +1265,22 @@
     "maintEN": "Outdoor Main Pool and Outdoor Training Pool : \n From 1 November to 15 April of the following year \n Indoor Training Pool and Indoor Jacuzzi : \n From 16 April to 5 June",
     "maintTC": "室外主池及室外訓練池﹕ 11 月 1 日至翌年 4 月 15 日 \n室內訓練池及室內按摩池： 4 月 16 日至 6 月 5 日",
     "revision": "2026年11月6日",
-    "search": "tin sau road swimming pool 天秀路游泳池 20 tin sau road, tin shui wai 天水圍天秀路20號"
+    "search": "tin sau road swimming pool 天秀路游泳池 20 tin sau road, tin shui wai 天水圍天秀路20號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "44",
@@ -1052,7 +1327,22 @@
     "maintEN": "From 11 September to 31 October",
     "maintTC": "9月11日至10月31日",
     "revision": "2026年11月6日",
-    "search": "tsing yi southwest swimming pool 青衣西南游泳池 70 chung mei road, tsing yi 新界青衣涌美路70號"
+    "search": "tsing yi southwest swimming pool 青衣西南游泳池 70 chung mei road, tsing yi 新界青衣涌美路70號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "24",
@@ -1103,7 +1393,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "tsuen king circuit wu chung swimming pool 荃景圍胡忠游泳池 178 tsuen king circuit, tsuen wan 荃灣荃景圍安逸街"
+    "search": "tsuen king circuit wu chung swimming pool 荃景圍胡忠游泳池 178 tsuen king circuit, tsuen wan 荃灣荃景圍安逸街",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "38",
@@ -1162,7 +1467,22 @@
     "maintEN": "Main pool: From 11 September to 31 October\n Training pool: From 1 November to 15 April of the following year",
     "maintTC": "主池： 9月11日至10月31日\n 訓練池： 11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "tung chung swimming pool 東涌游泳池 5 tat tung road, tung chung, n.t. 東涌達東路5號"
+    "search": "tung chung swimming pool 東涌游泳池 5 tat tung road, tung chung, n.t. 東涌達東路5號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "13",
@@ -1231,7 +1551,22 @@
     "maintEN": "Indoor Pools : From 11 September to 31 October Outdoor Pools : From 11 September to 15 April of the following year",
     "maintTC": "室內泳池 ：9月11日至10月31日 戶外泳池 ：9月11日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "ho man tin swimming pool 何文田游泳池 1 chung yee street, ho man tin, kowloon 九龍何文田忠義街1號"
+    "search": "ho man tin swimming pool 何文田游泳池 1 chung yee street, ho man tin, kowloon 九龍何文田忠義街1號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "6",
@@ -1284,7 +1619,22 @@
     "maintEN": "From 11 September to 31 October",
     "maintTC": "9月11日至10月31日",
     "revision": "2026年11月6日",
-    "search": "island east swimming pool 港島東游泳池 52, lei king road, sai wan ho, hong kong 香港西灣河鯉景道52號港島東體育館一樓"
+    "search": "island east swimming pool 港島東游泳池 52, lei king road, sai wan ho, hong kong 香港西灣河鯉景道52號港島東體育館一樓",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "2",
@@ -1350,7 +1700,22 @@
     "maintEN": "Indoor pools : \nFrom 11 September to 31 October\n Outdoor pools : \nFrom 1 November to 15 April of the following year",
     "maintTC": "室內泳池 : 9月11日至10月31日\n戶外泳池 : 11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "kennedy town swimming pool 堅尼地城游泳池 2 sai cheung street north, kennedy town 香港堅尼地城西祥街北2號"
+    "search": "kennedy town swimming pool 堅尼地城游泳池 2 sai cheung street north, kennedy town 香港堅尼地城西祥街北2號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "18",
@@ -1417,7 +1782,22 @@
     "maintEN": "Outdoor pools : From 1 November to 15 April of the following year\n Indoor pools : From 2 January to 21 February",
     "maintTC": "戶外泳池 ： 11 月 1 日至翌年 4 月 15 日\n 室內泳池 ： 1月2日至2月21日",
     "revision": "2026年11月6日",
-    "search": "kwun tong swimming pool 觀塘游泳池 2 tsui ping road, kwun tong, kowloon 九龍觀塘翠屏道2號"
+    "search": "kwun tong swimming pool 觀塘游泳池 2 tsui ping road, kwun tong, kowloon 九龍觀塘翠屏道2號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          21
+        ]
+      ]
+    ]
   },
   {
     "id": "8",
@@ -1486,7 +1866,22 @@
     "maintEN": "Diving pool, Training pool, Teaching pools and Toddlers' pool: \nFrom 1 November to 15 April of the following year\n Main pool, Secondary pool, Diving pool: \nFrom 16 April to 5 June",
     "maintTC": "跳水池 、 訓練池、習泳池、戲水池： \n11月1日至翌年4月15日\n 主池、副池、跳水池 : \n4月16日至6月5日",
     "revision": "2026年11月6日",
-    "search": "lai chi kok park swimming pool 荔枝角公園游泳池 no.1 lai wan road, lai chi kok, kowloon 九龍深水埗荔灣道1號"
+    "search": "lai chi kok park swimming pool 荔枝角公園游泳池 no.1 lai wan road, lai chi kok, kowloon 九龍深水埗荔灣道1號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "4",
@@ -1550,7 +1945,22 @@
     "maintEN": "Indoor main pool and training pool: From 11 May to 30 June \n Outdoor teaching pool and toddler's pool: From 1 November to 15 April of the following year",
     "maintTC": "室內主池、訓練池: 5月11日至6月30日\n戶外習泳池、幼童池：11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "morrison hill swimming pool 摩理臣山游泳池 7 oi kwan road, wan chai, hong kong 香港灣仔愛群道7號"
+    "search": "morrison hill swimming pool 摩理臣山游泳池 7 oi kwan road, wan chai, hong kong 香港灣仔愛群道7號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          30
+        ]
+      ]
+    ]
   },
   {
     "id": "27",
@@ -1605,7 +2015,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "north kwai chung jockey club swimming pool 北葵涌賽馬會游泳池 290 wo yi hop road, kwai chung 新界葵涌和宜合道290號"
+    "search": "north kwai chung jockey club swimming pool 北葵涌賽馬會游泳池 290 wo yi hop road, kwai chung 新界葵涌和宜合道290號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "36",
@@ -1656,7 +2081,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "sai kung swimming pool 西貢游泳池 wai man road, sai kung, nt 西貢惠民路12號"
+    "search": "sai kung swimming pool 西貢游泳池 wai man road, sai kung, nt 西貢惠民路12號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "43",
@@ -1725,7 +2165,22 @@
     "maintEN": "Outdoor pools (Main pool, Training pool, Teaching pool) : \nFrom 1 November to 15 April of the following year\n Maintenance of indoor training pool, leisure pool and jacuzzi: \n 1 September to 21 October",
     "maintTC": "室外泳池(主池、訓練池及 習泳池) ： 11月1日至翌年4月15日\n 室內訓練池、嬉水池及按摩池維修： 9月1日至10月21日",
     "revision": "2026年11月6日",
-    "search": "tuen mun north west swimming pool 屯門西北游泳池 95 ming kum road, tuen mun, n.t. 屯門鳴琴路95號"
+    "search": "tuen mun north west swimming pool 屯門西北游泳池 95 ming kum road, tuen mun, n.t. 屯門鳴琴路95號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          21
+        ]
+      ]
+    ]
   },
   {
     "id": "22",
@@ -1790,7 +2245,32 @@
     "maintEN": "Secondary pool, Training pool, Diving pool, Toddlers' Pool : From 1 November to 15 April of the following year Main pool : From 16 April to 5 June",
     "maintTC": "副池、訓練池、跳水池、幼童池﹕ 11月1日至翌年4月15日\n主池：4月16日至6月5日",
     "revision": "2026年11月6日",
-    "search": "yuen long swimming pool 元朗游泳池 10 tai yuk road, yuen long 元朗體育路10號"
+    "search": "yuen long swimming pool 元朗游泳池 10 tai yuk road, yuen long 元朗體育路10號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          4,
+          15
+        ]
+      ],
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "33",
@@ -1861,7 +2341,22 @@
     "maintEN": "Indoor pools (Main pool ,Jacuzzi pool ): From 11 September to 31 October Outdoor pools (Training pool, Leisure pool ): From 1 November to 15 April of the following year",
     "maintTC": "室內泳池 ( 主池 、 按摩池)： 9月11日至10月31日 戶外泳池( 訓練池、嬉水池)： 11月1日至翌年4月15日",
     "revision": "2026年11月6日",
-    "search": "hin tin swimming pool 顯田游泳池 68 che kung miu road, tai wai, sha tin. 沙田大圍車公廟路68號"
+    "search": "hin tin swimming pool 顯田游泳池 68 che kung miu road, tai wai, sha tin. 沙田大圍車公廟路68號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "42",
@@ -1922,7 +2417,22 @@
     "maintEN": "From 16 April to 5 June",
     "maintTC": "4月16日至6月5日",
     "revision": "2026年11月6日",
-    "search": "lam tin swimming pool 藍田游泳池 1/f lam tin complex, 1 hing tin street, lam tin, kowloon 九龍藍田慶田街1號藍田綜合大樓1樓"
+    "search": "lam tin swimming pool 藍田游泳池 1/f lam tin complex, 1 hing tin street, lam tin, kowloon 九龍藍田慶田街1號藍田綜合大樓1樓",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "10",
@@ -1982,7 +2492,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "lei cheng uk swimming pool 李鄭屋游泳池 25 kwong lee road, kowloon, hong kong 深水埗廣利道25號"
+    "search": "lei cheng uk swimming pool 李鄭屋游泳池 25 kwong lee road, kowloon, hong kong 深水埗廣利道25號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "30",
@@ -2031,7 +2556,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "sheung shui swimming pool 上水游泳池 38 tin ping road, sheung shui 新界上水天平路38號"
+    "search": "sheung shui swimming pool 上水游泳池 38 tin ping road, sheung shui 新界上水天平路38號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "39",
@@ -2082,7 +2622,22 @@
     "maintEN": "From 2 May to 26 July",
     "maintTC": "5月2日至7月26日",
     "revision": "2026年11月6日",
-    "search": "siu sai wan swimming pool 小西灣游泳池 1/f., siu sai wan complex, 15 siu sai wan road, hk 香港小西灣道15號小西灣綜合大樓一樓"
+    "search": "siu sai wan swimming pool 小西灣游泳池 1/f., siu sai wan complex, 15 siu sai wan road, hk 香港小西灣道15號小西灣綜合大樓一樓",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          26
+        ]
+      ]
+    ]
   },
   {
     "id": "12",
@@ -2143,7 +2698,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "tai wan shan swimming pool 大環山游泳池 no.7 wan hoi street, hung hom, kowloon 九龍紅磡環海街7號"
+    "search": "tai wan shan swimming pool 大環山游泳池 no.7 wan hoi street, hung hom, kowloon 九龍紅磡環海街7號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "23",
@@ -2194,7 +2764,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "tin shui wai swimming pool 天水圍游泳池 no. 1 tin pak road, tin shui wai 天水圍天柏路一號"
+    "search": "tin shui wai swimming pool 天水圍游泳池 no. 1 tin pak road, tin shui wai 天水圍天柏路一號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "28",
@@ -2251,7 +2836,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "tsing yi swimming pool 青衣游泳池 51 tsing king road, tsing yi 新界青衣青敬路 51號"
+    "search": "tsing yi swimming pool 青衣游泳池 51 tsing king road, tsing yi 新界青衣青敬路 51號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "20",
@@ -2318,7 +2918,22 @@
     "maintEN": "Outdoor pools (Training pool, Teaching pool, Leisure pool and Diving pool):\nFrom 1 November 2026 to 15 April of the following year\nIndoor pools (Main pool and Training pool):\nFrom 16 April 2027 to 5 Jun 2027",
     "maintTC": "戶外泳池(訓練池、習泳池、嬉水池及跳水池 )：2026年11月1日至翌年4月15日\n室內泳池(主池、訓練池)：2027年4月16日至2027年6月5日",
     "revision": "2026年11月6日",
-    "search": "tuen mun swimming pool 屯門游泳池 50 lung mun road, tuen mun, n.t. 新界屯門龍門路50號"
+    "search": "tuen mun swimming pool 屯門游泳池 50 lung mun road, tuen mun, n.t. 新界屯門龍門路50號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "250",
@@ -2370,7 +2985,22 @@
     "maintEN": "From 11 September to 31 October",
     "maintTC": "9月11日至10月31日",
     "revision": "2026年11月6日",
-    "search": "tung cheong street swimming pool 東昌街游泳池 1/f, tai po tung cheong street leisure building 大埔東昌街康體大樓1樓"
+    "search": "tung cheong street swimming pool 東昌街游泳池 1/f, tai po tung cheong street leisure building 大埔東昌街康體大樓1樓",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "26",
@@ -2387,7 +3017,7 @@
     "day": "Friday",
     "dayTC": "星期五",
     "dayIdx": 4,
-    "closedToday": true,
+    "closedToday": false,
     "restDay": "Closed on Fridays 10am to 6:00 pm for weeking cleansing operation",
     "indoorWindows": [
       {
@@ -2432,7 +3062,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "kwai shing swimming pool 葵盛游泳池 306 kwai shing circuit, kwai chung 新界葵涌葵盛圍306號"
+    "search": "kwai shing swimming pool 葵盛游泳池 306 kwai shing circuit, kwai chung 新界葵涌葵盛圍306號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "15",
@@ -2449,7 +3094,7 @@
     "day": "Friday",
     "dayTC": "星期五",
     "dayIdx": 4,
-    "closedToday": true,
+    "closedToday": false,
     "restDay": "Closed on every Friday from 10:00am to 5:00pm for weekly cleansing operation. (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Wednesday of the same week)\nAnnual maintenance:\n Whole pool complex: From 1 November to 31 March of the following year",
     "indoorWindows": [
       {
@@ -2503,7 +3148,22 @@
     "maintEN": "Outdoor Pools: From 1 November to 15 April of the following year \n Indoor Secondary Pool: From 16 April to 5 June",
     "maintTC": "戶外泳池 : 11 月1日至翌年4月15日 \n 室內副池: 4月16日至 6月5日",
     "revision": "2026年11月6日",
-    "search": "morse park swimming pool 摩士公園游泳池 80 fung mo street, wong tai sin, kowloon 九龍黃大仙鳳舞街80號"
+    "search": "morse park swimming pool 摩士公園游泳池 80 fung mo street, wong tai sin, kowloon 九龍黃大仙鳳舞街80號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    ]
   },
   {
     "id": "19",
@@ -2520,7 +3180,7 @@
     "day": "Friday",
     "dayTC": "星期五",
     "dayIdx": 4,
-    "closedToday": true,
+    "closedToday": false,
     "restDay": "Closed on every Friday 8:30 am to 6:00 pm for weekly cleansing operation (Except Public Holiday)",
     "indoorWindows": [
       {
@@ -2550,7 +3210,22 @@
     "maintEN": "From 1 November to 31 March of the following year",
     "maintTC": "11月1日至翌年3月31日",
     "revision": "2026年11月6日",
-    "search": "mui wo swimming pool 梅窩游泳池 5 ngan shek street, mui wo, lantau 大嶼山梅窩銀石街5號"
+    "search": "mui wo swimming pool 梅窩游泳池 5 ngan shek street, mui wo, lantau 大嶼山梅窩銀石街5號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          3,
+          31
+        ]
+      ]
+    ]
   },
   {
     "id": "32",
@@ -2567,7 +3242,7 @@
     "day": "Friday",
     "dayTC": "星期五",
     "dayIdx": 4,
-    "closedToday": true,
+    "closedToday": false,
     "restDay": "(Apr - Oct)Scheduled cleansing day on Friday from 10:00am to 7:30pm (except Public Holidays)(Nov - Mar) Closed for overhaul except main pool Scheduled cleansing day on Friday from 10:00am to 7:00pm (except Public Holidays)",
     "indoorWindows": [
       {
@@ -2625,7 +3300,22 @@
     "maintEN": "Main pool : From 16 April to 5 June Secondary pool, Children's pool , Toddlers' Pool, Training pool, Teaching pools : From 1 November to 15 April of the following year \n Diving pool : From 1 November to 5 June of the following year",
     "maintTC": "主池： 4月16日至6月5日 副池、兒童池 、幼童池、 訓練池、習泳池 ：11月1日至翌年4月15日 跳水池 : 11月1日至翌年6月5日",
     "revision": "2026年11月6日",
-    "search": "sha tin jockey club swimming pool 沙田賽馬會游泳池 10 yuen wo road, sha tin, n.t. 沙田源禾路10號"
+    "search": "sha tin jockey club swimming pool 沙田賽馬會游泳池 10 yuen wo road, sha tin, n.t. 沙田源禾路10號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          4,
+          15
+        ]
+      ]
+    ]
   },
   {
     "id": "9",
@@ -2642,7 +3332,7 @@
     "day": "Friday",
     "dayTC": "星期五",
     "dayIdx": 4,
-    "closedToday": true,
+    "closedToday": false,
     "restDay": "Closed on every Friday from 10 am to 6 pm for weekly cleansing operation. (If the weekly cleansing day falls on a public holiday, the swimming pool will open as usual. The weekly cleansing operation will be rescheduled for Tuesday of the same week). Late Feb to mid-Apr: Maintenance",
     "indoorWindows": [
       {
@@ -2695,7 +3385,32 @@
     "maintEN": "Whole complex: From 24 February to 15 April \n Other pools except main pool: From 1 November to 23 February of the following year",
     "maintTC": "全池 : 2月24日至 4月15日 \n除主池外，其他泳池: 11 月1日至翌年2月23日",
     "revision": "2026年11月6日",
-    "search": "sham shui po park swimming pool 深水埗公園游泳池 733 lai chi kok road, sham shui po, kowloon. 九龍深水埗荔枝角道733號"
+    "search": "sham shui po park swimming pool 深水埗公園游泳池 733 lai chi kok road, sham shui po, kowloon. 九龍深水埗荔枝角道733號",
+    "status": "closed",
+    "cleansingToday": false,
+    "maintenanceToday": true,
+    "windowMD": [
+      [
+        [
+          11,
+          1
+        ],
+        [
+          2,
+          23
+        ]
+      ],
+      [
+        [
+          2,
+          24
+        ],
+        [
+          4,
+          15
+        ]
+      ]
+    ]
   },
   {
     "id": "3",
@@ -2712,7 +3427,7 @@
     "day": "Friday",
     "dayTC": "星期五",
     "dayIdx": 4,
-    "closedToday": true,
+    "closedToday": false,
     "restDay": "Friday (10 am - 4 pm)",
     "indoorWindows": [
       {
@@ -2742,6 +3457,21 @@
     "maintEN": "From 1 December to 20 January of the following year",
     "maintTC": "12月1日至翌年1月20日",
     "revision": "2026年11月6日",
-    "search": "wan chai swimming pool 灣仔游泳池 27 harbour road, wan chai, hong kong 香港灣仔港灣道27號"
+    "search": "wan chai swimming pool 灣仔游泳池 27 harbour road, wan chai, hong kong 香港灣仔港灣道27號",
+    "status": "open",
+    "cleansingToday": false,
+    "maintenanceToday": false,
+    "windowMD": [
+      [
+        [
+          12,
+          1
+        ],
+        [
+          1,
+          20
+        ]
+      ]
+    ]
   }
 ]

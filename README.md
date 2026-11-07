@@ -14,6 +14,18 @@ listing, for each pool:
 
 **Live page:** <https://winglam01.github.io/lcsd-swimming-pools/>
 
+### "Open today" filters
+
+The page answers *can I swim today?* directly:
+
+- **Open today** — every pool with at least one open session today, including pools whose
+  daytime session is shut for the weekly cleansing but that reopen for the evening session.
+- **Open all day today** — only pools with no closure of any kind today.
+
+Pools inside their annual maintenance window are excluded from both. Each card carries a
+badge saying which case applies: *Open today*, *Open evenings only today*, or
+*Closed today · annual maintenance*. The same split is in the CSV's `Status today` column.
+
 ---
 
 ## Why two different "closures"

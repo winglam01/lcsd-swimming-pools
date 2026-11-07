@@ -46,6 +46,10 @@ input[type=search]{min-width:250px;flex:1 1 260px}
 .chip:hover{border-color:var(--blue)} .chip.on{background:var(--blue);border-color:var(--blue);color:#04121f;font-weight:600}
 .chip .n{background:rgba(255,255,255,.12);border-radius:999px;padding:1px 7px;font-size:11.5px}
 .chip.on .n{background:rgba(0,0,0,.18)}
+.chip.toggle{border-color:rgba(93,220,154,.35);color:#b6f0d0}
+.chip.toggle:hover{border-color:var(--green)}
+#openToday.on{background:var(--green);border-color:var(--green);color:#04231a;font-weight:700}
+#fullToday.on{background:var(--cyan);border-color:var(--cyan);color:#032420;font-weight:700}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(430px,1fr));gap:16px;margin-top:18px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px 14px}
 .card.hidden{display:none}
@@ -57,6 +61,8 @@ input[type=search]{min-width:250px;flex:1 1 260px}
 .badge.day{color:var(--cyan);border-color:rgba(63,208,201,.35)}
 .badge.type{color:#a9c4e8}
 .badge.closed{background:rgba(255,122,122,.14);border-color:rgba(255,122,122,.4);color:var(--red);font-weight:600}
+.badge.evening{background:rgba(255,180,84,.13);border-color:rgba(255,180,84,.38);color:var(--amber);font-weight:600}
+.badge.opentoday{background:rgba(93,220,154,.12);border-color:rgba(93,220,154,.38);color:var(--green);font-weight:600}
 .addr{color:var(--muted);font-size:13px;margin:8px 0 12px}
 .dayoff{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--cyan);border-radius:10px;padding:10px 13px;margin-bottom:12px}
 .dayoff-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
@@ -106,12 +112,15 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
     the <b>indoor pool annual maintenance closing date</b> and the <b>reopening date</b>, plus the outdoor closures that affect
     what is actually open on the day.</p>
     <p class="meta">Data captured from lcsd.gov.hk on <b>6 Nov 2026</b> &middot; LCSD page revision: 2026年11月6日
-      &middot; <span id="todayline">Today is Friday — 6 indoor pool(s) on routine day off</span></p>
+      &middot; <span id="todayline">Today is Saturday — 25 of 46 pools have an open indoor pool</span></p>
     <div class="stats">
       <div class="stat"><b>46</b><span>public pools listed</span></div>
+      <div class="stat"><b id="statOpenToday">25</b><span>open today (indoor pool)</span></div>
+      <div class="stat"><b id="statOpenAll">25</b><span>open all day today</span></div>
+      <div class="stat"><b id="statEvening">0</b><span>evening session only today</span></div>
+      <div class="stat"><b id="statMaint">21</b><span>closed today (maintenance)</span></div>
       <div class="stat"><b>28</b><span>indoor-only complexes</span></div>
       <div class="stat"><b>18</b><span>indoor + outdoor complexes</span></div>
-      <div class="stat"><b>6</b><span>closed today (routine day off)</span></div>
     </div>
   </div>
 </header>
@@ -128,6 +137,13 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
     outdoor pools, the outdoor window is shown as well, because a closed outdoor pool often means “indoor only” even though the indoor
     pool itself is open.
   </div>
+  <div class="note">
+    <b>“Open today”.</b> Two filters answer “can I swim today?”.
+    <b>Open today</b> keeps every pool with at least one open session today — including pools whose daytime session is shut for the weekly
+    cleansing but that reopen for the evening session.
+    <b>Open all day today</b> keeps only pools with no closure of any kind today.
+    Pools closed for annual maintenance are excluded from both. The badge on each card spells out which case applies.
+  </div>
 </section>
 
 <section class="wrap">
@@ -143,7 +159,7 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
 
 <section class="wrap">
   <h2>All pools</h2>
-  <p class="lede">Filter by name, weekday or pool type.</p>
+  <p class="lede">Filter by name, weekday, pool type — or by what is actually open today.</p>
   <div class="controls">
     <input type="search" id="q" placeholder="Search pool name or address…" aria-label="Search">
     <select id="day" aria-label="Filter by weekday"><option value="">Any weekday</option><option value="0">Monday</option><option value="1">Tuesday</option><option value="2">Wednesday</option><option value="3">Thursday</option><option value="4">Friday</option><option value="5">Saturday</option><option value="6">Sunday</option></select>
@@ -152,11 +168,14 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
       <option value="indoor_only">Indoor only</option>
       <option value="mixed">Indoor + outdoor</option>
     </select>
+    <button class="chip toggle" id="openToday" type="button" aria-pressed="false">Open today <span class="n" id="openTodayN">25</span></button>
+    <button class="chip toggle" id="fullToday" type="button" aria-pressed="false">Open all day today <span class="n" id="fullTodayN">25</span></button>
     <button class="chip" id="reset" type="button">Reset</button>
   </div>
   <div class="chips" id="chips"><button class="chip" data-day="0">Monday<span class="n">8</span></button><button class="chip" data-day="1">Tuesday<span class="n">12</span></button><button class="chip" data-day="2">Wednesday<span class="n">10</span></button><button class="chip" data-day="3">Thursday<span class="n">10</span></button><button class="chip" data-day="4">Friday<span class="n">6</span></button><button class="chip" data-day="5">Saturday<span class="n">0</span></button><button class="chip" data-day="6">Sunday<span class="n">0</span></button></div>
   <div class="grid" id="grid">
-<article class="card" data-type="mixed" data-day="0" data-name="hammer hill road swimming pool 斧山道游泳池 30 lung cheung road, wong tai sin, kowloon 九龍黃大仙龍翔道30號">
+<article class="card" data-type="mixed" data-day="0" data-status="open"
+         data-clean="0" data-win="[[[5,11],[6,30]]]" data-name="hammer hill road swimming pool 斧山道游泳池 30 lung cheung road, wong tai sin, kowloon 九龍黃大仙龍翔道30號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Hammer Hill Road Swimming Pool</h3>
@@ -165,7 +184,7 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">30 Lung Cheung Road, Wong Tai Sin, Kowloon</p>
@@ -213,7 +232,8 @@ Indoor pools: From 16 April to 15 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="0" data-name="kowloon tsai swimming pool 九龍仔游泳池 13 inverness road, kowloon city, kowloon 九龍城延文禮士道13號">
+<article class="card" data-type="mixed" data-day="0" data-status="open"
+         data-clean="0" data-win="[[[4,16],[6,5]]]" data-name="kowloon tsai swimming pool 九龍仔游泳池 13 inverness road, kowloon city, kowloon 九龍城延文禮士道13號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Kowloon Tsai Swimming Pool</h3>
@@ -222,7 +242,7 @@ Indoor pools: From 16 April to 15 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">13 Inverness Road, Kowloon City, Kowloon</p>
@@ -267,7 +287,8 @@ Indoor pools: From 16 April to 15 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="0" data-name="ping shan tin shui wai swimming pool 屏山天水圍游泳池 1 tsui sing road, tin shui wai, yuen long 元朗天水圍聚星路1號">
+<article class="card" data-type="indoor_only" data-day="0" data-status="open"
+         data-clean="0" data-win="[[[9,11],[10,31]]]" data-name="ping shan tin shui wai swimming pool 屏山天水圍游泳池 1 tsui sing road, tin shui wai, yuen long 元朗天水圍聚星路1號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Ping Shan Tin Shui Wai Swimming Pool</h3>
@@ -276,7 +297,7 @@ Indoor pools: From 16 April to 15 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">1 Tsui Sing Road, Tin Shui Wai, Yuen Long</p>
@@ -321,7 +342,8 @@ Indoor pools: From 16 April to 15 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="0" data-name="shing mun valley swimming pool 城門谷游泳池 21 shing mun road, tsuen wan 荃灣城門道21號">
+<article class="card" data-type="mixed" data-day="0" data-status="open"
+         data-clean="0" data-win="[[[5,1],[6,30]]]" data-name="shing mun valley swimming pool 城門谷游泳池 21 shing mun road, tsuen wan 荃灣城門道21號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Shing Mun Valley Swimming Pool</h3>
@@ -330,7 +352,7 @@ Indoor pools: From 16 April to 15 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">21 Shing Mun Road, Tsuen Wan</p>
@@ -375,7 +397,8 @@ Indoor pools: From 16 April to 15 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="0" data-name="tai kok tsui swimming pool 大角咀游泳池 4/f,tai kok tsui municipal services building, 63 fuk tsun street, tai kok tsui, kowloon 九龍大角咀福全街63號大角咀市政大廈四樓">
+<article class="card" data-type="indoor_only" data-day="0" data-status="open"
+         data-clean="0" data-win="[[[9,11],[10,31]]]" data-name="tai kok tsui swimming pool 大角咀游泳池 4/f,tai kok tsui municipal services building, 63 fuk tsun street, tai kok tsui, kowloon 九龍大角咀福全街63號大角咀市政大廈四樓">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tai Kok Tsui Swimming Pool</h3>
@@ -384,7 +407,7 @@ Indoor pools: From 16 April to 15 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">4/F,Tai Kok Tsui Municipal Services Building, 63 Fuk Tsun Street, Tai Kok Tsui, Kowloon</p>
@@ -429,7 +452,8 @@ Indoor pools: From 16 April to 15 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="0" data-name="tai po swimming pool 大埔游泳池 11 ting tai road 大埔汀太路11號">
+<article class="card" data-type="indoor_only" data-day="0" data-status="closed"
+         data-clean="0" data-win="[[[11,1],[3,31]]]" data-name="tai po swimming pool 大埔游泳池 11 ting tai road 大埔汀太路11號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tai Po Swimming Pool</h3>
@@ -438,7 +462,7 @@ Indoor pools: From 16 April to 15 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">11 Ting Tai Road</p>
@@ -483,7 +507,8 @@ Indoor pools: From 16 April to 15 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="0" data-name="tseung kwan o swimming pool 將軍澳游泳池 9 wan lung road, tseung kwan o, nt 將軍澳運隆路9號">
+<article class="card" data-type="mixed" data-day="0" data-status="closed"
+         data-clean="0" data-win="[[[11,1],[4,15]],[[5,4],[6,23]]]" data-name="tseung kwan o swimming pool 將軍澳游泳池 9 wan lung road, tseung kwan o, nt 將軍澳運隆路9號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tseung Kwan O Swimming Pool</h3>
@@ -492,7 +517,7 @@ Indoor pools: From 16 April to 15 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">9 Wan Lung Road, Tseung Kwan O, NT</p>
@@ -540,7 +565,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="0" data-name="victoria park swimming pool 維多利亞公園游泳池 1 hing fat street, causeway bay, hong kong 香港銅鑼灣興發街一號">
+<article class="card" data-type="indoor_only" data-day="0" data-status="open"
+         data-clean="0" data-win="[[[2,20],[4,21]]]" data-name="victoria park swimming pool 維多利亞公園游泳池 1 hing fat street, causeway bay, hong kong 香港銅鑼灣興發街一號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Victoria Park Swimming Pool</h3>
@@ -549,7 +575,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Monday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">1 Hing Fat Street, Causeway Bay, Hong Kong</p>
@@ -595,7 +621,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="chai wan swimming pool 柴灣游泳池 345 san ha street, chai wan, hong kong 香港柴灣新廈街345號">
+<article class="card" data-type="indoor_only" data-day="1" data-status="closed"
+         data-clean="1" data-win="[[[11,1],[3,31]]]" data-name="chai wan swimming pool 柴灣游泳池 345 san ha street, chai wan, hong kong 香港柴灣新廈街345號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Chai Wan Swimming Pool</h3>
@@ -604,7 +631,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">345 San Ha Street, Chai Wan, Hong Kong</p>
@@ -649,7 +676,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="fanling swimming pool 粉嶺游泳池 73 san wan road, fanling 新界粉嶺新運路73號">
+<article class="card" data-type="indoor_only" data-day="1" data-status="closed"
+         data-clean="1" data-win="[[[11,1],[4,15]],[[4,16],[6,5]]]" data-name="fanling swimming pool 粉嶺游泳池 73 san wan road, fanling 新界粉嶺新運路73號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Fanling Swimming Pool</h3>
@@ -658,7 +686,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">73 San Wan Road, Fanling</p>
@@ -703,7 +731,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="jordan valley swimming pool 佐敦谷游泳池 6 choi ha road, ngau tau kok, kowloon 九龍牛頭角彩霞道6號">
+<article class="card" data-type="indoor_only" data-day="1" data-status="closed"
+         data-clean="1" data-win="[[[11,1],[3,31]]]" data-name="jordan valley swimming pool 佐敦谷游泳池 6 choi ha road, ngau tau kok, kowloon 九龍牛頭角彩霞道6號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Jordan Valley Swimming Pool</h3>
@@ -712,7 +741,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">6 Choi Ha Road, Ngau Tau Kok, Kowloon</p>
@@ -759,7 +788,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="1" data-name="kowloon park swimming pool 九龍公園游泳池 22 austin road, tsim sha tsui, kowloon, hong kong 九龍尖沙咀柯士甸道22號">
+<article class="card" data-type="mixed" data-day="1" data-status="open"
+         data-clean="1" data-win="[[[4,16],[6,5]]]" data-name="kowloon park swimming pool 九龍公園游泳池 22 austin road, tsim sha tsui, kowloon, hong kong 九龍尖沙咀柯士甸道22號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Kowloon Park Swimming Pool</h3>
@@ -768,7 +798,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">22 Austin Road, Tsim Sha Tsui, Kowloon, Hong Kong</p>
@@ -813,7 +843,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="ma on shan swimming pool 馬鞍山游泳池 33 on chun street, ma on shan, sha tin. 沙田馬鞍山鞍駿街33號">
+<article class="card" data-type="indoor_only" data-day="1" data-status="closed"
+         data-clean="1" data-win="[[[11,1],[3,31]]]" data-name="ma on shan swimming pool 馬鞍山游泳池 33 on chun street, ma on shan, sha tin. 沙田馬鞍山鞍駿街33號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Ma On Shan Swimming Pool</h3>
@@ -822,7 +853,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">33 On Chun Street, Ma On Shan, Sha Tin.</p>
@@ -867,7 +898,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="pao yue kong swimming pool 包玉剛游泳池 2 shum wan road, wong chuk hang, hong kong 香港黃竹坑深灣道２號">
+<article class="card" data-type="indoor_only" data-day="1" data-status="closed"
+         data-clean="1" data-win="[[[11,1],[3,31]]]" data-name="pao yue kong swimming pool 包玉剛游泳池 2 shum wan road, wong chuk hang, hong kong 香港黃竹坑深灣道２號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Pao Yue Kong Swimming Pool</h3>
@@ -876,7 +908,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">2 Shum Wan Road, Wong Chuk Hang, Hong Kong</p>
@@ -921,7 +953,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="sun yat sen memorial park swimming pool 中山紀念公園游泳池 16 eastern street north, sai ying pun, hong kong 香港西營盤東邊街北16號">
+<article class="card" data-type="indoor_only" data-day="1" data-status="open"
+         data-clean="1" data-win="[[[4,16],[6,5]]]" data-name="sun yat sen memorial park swimming pool 中山紀念公園游泳池 16 eastern street north, sai ying pun, hong kong 香港西營盤東邊街北16號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Sun Yat Sen Memorial Park Swimming Pool</h3>
@@ -930,7 +963,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">16 Eastern Street North, Sai Ying Pun, Hong Kong</p>
@@ -975,7 +1008,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="the jockey club yan oi tong swimming pool 賽馬會仁愛堂游泳池 tsing chung koon road, tuen mun 新界屯門青松觀路">
+<article class="card" data-type="indoor_only" data-day="1" data-status="closed"
+         data-clean="1" data-win="[[[11,1],[3,31]]]" data-name="the jockey club yan oi tong swimming pool 賽馬會仁愛堂游泳池 tsing chung koon road, tuen mun 新界屯門青松觀路">
   <header class="card-head">
     <div class="ctitle">
       <h3>The Jockey Club Yan Oi Tong Swimming Pool</h3>
@@ -984,7 +1018,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">Tsing Chung Koon Road, Tuen Mun</p>
@@ -1029,7 +1063,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="1" data-name="tin sau road swimming pool 天秀路游泳池 20 tin sau road, tin shui wai 天水圍天秀路20號">
+<article class="card" data-type="mixed" data-day="1" data-status="open"
+         data-clean="1" data-win="[[[4,16],[6,5]]]" data-name="tin sau road swimming pool 天秀路游泳池 20 tin sau road, tin shui wai 天水圍天秀路20號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tin Sau Road Swimming Pool</h3>
@@ -1038,7 +1073,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">20 Tin Sau Road, Tin Shui Wai</p>
@@ -1083,7 +1118,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="tsing yi southwest swimming pool 青衣西南游泳池 70 chung mei road, tsing yi 新界青衣涌美路70號">
+<article class="card" data-type="indoor_only" data-day="1" data-status="open"
+         data-clean="1" data-win="[[[9,11],[10,31]]]" data-name="tsing yi southwest swimming pool 青衣西南游泳池 70 chung mei road, tsing yi 新界青衣涌美路70號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tsing Yi Southwest Swimming Pool</h3>
@@ -1092,7 +1128,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">70 Chung Mei Road, Tsing Yi</p>
@@ -1137,7 +1173,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="1" data-name="tsuen king circuit wu chung swimming pool 荃景圍胡忠游泳池 178 tsuen king circuit, tsuen wan 荃灣荃景圍安逸街">
+<article class="card" data-type="indoor_only" data-day="1" data-status="closed"
+         data-clean="1" data-win="[[[11,1],[3,31]]]" data-name="tsuen king circuit wu chung swimming pool 荃景圍胡忠游泳池 178 tsuen king circuit, tsuen wan 荃灣荃景圍安逸街">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tsuen King Circuit Wu Chung Swimming Pool</h3>
@@ -1146,7 +1183,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">178 Tsuen King Circuit, Tsuen Wan</p>
@@ -1191,7 +1228,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="1" data-name="tung chung swimming pool 東涌游泳池 5 tat tung road, tung chung, n.t. 東涌達東路5號">
+<article class="card" data-type="mixed" data-day="1" data-status="open"
+         data-clean="1" data-win="[[[9,11],[10,31]]]" data-name="tung chung swimming pool 東涌游泳池 5 tat tung road, tung chung, n.t. 東涌達東路5號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tung Chung Swimming Pool</h3>
@@ -1200,7 +1238,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Tuesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">5 Tat Tung Road, Tung Chung, N.T.</p>
@@ -1245,7 +1283,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="2" data-name="ho man tin swimming pool 何文田游泳池 1 chung yee street, ho man tin, kowloon 九龍何文田忠義街1號">
+<article class="card" data-type="mixed" data-day="2" data-status="open"
+         data-clean="2" data-win="[[[9,11],[10,31]]]" data-name="ho man tin swimming pool 何文田游泳池 1 chung yee street, ho man tin, kowloon 九龍何文田忠義街1號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Ho Man Tin Swimming Pool</h3>
@@ -1254,7 +1293,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">1 Chung Yee Street, Ho Man Tin, Kowloon</p>
@@ -1299,7 +1338,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="2" data-name="island east swimming pool 港島東游泳池 52, lei king road, sai wan ho, hong kong 香港西灣河鯉景道52號港島東體育館一樓">
+<article class="card" data-type="indoor_only" data-day="2" data-status="open"
+         data-clean="2" data-win="[[[9,11],[10,31]]]" data-name="island east swimming pool 港島東游泳池 52, lei king road, sai wan ho, hong kong 香港西灣河鯉景道52號港島東體育館一樓">
   <header class="card-head">
     <div class="ctitle">
       <h3>Island East Swimming Pool</h3>
@@ -1308,7 +1348,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">52, Lei King Road, Sai Wan Ho, Hong Kong</p>
@@ -1353,7 +1393,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="2" data-name="kennedy town swimming pool 堅尼地城游泳池 2 sai cheung street north, kennedy town 香港堅尼地城西祥街北2號">
+<article class="card" data-type="mixed" data-day="2" data-status="open"
+         data-clean="2" data-win="[[[9,11],[10,31]]]" data-name="kennedy town swimming pool 堅尼地城游泳池 2 sai cheung street north, kennedy town 香港堅尼地城西祥街北2號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Kennedy Town Swimming Pool</h3>
@@ -1362,7 +1403,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">2 Sai Cheung Street North, Kennedy Town</p>
@@ -1407,7 +1448,8 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="2" data-name="kwun tong swimming pool 觀塘游泳池 2 tsui ping road, kwun tong, kowloon 九龍觀塘翠屏道2號">
+<article class="card" data-type="mixed" data-day="2" data-status="open"
+         data-clean="2" data-win="[[[1,2],[2,21]]]" data-name="kwun tong swimming pool 觀塘游泳池 2 tsui ping road, kwun tong, kowloon 九龍觀塘翠屏道2號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Kwun Tong Swimming Pool</h3>
@@ -1416,7 +1458,7 @@ Annual maintenance : From 1 Nov to 31 Mar of the following year</div>
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">2 Tsui Ping Road, Kwun Tong, Kowloon</p>
@@ -1465,7 +1507,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="2" data-name="lai chi kok park swimming pool 荔枝角公園游泳池 no.1 lai wan road, lai chi kok, kowloon 九龍深水埗荔灣道1號">
+<article class="card" data-type="mixed" data-day="2" data-status="open"
+         data-clean="2" data-win="[[[4,16],[6,5]]]" data-name="lai chi kok park swimming pool 荔枝角公園游泳池 no.1 lai wan road, lai chi kok, kowloon 九龍深水埗荔灣道1號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Lai Chi Kok Park Swimming Pool</h3>
@@ -1474,7 +1517,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">No.1 Lai Wan Road, Lai Chi Kok, Kowloon</p>
@@ -1519,7 +1562,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="2" data-name="morrison hill swimming pool 摩理臣山游泳池 7 oi kwan road, wan chai, hong kong 香港灣仔愛群道7號">
+<article class="card" data-type="mixed" data-day="2" data-status="open"
+         data-clean="2" data-win="[[[5,11],[6,30]]]" data-name="morrison hill swimming pool 摩理臣山游泳池 7 oi kwan road, wan chai, hong kong 香港灣仔愛群道7號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Morrison Hill Swimming Pool</h3>
@@ -1528,7 +1572,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">7 Oi Kwan Road, Wan Chai, Hong Kong</p>
@@ -1573,7 +1617,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="2" data-name="north kwai chung jockey club swimming pool 北葵涌賽馬會游泳池 290 wo yi hop road, kwai chung 新界葵涌和宜合道290號">
+<article class="card" data-type="indoor_only" data-day="2" data-status="closed"
+         data-clean="2" data-win="[[[11,1],[3,31]]]" data-name="north kwai chung jockey club swimming pool 北葵涌賽馬會游泳池 290 wo yi hop road, kwai chung 新界葵涌和宜合道290號">
   <header class="card-head">
     <div class="ctitle">
       <h3>North Kwai Chung Jockey Club Swimming Pool</h3>
@@ -1582,7 +1627,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">290 Wo Yi Hop Road, Kwai Chung</p>
@@ -1627,7 +1672,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="2" data-name="sai kung swimming pool 西貢游泳池 wai man road, sai kung, nt 西貢惠民路12號">
+<article class="card" data-type="indoor_only" data-day="2" data-status="closed"
+         data-clean="2" data-win="[[[11,1],[3,31]]]" data-name="sai kung swimming pool 西貢游泳池 wai man road, sai kung, nt 西貢惠民路12號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Sai Kung Swimming Pool</h3>
@@ -1636,7 +1682,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">Wai Man Road, Sai Kung, NT</p>
@@ -1681,7 +1727,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="2" data-name="tuen mun north west swimming pool 屯門西北游泳池 95 ming kum road, tuen mun, n.t. 屯門鳴琴路95號">
+<article class="card" data-type="mixed" data-day="2" data-status="open"
+         data-clean="2" data-win="[[[9,1],[10,21]]]" data-name="tuen mun north west swimming pool 屯門西北游泳池 95 ming kum road, tuen mun, n.t. 屯門鳴琴路95號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tuen Mun North West Swimming Pool</h3>
@@ -1690,7 +1737,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">95 Ming Kum Road, Tuen Mun, N.T.</p>
@@ -1735,7 +1782,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="2" data-name="yuen long swimming pool 元朗游泳池 10 tai yuk road, yuen long 元朗體育路10號">
+<article class="card" data-type="indoor_only" data-day="2" data-status="closed"
+         data-clean="2" data-win="[[[11,1],[4,15]],[[4,16],[6,5]]]" data-name="yuen long swimming pool 元朗游泳池 10 tai yuk road, yuen long 元朗體育路10號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Yuen Long Swimming Pool</h3>
@@ -1744,7 +1792,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Wednesday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">10 Tai Yuk Road, Yuen Long</p>
@@ -1789,7 +1837,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="3" data-name="hin tin swimming pool 顯田游泳池 68 che kung miu road, tai wai, sha tin. 沙田大圍車公廟路68號">
+<article class="card" data-type="mixed" data-day="3" data-status="open"
+         data-clean="3" data-win="[[[9,11],[10,31]]]" data-name="hin tin swimming pool 顯田游泳池 68 che kung miu road, tai wai, sha tin. 沙田大圍車公廟路68號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Hin Tin Swimming Pool</h3>
@@ -1798,7 +1847,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">68 Che Kung Miu Road, Tai Wai, Sha Tin.</p>
@@ -1843,7 +1892,8 @@ Jan to Feb (Whole pool complex)
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="3" data-name="lam tin swimming pool 藍田游泳池 1/f lam tin complex, 1 hing tin street, lam tin, kowloon 九龍藍田慶田街1號藍田綜合大樓1樓">
+<article class="card" data-type="mixed" data-day="3" data-status="open"
+         data-clean="3" data-win="[[[4,16],[6,5]]]" data-name="lam tin swimming pool 藍田游泳池 1/f lam tin complex, 1 hing tin street, lam tin, kowloon 九龍藍田慶田街1號藍田綜合大樓1樓">
   <header class="card-head">
     <div class="ctitle">
       <h3>Lam Tin Swimming Pool</h3>
@@ -1852,7 +1902,7 @@ Jan to Feb (Whole pool complex)
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">1/F Lam Tin Complex, 1 Hing Tin Street, Lam Tin, Kowloon</p>
@@ -1899,7 +1949,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="3" data-name="lei cheng uk swimming pool 李鄭屋游泳池 25 kwong lee road, kowloon, hong kong 深水埗廣利道25號">
+<article class="card" data-type="indoor_only" data-day="3" data-status="closed"
+         data-clean="3" data-win="[[[11,1],[3,31]]]" data-name="lei cheng uk swimming pool 李鄭屋游泳池 25 kwong lee road, kowloon, hong kong 深水埗廣利道25號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Lei Cheng Uk Swimming Pool</h3>
@@ -1908,7 +1959,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">25 Kwong Lee Road, Kowloon, Hong Kong</p>
@@ -1954,7 +2005,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="3" data-name="sheung shui swimming pool 上水游泳池 38 tin ping road, sheung shui 新界上水天平路38號">
+<article class="card" data-type="indoor_only" data-day="3" data-status="closed"
+         data-clean="3" data-win="[[[11,1],[3,31]]]" data-name="sheung shui swimming pool 上水游泳池 38 tin ping road, sheung shui 新界上水天平路38號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Sheung Shui Swimming Pool</h3>
@@ -1963,7 +2015,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">38 Tin Ping Road, Sheung Shui</p>
@@ -2008,7 +2060,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="3" data-name="siu sai wan swimming pool 小西灣游泳池 1/f., siu sai wan complex, 15 siu sai wan road, hk 香港小西灣道15號小西灣綜合大樓一樓">
+<article class="card" data-type="indoor_only" data-day="3" data-status="open"
+         data-clean="3" data-win="[[[5,2],[7,26]]]" data-name="siu sai wan swimming pool 小西灣游泳池 1/f., siu sai wan complex, 15 siu sai wan road, hk 香港小西灣道15號小西灣綜合大樓一樓">
   <header class="card-head">
     <div class="ctitle">
       <h3>Siu Sai Wan Swimming Pool</h3>
@@ -2017,7 +2070,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">1/F., Siu Sai Wan Complex, 15 Siu Sai Wan Road, HK</p>
@@ -2062,7 +2115,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="3" data-name="tai wan shan swimming pool 大環山游泳池 no.7 wan hoi street, hung hom, kowloon 九龍紅磡環海街7號">
+<article class="card" data-type="indoor_only" data-day="3" data-status="closed"
+         data-clean="3" data-win="[[[11,1],[3,31]]]" data-name="tai wan shan swimming pool 大環山游泳池 no.7 wan hoi street, hung hom, kowloon 九龍紅磡環海街7號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tai Wan Shan Swimming Pool</h3>
@@ -2071,7 +2125,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">No.7 Wan Hoi Street, Hung Hom, Kowloon</p>
@@ -2116,7 +2170,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="3" data-name="tin shui wai swimming pool 天水圍游泳池 no. 1 tin pak road, tin shui wai 天水圍天柏路一號">
+<article class="card" data-type="indoor_only" data-day="3" data-status="closed"
+         data-clean="3" data-win="[[[11,1],[3,31]]]" data-name="tin shui wai swimming pool 天水圍游泳池 no. 1 tin pak road, tin shui wai 天水圍天柏路一號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tin Shui Wai Swimming Pool</h3>
@@ -2125,7 +2180,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">No. 1 Tin Pak Road, Tin Shui Wai</p>
@@ -2170,7 +2225,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="3" data-name="tsing yi swimming pool 青衣游泳池 51 tsing king road, tsing yi 新界青衣青敬路 51號">
+<article class="card" data-type="indoor_only" data-day="3" data-status="closed"
+         data-clean="3" data-win="[[[11,1],[3,31]]]" data-name="tsing yi swimming pool 青衣游泳池 51 tsing king road, tsing yi 新界青衣青敬路 51號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tsing Yi Swimming Pool</h3>
@@ -2179,7 +2235,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">51 Tsing King Road, Tsing Yi</p>
@@ -2224,7 +2280,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="3" data-name="tuen mun swimming pool 屯門游泳池 50 lung mun road, tuen mun, n.t. 新界屯門龍門路50號">
+<article class="card" data-type="mixed" data-day="3" data-status="open"
+         data-clean="3" data-win="[[[4,16],[6,5]]]" data-name="tuen mun swimming pool 屯門游泳池 50 lung mun road, tuen mun, n.t. 新界屯門龍門路50號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tuen Mun Swimming Pool</h3>
@@ -2233,7 +2290,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor + outdoor</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">50 Lung Mun Road, Tuen Mun, N.T.</p>
@@ -2278,7 +2335,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="3" data-name="tung cheong street swimming pool 東昌街游泳池 1/f, tai po tung cheong street leisure building 大埔東昌街康體大樓1樓">
+<article class="card" data-type="indoor_only" data-day="3" data-status="open"
+         data-clean="3" data-win="[[[9,11],[10,31]]]" data-name="tung cheong street swimming pool 東昌街游泳池 1/f, tai po tung cheong street leisure building 大埔東昌街康體大樓1樓">
   <header class="card-head">
     <div class="ctitle">
       <h3>Tung Cheong Street Swimming Pool</h3>
@@ -2287,7 +2345,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Thursday</span>
       <span class="badge type">Indoor only</span>
-      
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">1/F, Tai Po Tung Cheong Street Leisure Building</p>
@@ -2332,7 +2390,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="4" data-name="kwai shing swimming pool 葵盛游泳池 306 kwai shing circuit, kwai chung 新界葵涌葵盛圍306號">
+<article class="card" data-type="indoor_only" data-day="4" data-status="closed"
+         data-clean="4" data-win="[[[11,1],[3,31]]]" data-name="kwai shing swimming pool 葵盛游泳池 306 kwai shing circuit, kwai chung 新界葵涌葵盛圍306號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Kwai Shing Swimming Pool</h3>
@@ -2341,7 +2400,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Friday</span>
       <span class="badge type">Indoor only</span>
-      <span class="badge closed">Closed today</span>
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">306 Kwai Shing Circuit, Kwai Chung</p>
@@ -2386,7 +2445,8 @@ Annual maintenance : From 15 April to 5 June</div>
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="4" data-name="morse park swimming pool 摩士公園游泳池 80 fung mo street, wong tai sin, kowloon 九龍黃大仙鳳舞街80號">
+<article class="card" data-type="mixed" data-day="4" data-status="open"
+         data-clean="4" data-win="[[[4,16],[6,5]]]" data-name="morse park swimming pool 摩士公園游泳池 80 fung mo street, wong tai sin, kowloon 九龍黃大仙鳳舞街80號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Morse Park Swimming Pool</h3>
@@ -2395,7 +2455,7 @@ Annual maintenance : From 15 April to 5 June</div>
     <div class="cbadges">
       <span class="badge day">Day off: Friday</span>
       <span class="badge type">Indoor + outdoor</span>
-      <span class="badge closed">Closed today</span>
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">80 Fung Mo Street, Wong Tai Sin, Kowloon</p>
@@ -2442,7 +2502,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="4" data-name="mui wo swimming pool 梅窩游泳池 5 ngan shek street, mui wo, lantau 大嶼山梅窩銀石街5號">
+<article class="card" data-type="indoor_only" data-day="4" data-status="closed"
+         data-clean="4" data-win="[[[11,1],[3,31]]]" data-name="mui wo swimming pool 梅窩游泳池 5 ngan shek street, mui wo, lantau 大嶼山梅窩銀石街5號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Mui Wo Swimming Pool</h3>
@@ -2451,7 +2512,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Friday</span>
       <span class="badge type">Indoor only</span>
-      <span class="badge closed">Closed today</span>
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">5 Ngan Shek Street, Mui Wo, Lantau</p>
@@ -2496,7 +2557,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="mixed" data-day="4" data-name="sha tin jockey club swimming pool 沙田賽馬會游泳池 10 yuen wo road, sha tin, n.t. 沙田源禾路10號">
+<article class="card" data-type="mixed" data-day="4" data-status="closed"
+         data-clean="4" data-win="[[[11,1],[4,15]]]" data-name="sha tin jockey club swimming pool 沙田賽馬會游泳池 10 yuen wo road, sha tin, n.t. 沙田源禾路10號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Sha Tin Jockey Club Swimming Pool</h3>
@@ -2505,7 +2567,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Friday</span>
       <span class="badge type">Indoor + outdoor</span>
-      <span class="badge closed">Closed today</span>
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">10 Yuen Wo Road, Sha Tin, N.T.</p>
@@ -2550,7 +2612,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="4" data-name="sham shui po park swimming pool 深水埗公園游泳池 733 lai chi kok road, sham shui po, kowloon. 九龍深水埗荔枝角道733號">
+<article class="card" data-type="indoor_only" data-day="4" data-status="closed"
+         data-clean="4" data-win="[[[11,1],[2,23]],[[2,24],[4,15]]]" data-name="sham shui po park swimming pool 深水埗公園游泳池 733 lai chi kok road, sham shui po, kowloon. 九龍深水埗荔枝角道733號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Sham Shui Po Park Swimming Pool</h3>
@@ -2559,7 +2622,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Friday</span>
       <span class="badge type">Indoor only</span>
-      <span class="badge closed">Closed today</span>
+      <span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>
     </div>
   </header>
   <p class="addr">733 Lai Chi Kok Road, Sham Shui Po, Kowloon.</p>
@@ -2604,7 +2667,8 @@ Annual maintenance:
     </p>
   </details>
 </article>
-<article class="card" data-type="indoor_only" data-day="4" data-name="wan chai swimming pool 灣仔游泳池 27 harbour road, wan chai, hong kong 香港灣仔港灣道27號">
+<article class="card" data-type="indoor_only" data-day="4" data-status="open"
+         data-clean="4" data-win="[[[12,1],[1,20]]]" data-name="wan chai swimming pool 灣仔游泳池 27 harbour road, wan chai, hong kong 香港灣仔港灣道27號">
   <header class="card-head">
     <div class="ctitle">
       <h3>Wan Chai Swimming Pool</h3>
@@ -2613,7 +2677,7 @@ Annual maintenance:
     <div class="cbadges">
       <span class="badge day">Day off: Friday</span>
       <span class="badge type">Indoor only</span>
-      <span class="badge closed">Closed today</span>
+      <span class="badge statusbadge opentoday">Open today</span>
     </div>
   </header>
   <p class="addr">27 Harbour Road, Wan Chai, Hong Kong</p>
@@ -2670,7 +2734,7 @@ Annual maintenance:
   </span></p>
   <p>Every row is linked back to the pool’s own LCSD page. Opening hours and closures are subject to change — the LCSD page and the
   pool office (phone shown on each card) are authoritative. This page is an unofficial convenience summary.</p>
-  <p>Built with data captured 6 Nov 2026.</p>
+  <p>Built with data captured 6 Nov 2026. “Today” status is recomputed live in your browser from the current date.</p>
 </footer>
 
 <script>
@@ -2681,7 +2745,53 @@ Annual maintenance:
   const type = document.getElementById('type');
   const chips = Array.from(document.querySelectorAll('#chips .chip'));
   const count = document.getElementById('count');
+  const openToday = document.getElementById('openToday');
+  const fullToday = document.getElementById('fullToday');
   let chipDay = null;
+  let onlyOpenToday = false;
+  let onlyFullToday = false;
+
+  const WD = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  // Live "today" status, recomputed from the visitor's clock so the page never goes stale.
+  function computeLiveStatus() {
+    const now = new Date();
+    const todayIdx = (now.getDay() + 6) % 7;          // 0 = Monday, matching the data
+    const md = (now.getMonth() + 1) * 100 + now.getDate();
+    const tally = { open: 0, evening: 0, closed: 0 };
+    cards.forEach(c => {
+      const windows = JSON.parse(c.dataset.win || '[]');
+      let inMaintenance = false;
+      windows.forEach(w => {
+        const s = w[0][0] * 100 + w[0][1];
+        const e = w[1][0] * 100 + w[1][1];
+        if (s <= e ? (md >= s && md <= e) : (md >= s || md <= e)) inMaintenance = true;
+      });
+      const isCleansing = Number(c.dataset.clean) === todayIdx;
+      let st = 'open';
+      if (inMaintenance) st = 'closed';
+      else if (isCleansing) st = 'evening';
+      c.dataset.status = st;
+      tally[st]++;
+      const badge = c.querySelector('.statusbadge');
+      if (badge) {
+        badge.className = 'badge statusbadge ' + (st === 'closed' ? 'closed' : st === 'evening' ? 'evening' : 'opentoday');
+        badge.textContent = st === 'closed' ? 'Closed today \u00b7 annual maintenance'
+                        : st === 'evening' ? 'Open evenings only today' : 'Open today';
+      }
+    });
+    const openTotal = tally.open + tally.evening;
+    document.getElementById('statOpenToday').textContent = openTotal;
+    document.getElementById('statOpenAll').textContent = tally.open;
+    document.getElementById('statEvening').textContent = tally.evening;
+    document.getElementById('statMaint').textContent = tally.closed;
+    document.getElementById('openTodayN').textContent = openTotal;
+    document.getElementById('fullTodayN').textContent = tally.open;
+    document.getElementById('todayline').textContent =
+      'Today is ' + WD[todayIdx] + ' ' + now.getDate() + ' ' + MONTHS[now.getMonth()] + ' — ' +
+      openTotal + ' of ' + cards.length + ' pools have an open indoor pool';
+  }
 
   function apply() {
     const term = q.value.trim().toLowerCase();
@@ -2692,16 +2802,29 @@ Annual maintenance:
       const okQ = !term || c.dataset.name.includes(term);
       const okD = (!dsel && chipDay === null) || (dsel !== '' ? c.dataset.day === dsel : c.dataset.day === String(chipDay));
       const okT = !tsel || c.dataset.type === tsel;
-      const vis = okQ && okD && okT;
+      const st = c.dataset.status;
+      const okOpen = !onlyOpenToday ? true : (st === 'open' || st === 'evening');
+      const okFull = !onlyFullToday ? true : (st === 'open');
+      const vis = okQ && okD && okT && okOpen && okFull;
       c.classList.toggle('hidden', !vis);
       if (vis) shown++;
     });
     count.textContent = 'Showing ' + shown + ' of ' + cards.length + ' pools.';
   }
 
+  function toggle(btn, key) {
+    const on = btn.classList.toggle('on');
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (key === 'open') { onlyOpenToday = on; if (on) { onlyFullToday = false; fullToday.classList.remove('on'); fullToday.setAttribute('aria-pressed','false'); } }
+    else { onlyFullToday = on; if (on) { onlyOpenToday = false; openToday.classList.remove('on'); openToday.setAttribute('aria-pressed','false'); } }
+    apply();
+  }
+
   q.addEventListener('input', apply);
   day.addEventListener('change', () => { chipDay = null; chips.forEach(c => c.classList.remove('on')); apply(); });
   type.addEventListener('change', apply);
+  openToday.addEventListener('click', () => toggle(openToday, 'open'));
+  fullToday.addEventListener('click', () => toggle(fullToday, 'full'));
   chips.forEach(ch => ch.addEventListener('click', () => {
     const v = ch.dataset.day;
     const already = ch.classList.contains('on');
@@ -2712,8 +2835,12 @@ Annual maintenance:
   }));
   document.getElementById('reset').addEventListener('click', () => {
     q.value = ''; day.value = ''; type.value = ''; chipDay = null;
+    onlyOpenToday = false; onlyFullToday = false;
+    openToday.classList.remove('on'); openToday.setAttribute('aria-pressed','false');
+    fullToday.classList.remove('on'); fullToday.setAttribute('aria-pressed','false');
     chips.forEach(c => c.classList.remove('on')); apply();
   });
+  computeLiveStatus();
   apply();
 })();
 </script>

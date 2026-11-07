@@ -110,10 +110,28 @@ def strip_labels(lines):
     return out
 
 
+def md_of(iso):
+    dt = d(iso)
+    return (dt.month, dt.day)
+
+
+def in_annual_window(today, start_iso, end_iso):
+    """True if today falls inside the recurring annual closure window."""
+    sm, sd = md_of(start_iso)
+    em, ed = md_of(end_iso)
+    tm, td = today.month, today.day
+    tmd = (tm, td)
+    if (sm, sd) <= (em, ed):
+        return (sm, sd) <= tmd <= (em, ed)
+    return tmd >= (sm, sd) or tmd <= (em, ed)
+
+
 def build():
     pools = json.loads((DATA / "final_pools.json").read_text(encoding="utf-8"))
-    today = date(2026, 11, 6)
+    captured = date(2026, 11, 6)          # when the LCSD pages were scraped
+    today = date.today()                   # day the page is built for (JS keeps it live)
     today_wd = WD[today.weekday()]
+    live_today = today
 
     records = []
     for p in pools:
@@ -141,7 +159,15 @@ def build():
             outdoor.append({"label": w[4], "start": fmt(nws), "end": fmt(nwe), "reopen": fmt(nwe + timedelta(days=1))})
 
         day = p["cleanDayEN"] or ""
-        closed_today = day == today_wd
+        cleansing_today = day == today_wd
+        maintenance_today = any(in_annual_window(today, w[0], w[1]) for w in p["indoorClosure"])
+        if maintenance_today:
+            status = "closed"
+        elif cleansing_today:
+            status = "evening"
+        else:
+            status = "open"
+        window_md = [[md_of(w[0]), md_of(w[1])] for w in p["indoorClosure"]]
         records.append({
             "id": p["swpId"],
             "nameEN": p["nameEN"],
@@ -157,9 +183,8 @@ def build():
             "day": day,
             "dayTC": WD_ZH.get(day, ""),
             "dayIdx": WD.index(day) if day in WD else -1,
-            "closedToday": closed_today,
-            "restDay": p["restDayEN"] or p["restDayTC"],
-            "indoorWindows": windows,
+            "closedToday": cleansing_today,
+            "restDay": p["restDayEN"] or p["restDayTC"],            "indoorWindows": windows,
             "outdoorWindows": outdoor,
             "openPeriod": ", ".join(fmt_range(a, b) for a, b in
                                    open_periods([(w[0], w[1]) for w in p["indoorClosure"]],
@@ -173,6 +198,10 @@ def build():
             "maintTC": p["maintenanceRawTC"],
             "revision": p["revisionDate"],
             "search": f"{p['nameEN']} {p['nameTC']} {p['addressEN']} {p['addressTC']}".lower(),
+            "status": status,
+            "cleansingToday": cleansing_today,
+            "maintenanceToday": maintenance_today,
+            "windowMD": window_md,
         })
 
     records.sort(key=lambda r: (r["dayIdx"], r["nameEN"]))
@@ -191,14 +220,20 @@ def build():
 
     cards = []
     for r in records:
-        closed_badge = '<span class="badge closed">Closed today</span>' if r["closedToday"] else ""
+        if r["status"] == "closed":
+            status_badge = ('<span class="badge statusbadge closed">Closed today &middot; annual maintenance</span>')
+        elif r["status"] == "evening":
+            status_badge = '<span class="badge statusbadge evening">Open evenings only today</span>'
+        else:
+            status_badge = '<span class="badge statusbadge opentoday">Open today</span>'
         facs = "".join(f"<li>{esc(x)}</li>" for x in strip_labels(r["indoorFacilities"])[:6]) or "<li>—</li>"
         outf = "".join(f"<li>{esc(x)}</li>" for x in strip_labels(r["outdoorFacilities"])[:4])
         maint_tc = "<br>".join(esc(x) for x in clean_lines(r["maintTC"]))
         maint_en = "<br>".join(esc(x) for x in clean_lines(r["maintEN"]))
         hours = "<br>".join(esc(x) for x in clean_lines(r["hours"]))
         card = f"""
-<article class="card" data-type="{r['type']}" data-day="{r['dayIdx']}" data-name="{esc(r['search'])}">
+<article class="card" data-type="{r['type']}" data-day="{r['dayIdx']}" data-status="{r['status']}"
+         data-clean="{r['dayIdx']}" data-win="{esc(json.dumps(r['windowMD'], separators=(',', ':')))}" data-name="{esc(r['search'])}">
   <header class="card-head">
     <div class="ctitle">
       <h3>{esc(r['nameEN'])}</h3>
@@ -207,7 +242,7 @@ def build():
     <div class="cbadges">
       <span class="badge day">Day off: {esc(r['day'])}</span>
       <span class="badge type">{esc(r['typeLabel'])}</span>
-      {closed_badge}
+      {status_badge}
     </div>
   </header>
   <p class="addr">{esc(r['addr'])}</p>
@@ -271,7 +306,10 @@ def build():
         "total": len(records),
         "indoor_only": sum(1 for r in records if r["type"] == "indoor_only"),
         "mixed": sum(1 for r in records if r["type"] == "mixed"),
-        "closed_today": sum(1 for r in records if r["closedToday"]),
+        "open_today": sum(1 for r in records if r["status"] in ("open", "evening")),
+        "open_all_day": sum(1 for r in records if r["status"] == "open"),
+        "evening_only": sum(1 for r in records if r["status"] == "evening"),
+        "closed_today": sum(1 for r in records if r["status"] == "closed"),
     }
     day_counts = {day: len(by_day.get(day, [])) for day in WD}
     busiest = max(day_counts, key=lambda k: day_counts[k])
@@ -283,7 +321,10 @@ def build():
     page = TEMPLATE
     for key, val in (
         ("stats_total", stats["total"]), ("stats_indoor", stats["indoor_only"]), ("stats_mixed", stats["mixed"]),
-        ("stats_today", stats["closed_today"]), ("today_long", f"{today.day} {MONTHS[today.month-1]} {today.year}"),
+        ("stats_today", stats["open_today"]), ("stats_open_all", stats["open_all_day"]),
+        ("stats_evening", stats["evening_only"]), ("stats_maint", stats["closed_today"]),
+        ("today_long", f"{today.day} {MONTHS[today.month-1]} {today.year}"),
+        ("captured", f"{captured.day} {MONTHS[captured.month-1]} {captured.year}"),
         ("today_wd", today_wd), ("busiest", busiest), ("chips", chips), ("cards", "".join(cards)),
         ("day_rows", "".join(day_rows)), ("day_names", "".join(f'<option value="{i}">{esc(dd)}</option>' for i, dd in enumerate(WD))),
         ("revision", records[0]["revision"] if records else ""),
@@ -293,7 +334,9 @@ def build():
     (OUT / "index.html").write_text(page, encoding="utf-8")
     (DATA / "page_data.json").write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"wrote {OUT / 'index.html'}")
-    print(f"  pools: {stats['total']}  indoor-only: {stats['indoor_only']}  mixed: {stats['mixed']}  closed today ({today_wd}): {stats['closed_today']}")
+    print(f"  pools: {stats['total']}  indoor-only: {stats['indoor_only']}  mixed: {stats['mixed']}")
+    print(f"  today ({today_wd}): open all day {stats['open_all_day']}, evenings only {stats['evening_only']}, "
+          f"closed for maintenance {stats['closed_today']}, open today total {stats['open_today']}")
 
 TEMPLATE = """
 <!DOCTYPE html>
@@ -343,6 +386,10 @@ input[type=search]{min-width:250px;flex:1 1 260px}
 .chip:hover{border-color:var(--blue)} .chip.on{background:var(--blue);border-color:var(--blue);color:#04121f;font-weight:600}
 .chip .n{background:rgba(255,255,255,.12);border-radius:999px;padding:1px 7px;font-size:11.5px}
 .chip.on .n{background:rgba(0,0,0,.18)}
+.chip.toggle{border-color:rgba(93,220,154,.35);color:#b6f0d0}
+.chip.toggle:hover{border-color:var(--green)}
+#openToday.on{background:var(--green);border-color:var(--green);color:#04231a;font-weight:700}
+#fullToday.on{background:var(--cyan);border-color:var(--cyan);color:#032420;font-weight:700}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(430px,1fr));gap:16px;margin-top:18px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px 14px}
 .card.hidden{display:none}
@@ -354,6 +401,8 @@ input[type=search]{min-width:250px;flex:1 1 260px}
 .badge.day{color:var(--cyan);border-color:rgba(63,208,201,.35)}
 .badge.type{color:#a9c4e8}
 .badge.closed{background:rgba(255,122,122,.14);border-color:rgba(255,122,122,.4);color:var(--red);font-weight:600}
+.badge.evening{background:rgba(255,180,84,.13);border-color:rgba(255,180,84,.38);color:var(--amber);font-weight:600}
+.badge.opentoday{background:rgba(93,220,154,.12);border-color:rgba(93,220,154,.38);color:var(--green);font-weight:600}
 .addr{color:var(--muted);font-size:13px;margin:8px 0 12px}
 .dayoff{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--cyan);border-radius:10px;padding:10px 13px;margin-bottom:12px}
 .dayoff-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
@@ -402,13 +451,16 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
     <p class="sub">Every LCSD public swimming pool in Hong Kong, with the <b>routine weekly day off</b> (weekly cleansing day),
     the <b>indoor pool annual maintenance closing date</b> and the <b>reopening date</b>, plus the outdoor closures that affect
     what is actually open on the day.</p>
-    <p class="meta">Data captured from lcsd.gov.hk on <b>%%today_long%%</b> &middot; LCSD page revision: %%revision%%
-      &middot; <span id="todayline">Today is %%today_wd%% — %%stats_today%% indoor pool(s) on routine day off</span></p>
+    <p class="meta">Data captured from lcsd.gov.hk on <b>%%captured%%</b> &middot; LCSD page revision: %%revision%%
+      &middot; <span id="todayline">Today is %%today_wd%% — %%stats_today%% of %%stats_total%% pools have an open indoor pool</span></p>
     <div class="stats">
       <div class="stat"><b>%%stats_total%%</b><span>public pools listed</span></div>
+      <div class="stat"><b id="statOpenToday">%%stats_today%%</b><span>open today (indoor pool)</span></div>
+      <div class="stat"><b id="statOpenAll">%%stats_open_all%%</b><span>open all day today</span></div>
+      <div class="stat"><b id="statEvening">%%stats_evening%%</b><span>evening session only today</span></div>
+      <div class="stat"><b id="statMaint">%%stats_maint%%</b><span>closed today (maintenance)</span></div>
       <div class="stat"><b>%%stats_indoor%%</b><span>indoor-only complexes</span></div>
       <div class="stat"><b>%%stats_mixed%%</b><span>indoor + outdoor complexes</span></div>
-      <div class="stat"><b>%%stats_today%%</b><span>closed today (routine day off)</span></div>
     </div>
   </div>
 </header>
@@ -425,6 +477,13 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
     outdoor pools, the outdoor window is shown as well, because a closed outdoor pool often means “indoor only” even though the indoor
     pool itself is open.
   </div>
+  <div class="note">
+    <b>“Open today”.</b> Two filters answer “can I swim today?”.
+    <b>Open today</b> keeps every pool with at least one open session today — including pools whose daytime session is shut for the weekly
+    cleansing but that reopen for the evening session.
+    <b>Open all day today</b> keeps only pools with no closure of any kind today.
+    Pools closed for annual maintenance are excluded from both. The badge on each card spells out which case applies.
+  </div>
 </section>
 
 <section class="wrap">
@@ -440,7 +499,7 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
 
 <section class="wrap">
   <h2>All pools</h2>
-  <p class="lede">Filter by name, weekday or pool type.</p>
+  <p class="lede">Filter by name, weekday, pool type — or by what is actually open today.</p>
   <div class="controls">
     <input type="search" id="q" placeholder="Search pool name or address…" aria-label="Search">
     <select id="day" aria-label="Filter by weekday"><option value="">Any weekday</option>%%day_names%%</select>
@@ -449,6 +508,8 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
       <option value="indoor_only">Indoor only</option>
       <option value="mixed">Indoor + outdoor</option>
     </select>
+    <button class="chip toggle" id="openToday" type="button" aria-pressed="false">Open today <span class="n" id="openTodayN">%%stats_today%%</span></button>
+    <button class="chip toggle" id="fullToday" type="button" aria-pressed="false">Open all day today <span class="n" id="fullTodayN">%%stats_open_all%%</span></button>
     <button class="chip" id="reset" type="button">Reset</button>
   </div>
   <div class="chips" id="chips">%%chips%%</div>
@@ -465,7 +526,7 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
   </span></p>
   <p>Every row is linked back to the pool’s own LCSD page. Opening hours and closures are subject to change — the LCSD page and the
   pool office (phone shown on each card) are authoritative. This page is an unofficial convenience summary.</p>
-  <p>Built with data captured %%today_long%%.</p>
+  <p>Built with data captured %%captured%%. “Today” status is recomputed live in your browser from the current date.</p>
 </footer>
 
 <script>
@@ -476,7 +537,53 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
   const type = document.getElementById('type');
   const chips = Array.from(document.querySelectorAll('#chips .chip'));
   const count = document.getElementById('count');
+  const openToday = document.getElementById('openToday');
+  const fullToday = document.getElementById('fullToday');
   let chipDay = null;
+  let onlyOpenToday = false;
+  let onlyFullToday = false;
+
+  const WD = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  // Live "today" status, recomputed from the visitor's clock so the page never goes stale.
+  function computeLiveStatus() {
+    const now = new Date();
+    const todayIdx = (now.getDay() + 6) % 7;          // 0 = Monday, matching the data
+    const md = (now.getMonth() + 1) * 100 + now.getDate();
+    const tally = { open: 0, evening: 0, closed: 0 };
+    cards.forEach(c => {
+      const windows = JSON.parse(c.dataset.win || '[]');
+      let inMaintenance = false;
+      windows.forEach(w => {
+        const s = w[0][0] * 100 + w[0][1];
+        const e = w[1][0] * 100 + w[1][1];
+        if (s <= e ? (md >= s && md <= e) : (md >= s || md <= e)) inMaintenance = true;
+      });
+      const isCleansing = Number(c.dataset.clean) === todayIdx;
+      let st = 'open';
+      if (inMaintenance) st = 'closed';
+      else if (isCleansing) st = 'evening';
+      c.dataset.status = st;
+      tally[st]++;
+      const badge = c.querySelector('.statusbadge');
+      if (badge) {
+        badge.className = 'badge statusbadge ' + (st === 'closed' ? 'closed' : st === 'evening' ? 'evening' : 'opentoday');
+        badge.textContent = st === 'closed' ? 'Closed today \\u00b7 annual maintenance'
+                        : st === 'evening' ? 'Open evenings only today' : 'Open today';
+      }
+    });
+    const openTotal = tally.open + tally.evening;
+    document.getElementById('statOpenToday').textContent = openTotal;
+    document.getElementById('statOpenAll').textContent = tally.open;
+    document.getElementById('statEvening').textContent = tally.evening;
+    document.getElementById('statMaint').textContent = tally.closed;
+    document.getElementById('openTodayN').textContent = openTotal;
+    document.getElementById('fullTodayN').textContent = tally.open;
+    document.getElementById('todayline').textContent =
+      'Today is ' + WD[todayIdx] + ' ' + now.getDate() + ' ' + MONTHS[now.getMonth()] + ' — ' +
+      openTotal + ' of ' + cards.length + ' pools have an open indoor pool';
+  }
 
   function apply() {
     const term = q.value.trim().toLowerCase();
@@ -487,16 +594,29 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
       const okQ = !term || c.dataset.name.includes(term);
       const okD = (!dsel && chipDay === null) || (dsel !== '' ? c.dataset.day === dsel : c.dataset.day === String(chipDay));
       const okT = !tsel || c.dataset.type === tsel;
-      const vis = okQ && okD && okT;
+      const st = c.dataset.status;
+      const okOpen = !onlyOpenToday ? true : (st === 'open' || st === 'evening');
+      const okFull = !onlyFullToday ? true : (st === 'open');
+      const vis = okQ && okD && okT && okOpen && okFull;
       c.classList.toggle('hidden', !vis);
       if (vis) shown++;
     });
     count.textContent = 'Showing ' + shown + ' of ' + cards.length + ' pools.';
   }
 
+  function toggle(btn, key) {
+    const on = btn.classList.toggle('on');
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (key === 'open') { onlyOpenToday = on; if (on) { onlyFullToday = false; fullToday.classList.remove('on'); fullToday.setAttribute('aria-pressed','false'); } }
+    else { onlyFullToday = on; if (on) { onlyOpenToday = false; openToday.classList.remove('on'); openToday.setAttribute('aria-pressed','false'); } }
+    apply();
+  }
+
   q.addEventListener('input', apply);
   day.addEventListener('change', () => { chipDay = null; chips.forEach(c => c.classList.remove('on')); apply(); });
   type.addEventListener('change', apply);
+  openToday.addEventListener('click', () => toggle(openToday, 'open'));
+  fullToday.addEventListener('click', () => toggle(fullToday, 'full'));
   chips.forEach(ch => ch.addEventListener('click', () => {
     const v = ch.dataset.day;
     const already = ch.classList.contains('on');
@@ -507,8 +627,12 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px;colo
   }));
   document.getElementById('reset').addEventListener('click', () => {
     q.value = ''; day.value = ''; type.value = ''; chipDay = null;
+    onlyOpenToday = false; onlyFullToday = false;
+    openToday.classList.remove('on'); openToday.setAttribute('aria-pressed','false');
+    fullToday.classList.remove('on'); fullToday.setAttribute('aria-pressed','false');
     chips.forEach(c => c.classList.remove('on')); apply();
   });
+  computeLiveStatus();
   apply();
 })();
 </script>
